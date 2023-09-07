@@ -9,7 +9,6 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "rootDir": "src",
     "outDir": "build",
     "resolveJsonModule": true,
     "isolatedModules": true,
