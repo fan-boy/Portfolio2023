@@ -35,7 +35,7 @@ export default function Home() {
       <div className="flex  m-5 flex-col md:flex-row  justify-center" >
 
         <div className="md:basis-1/2 flex p-10 w-min  flex-col">
-        <Type variant="emphasized-body"> Hi! I'm,</Type>
+        <Type variant="emphasized-body"> Hi! Im,</Type>
         <Type variant="heroText">Aaditya</Type>
         </div>
         <div className="md:basis-1/2 p-10 flex w-min self-end flex-col">
