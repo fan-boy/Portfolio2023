@@ -9,7 +9,7 @@ export default function DefaultPage({
     selected:string
   }) {
   return (
-    <main className=" flex flex-col bg-backgroundDark text-fontDark min-h-screen ">
+    <main className=" flex flex-col bg-backgroundDark text-fontDark min-h-screen justify-center">
         <Navbar/>
         <div className="flex justify-center md:container ">
         {children}
