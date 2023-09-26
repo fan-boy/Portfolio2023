@@ -8,7 +8,7 @@ export default function Home() {
    <DefaultPage selected="work">
      <div className="flex flex-col mt-14">
      <div className="flex mt-4 flex-col text-center gap-4">
-       <span className="">
+       <span className="font-sans">
          Hi! I&#x27;m
        </span>
        <span className = "font-serif text-6xl">
