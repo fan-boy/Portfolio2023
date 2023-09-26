@@ -23,7 +23,7 @@ export default function Home() {
         who codes
        </span>
      </div>
-     <div className="flex mt-20 flex-col text-center gap-4">
+     <div className="flex font-sans mt-20 flex-col text-center gap-4">
        <span className="">
        HCIM grad student at <br/> University of Maryland, CP 
        </span>
