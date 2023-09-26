@@ -8,7 +8,7 @@ export default function Home() {
      <div className="flex flex-col">
      <div className="flex mt-4 flex-col text-center">
        <span className="">
-         Hi! I'm
+         Hi! I&#x27;m
        </span>
        <span className = "mt-4 font-serif text-6xl">
           Aaditya
