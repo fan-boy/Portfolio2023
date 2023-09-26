@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import localFont from '@next/font/local'
+import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,7 +54,7 @@ const quicksand = localFont({
 
 export const metadata: Metadata = {
   title: 'Aaditya Shete',
-  description: 'A collection of mmy works',
+  description: 'A collection of my works',
 }
 
 export default function RootLayout({
