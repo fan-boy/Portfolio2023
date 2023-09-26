@@ -1,16 +1,17 @@
 import Image from 'next/image'
 import DefaultPage from './ComponentLibrary/Components/DefaultPage'
+import Navbar from './ComponentLibrary/Components/Navbar'
 import { Type, Variants } from './ComponentLibrary/Typography/Type'
 
 export default function Home() {
   return (
-   <DefaultPage>
+   <DefaultPage selected="work">
      <div className="flex flex-col">
-     <div className="flex mt-4 flex-col text-center">
+     <div className="flex mt-4 flex-col text-center gap-4">
        <span className="">
          Hi! I&#x27;m
        </span>
-       <span className = "mt-4 font-serif text-6xl">
+       <span className = "font-serif text-6xl">
           Aaditya
        </span>
      </div>
@@ -22,11 +23,11 @@ export default function Home() {
         who codes
        </span>
      </div>
-     <div className="flex mt-20 flex-col text-center ">
+     <div className="flex mt-20 flex-col text-center gap-4">
        <span className="">
        HCIM grad student at <br/> University of Maryland, CP 
        </span>
-       <span className = "mt-4">
+       <span className = "">
        Graduating May 2024
        </span>
      </div>
