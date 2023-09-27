@@ -45,11 +45,11 @@ const tags: Record<Variant, ElementType> = {
 };
 
 const sizes: Record<Variant, string> = {
-    "heroText": "font-serif text-4xl md:text-8xl  font-normal non-italic",
+    "heroText": "font-serif text-6xl md:text-8xl  font-normal non-italic",
     h1: "font-serif md:text-6xl  text-4xl",
     h2: "font-serif md:text-5xl  text-3xl",
     h3: "font-serif md:text-4xl  text-2xl",
-    h4: "md:text-3xl font-bold text-xl",
+    h4: "font-serif md:text-3xl text-xl",
     h5: "md:text-2xl font-bold text-lg",
     "emphasized-body": "font-sans text-md md:text-2xl",
     body: "font-sans text-lg sm:text-md",
