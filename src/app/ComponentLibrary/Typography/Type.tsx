@@ -1,5 +1,10 @@
 import { ElementType } from "react";
 
+export interface FontTypes{
+    serif:"font-serif",
+    sans:"font-sans"
+}
+
 export interface Variants {
     heroText: "heroText",
     h1: "h1",
@@ -11,6 +16,10 @@ export interface Variants {
     bodySmall: "body-small",
     small: "small"
 }
+
+type FontType = 
+    | "font-serif"
+    | "font-sans";
 
 type Variant =
     | "heroText"
@@ -28,6 +37,7 @@ interface Props {
     variant: Variant;
     children: React.ReactNode;
     className?: string;
+    fontType?: FontType;
     as?: ElementType;
 }
 
@@ -50,15 +60,22 @@ const sizes: Record<Variant, string> = {
     h2: "font-serif md:text-5xl  text-3xl",
     h3: "font-serif md:text-4xl  text-2xl",
     h4: "font-serif md:text-3xl text-xl",
-    h5: "md:text-2xl font-bold text-lg",
+    h5: "font-sans md:text-2xl font-bold text-lg",
     "emphasized-body": "font-sans text-md md:text-2xl",
     body: "font-sans text-lg sm:text-md",
     "body-small": "font-sans text-md sm:text-sm",
     small: "font-sans text-base sm:text-xs"
 };
 
-export const Type = ({ variant, children, className, as }: Props) => {
+export const Type = ({ variant, children, className,fontType, as }: Props) => {
     const sizeClasses = sizes[variant];
+    if(fontType ){
+        if(sizeClasses.search("font-sans") !== -1){
+            sizeClasses.replace("font-sans", fontType);
+        }else if(sizeClasses.search("font-serif") !== -1){
+            sizeClasses.replace("font-serif", fontType);
+        }
+    }
     const Tag = as || tags[variant];
 
     return <Tag className={`${sizeClasses} ${className}`}>{children}</Tag>;

@@ -19,8 +19,8 @@ const esperanto = localFont({
     },
     {
       path: '../../public/fonts/Esperanto Italic.ttf',
-      weight: '600', //Italic
-      style:'normal'
+      weight: '400', //Italic
+      style:'italic'
     }
   ],
   variable: '--font-esperanto'
