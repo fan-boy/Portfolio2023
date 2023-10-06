@@ -22,4 +22,6 @@ const Section = (props:SectionProps) =>{
     );
 }
 
+Section.displayName = "Section";
+
 export default Section;

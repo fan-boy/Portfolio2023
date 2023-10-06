@@ -71,6 +71,6 @@ OverviewSection.OutcomeParagraph = (props:OverviewSectionProps) =>{
   );
 }
 
-
+OverviewSection.displayName="OverviewSection";
 
 export default OverviewSection;
