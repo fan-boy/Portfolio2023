@@ -89,20 +89,21 @@ export default function Home() {
                 influences menu items and prices?
               </OverviewSection.Problem>
               <OverviewSection.Outcome>
-                <p className="text-left">
+                
                   We designed and implemented a highly
                   dynamic component for supporting the
                   order scheduling needs of both the
                   customers and business owners.
-
-                </p>
-                <p className="mt-2 md:mt-4">
+                  <br/>
+                  <br/>
+                
+                
                   Check out the solution and order tasty
                   food at https://www.siamlewisburg.com/
                   (for Lewisburg, PA)
 
 
-                </p>
+                
               </OverviewSection.Outcome>
             </div>
             <OverviewSection.Solution>
