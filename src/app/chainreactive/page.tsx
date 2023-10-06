@@ -29,25 +29,25 @@ export default function Home() {
 
               <ProjectSection>
                 <ProjectSection.IndentedLine>
-                Building a <span className="italic font-serif font-normal">scalable solution</span> for small businesses.
+                  Building a <span className="italic font-serif font-normal">scalable solution</span> for small businesses.
                 </ProjectSection.IndentedLine>
                 <ProjectSection.FirstPara>
-                We wanted to focus on empowering local businesses and small
-                    mom-pop restaurants in rural areas, starting with the town of
-                    Lewisburg. Our objective was to enhance the existing POS
-                    system offered by the company and contribute to the vibrant
-                    culture of community development and upbringing prevalent in
-                    United States.
+                  We wanted to focus on empowering local businesses and small
+                  mom-pop restaurants in rural areas, starting with the town of
+                  Lewisburg. Our objective was to enhance the existing POS
+                  system offered by the company and contribute to the vibrant
+                  culture of community development and upbringing prevalent in
+                  United States.
                 </ProjectSection.FirstPara>
                 <ProjectSection.SecondPara>
-                Recognizing the challenges faced by these businesses due to the
-                    limited availability or inefficiency of popular apps like Doordash
-                    and Grubhub in rural areas, my goal was to create a user-
-                    friendly and adaptable online ordering experience for both
-                    businesses and customers, ensuring a seamless process.
+                  Recognizing the challenges faced by these businesses due to the
+                  limited availability or inefficiency of popular apps like Doordash
+                  and Grubhub in rural areas, my goal was to create a user-
+                  friendly and adaptable online ordering experience for both
+                  businesses and customers, ensuring a seamless process.
                 </ProjectSection.SecondPara>
               </ProjectSection>
-              
+
             </div>
 
             <div className="w-full min-w-full flex justify-center md:w-1/3 p-5">
@@ -89,21 +89,21 @@ export default function Home() {
                 influences menu items and prices?
               </OverviewSection.Problem>
               <OverviewSection.Outcome>
-                
+                <OverviewSection.OutcomeParagraph>
                   We designed and implemented a highly
                   dynamic component for supporting the
                   order scheduling needs of both the
                   customers and business owners.
-                  <br/>
-                  <br/>
-                
-                
+                  <br />
+                  <br />
+
+
                   Check out the solution and order tasty
                   food at https://www.siamlewisburg.com/
                   (for Lewisburg, PA)
+                </OverviewSection.OutcomeParagraph>
 
 
-                
               </OverviewSection.Outcome>
             </div>
             <OverviewSection.Solution>

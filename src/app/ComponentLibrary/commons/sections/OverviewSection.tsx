@@ -65,9 +65,11 @@ OverviewSection.Solution = (props:OverviewSectionProps) =>{
 
 OverviewSection.OutcomeParagraph = (props:OverviewSectionProps) =>{
   return(
-    <Type variant = "body">
+  
+    <Type variant ="body">
       {props.children}
     </Type>
+  
   );
 }
 

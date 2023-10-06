@@ -51,7 +51,7 @@ const tags: Record<Variant, ElementType> = {
     "emphasized-body": "p",
     body: "p",
     "body-small": "p",
-    small: "span"
+    small: "small"
 };
 
 const sizes: Record<Variant, string> = {
@@ -61,10 +61,10 @@ const sizes: Record<Variant, string> = {
     h3: "font-serif md:text-4xl  text-2xl",
     h4: "font-serif md:text-3xl text-xl",
     h5: "font-sans md:text-2xl font-bold text-lg",
-    "emphasized-body": "font-sans text-md md:text-2xl",
-    body: "font-sans text-lg sm:text-md",
+    "emphasized-body": "font-sans not-italic text-md md:text-2xl",
+    body: "font-sans md:text-lg text-md",
     "body-small": "font-sans text-md sm:text-sm",
-    small: "font-sans text-base sm:text-xs"
+    small: "font-sans text-xxs sm:text-xs"
 };
 
 export const Type = ({ variant, children, className,fontType, as }: Props) => {
