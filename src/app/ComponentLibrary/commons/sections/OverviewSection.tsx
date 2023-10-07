@@ -51,13 +51,13 @@ OverviewSection.Outcome = (props:OverviewSectionProps) => {
 
 OverviewSection.Solution = (props:OverviewSectionProps) =>{
   return(
-    <div className="w-full flex flex-col mt-20">
+    <div className="w-full flex flex-col mt-20 gap-y-10 md:gap-y-20">
       <Type variant="h4">
         The Solution
       </Type>
-      
+      <div>
       {props.children}
-      
+      </div>
 
     </div>
   );

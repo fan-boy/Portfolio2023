@@ -78,7 +78,7 @@ export default function Home() {
 
 
         {/* Overview and Solution */}
-        <div className="mt-20 md:mt-32 p-5">
+        <div className="my-20 md:mt-32 p-5">
           <OverviewSection>
             <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
               <OverviewSection.Problem>
@@ -107,7 +107,26 @@ export default function Home() {
               </OverviewSection.Outcome>
             </div>
             <OverviewSection.Solution>
-              Test
+              <div className="flex flex-col gap-y-20">
+                <div className="flex flex-col md:flex-row"> 
+                    <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                      <source src="./assets/chainreactive/desktop.mp4" type="video/mp4"/>
+                    </video>
+                    <div className="w-full md:w-1/3 flex justify-center items-center">
+                      <Type variant="h5" fontType="font-serif"> Desktop Solution</Type>
+                    </div>
+                </div>
+                <div className="flex flex-col md:flex-row"> 
+                <div className="w-full md:w-2/3 flex justify-center items-center">
+                      <Type variant="h5" fontType="font-serif"> Mobile Solution</Type>
+                    </div>
+                    <div className="w-full md:w-1/2">
+                    <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                      <source src="./assets/chainreactive/mobile.mp4" type="video/mp4"/>
+                    </video>
+                    </div>
+                </div>
+              </div>
             </OverviewSection.Solution>
           </OverviewSection>
 
