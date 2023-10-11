@@ -1,9 +1,11 @@
 import React from "react";
+import { theme } from "../commons/pages/PageSection";
 import { Type } from "../Typography/Type";
 
 interface SectionDividerProps {
     name: string,
-    number: string
+    number: string,
+    theme:theme
 }
 
 const SectionDivider = (props: SectionDividerProps) => {
@@ -14,9 +16,11 @@ const SectionDivider = (props: SectionDividerProps) => {
                 <Type variant="small">{props.name}</Type>
                 <Type variant="small">{props.number}</Type>
             </div>
-            <hr className="h-px  bg-white border-0 "></hr>
+            <hr className={`h-px  ${props.theme == "dark"?"bg-white":"bg-black"} border-0 `}></hr>
         </div>
     );
 }
+
+SectionDivider.displayName= "SectionDivider";
 
 export default SectionDivider

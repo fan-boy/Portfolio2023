@@ -10,7 +10,7 @@ interface OverviewSectionProps{
 
 const OverviewSection = (props:OverviewSectionProps) =>{
     return(
-        <Section name="Overview" number = "03" >
+        <Section theme="dark" name="Overview" number = "03" >
           {props.children}
         </Section>
     );

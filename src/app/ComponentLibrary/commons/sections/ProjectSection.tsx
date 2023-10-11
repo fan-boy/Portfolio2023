@@ -14,7 +14,7 @@ interface ProjectSectionProps {
 const ProjectSection = (props: ProjectSectionProps) => {
 
   return (
-    <Section name="Project" number="01" >
+    <Section theme="dark" name="Project" number="01" >
         {props.children}
     </Section>
   );

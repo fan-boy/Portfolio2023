@@ -11,7 +11,7 @@ interface InfoSectionProps {
 const InfoSection = (props: InfoSectionProps) => {
 
   return (
-    <Section name="Info" number="02" >
+    <Section theme="dark" name="Info" number="02" >
       <div className="flex gap-x-8 md:gap-x-0 flex-col gap-y-8">
         {props.children}
       </div>
