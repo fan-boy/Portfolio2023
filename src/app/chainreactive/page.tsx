@@ -11,23 +11,26 @@ import PageSection from '../ComponentLibrary/commons/pages/PageSection'
 import ListItem from '../ComponentLibrary/Components/List Items/listitem'
 import ResultSection from '../ComponentLibrary/commons/sections/ResultSection'
 
+import HeroImage from '../../../public/assets/chainreactive/ChainReactiveHero.png';
+import DoordashImage from '../../../public/assets/chainreactive/Doordash.png';
+import PostmatesImage from '../../../public/assets/chainreactive/Postmates.png'
+import UberEatsImage from '../../../public/assets/chainreactive/UberEats.png'
+import Sketch1 from '../../../public/assets/chainreactive/prototyping1.png'
+import Sketch2 from '../../../public/assets/chainreactive/prototyping2.png'
+import FinalSketch from '../../../public/assets/chainreactive/finalPrototype.png'
+
+
+
+
 export default function Home() {
   return (
     <DefaultPage selected="work">
       <PageSection theme="dark" isFullWidth>
         {/* Hero Section */}
         <>
-            <div className="max-h-[75vh]">
-            <img src="./assets/chainreactive/ChainReactiveHero.png" alt="Chain Reactive LLC - Order Scheduling Case study" />
-            </div>
-            <div className="hidden ">
-              <Type variant="h1">
-                Chain Reactive LLC
-              </Type>
-              <Type variant="h4">
-                Order <br /> Scheduling
-              </Type>
-            </div>
+            
+              <Image  src={HeroImage}  alt="Chain Reactive LLC - Order Scheduling Case study" />
+           
           </>
       </PageSection>
       <PageSection theme="dark">
@@ -230,9 +233,9 @@ export default function Home() {
           <Section theme={"light"} name="Competitor Analysis" number="06">
 
             <div className="w-full flex flex-col md:grid md:grid-cols-3 md:gap-3">
-             <img className="w-full " src="./assets/chainreactive/Doordash.png" alt="Doordash competitve analysis" />
-             <img className="w-full " src="./assets/chainreactive/Postmates.png" alt="Postmates competitve analysis" />
-             <img className="w-full " src="./assets/chainreactive/UberEats.png" alt="Uber Eats competitve analysis" /> 
+             <Image  src={DoordashImage} alt="Doordash competitve analysis" />
+             <Image  src={PostmatesImage} alt="Postmates competitve analysis" />
+             <Image src={UberEatsImage} alt="Uber Eats competitve analysis" /> 
             </div>
 
             <div className="mt-20">
@@ -263,17 +266,17 @@ export default function Home() {
             </Type>
             </div>
             <div className="mt-10 md:mt-20 grid grid-cols-3 md:grid-cols-2 justify-center gap-x-2 gap-y-10 md:gap-10">
-            <img className="w-full col-span-2 md:col-auto" src="./assets/chainreactive/prototyping1.png" alt="Doordash competitve analysis" />
-            <img className="w-full col-span-1 md:col-auto" src="./assets/chainreactive/prototyping1.png" alt="Doordash competitve analysis" />
-            <img className="w-full col-span-1 md:col-auto" src="./assets/chainreactive/prototyping2.png" alt="Doordash competitve analysis" />
-            <img className="w-full col-span-2 md:col-auto" src="./assets/chainreactive/prototyping2.png" alt="Doordash competitve analysis" />
+            <Image className="w-full col-span-2 md:col-auto" src={Sketch1} alt="Doordash competitve analysis" />
+            <Image className="w-full col-span-1 md:col-auto" src={Sketch2} alt="Doordash competitve analysis" />
+            <Image className="w-full col-span-1 md:col-auto" src={Sketch2} alt="Doordash competitve analysis" />
+            <Image className="w-full col-span-2 md:col-auto" src={Sketch2} alt="Doordash competitve analysis" />
             </div>
             <div className="mt-10">
               <Type variant="h4">
                 Final Prototype Sketch
               </Type>
               <div className="grid grid-cols-3 md:grid-cols-2 justify-center gap-x-2 gap-y-10 md:gap-10 mt-10">
-              <img className="w-full col-span-2" src="./assets/chainreactive/finalPrototype.png" alt="Final prototype sketch" />
+               <Image className="w-full col-span-2"  src={FinalSketch} alt="Final prototype sketch" />
               </div>
             </div>
           </Section>
