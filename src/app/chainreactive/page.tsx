@@ -9,15 +9,18 @@ import SectionDivider from '../ComponentLibrary/Components/SectionDivider'
 import { Type } from '../ComponentLibrary/Typography/Type'
 import PageSection from '../ComponentLibrary/commons/pages/PageSection'
 import ListItem from '../ComponentLibrary/Components/List Items/listitem'
+import ResultSection from '../ComponentLibrary/commons/sections/ResultSection'
 
 export default function Home() {
   return (
     <DefaultPage selected="work">
-      <PageSection theme="dark">
-        <div className="flex flex-col">
-          {/* Hero Section */}
-          <>
-            <div className="hidden md:flex flex-row w-full min-w-full text-left gap-x-56">
+      <PageSection theme="dark" isFullWidth>
+        {/* Hero Section */}
+        <>
+            <div className="max-h-[75vh]">
+            <img src="./assets/chainreactive/ChainReactiveHero.png" alt="Chain Reactive LLC - Order Scheduling Case study" />
+            </div>
+            <div className="hidden ">
               <Type variant="h1">
                 Chain Reactive LLC
               </Type>
@@ -26,6 +29,10 @@ export default function Home() {
               </Type>
             </div>
           </>
+      </PageSection>
+      <PageSection theme="dark">
+        <div className="flex flex-col">
+          
           {/* Project and Info Section */}
           <>
             <div className="flex mt-10 flex-col md:flex-row gap-2">
@@ -192,7 +199,7 @@ export default function Home() {
                 To get a baseline understanding of the public space, I conducted semi-structured interviews with businesses and customers. Here are the findings.
               </Type>
             </div>
-            <div className="flex flex-col md:grid md:grid-cols-3 gap-20 p-20">
+            <div className="flex flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
               <ListItem number="01">
                 The business owners wanted the customers to schedule the order at a specific time so that they could plan their resources accordingly.
               </ListItem>
@@ -211,7 +218,7 @@ export default function Home() {
 
 
             </div>
-            <div className="mt-8 w-3/4 flex flex-col gap-6">
+            <div className="mt-8 w-full md:w-3/4 flex flex-col gap-6">
               <Type variant="h4">
                 Key finding -
               </Type>
@@ -222,10 +229,10 @@ export default function Home() {
           </Section>
           <Section theme={"light"} name="Competitor Analysis" number="06">
 
-            <div className="w-full flex flex-col md:flex-row gap-6">
-             <img src="./assets/chainreactive/Doordash.png" alt="Doordash competitve analysis" />
-             <img src="./assets/chainreactive/Postmates.png" alt="Postmates competitve analysis" />
-             <img src="./assets/chainreactive/UberEats.png" alt="Uber Eats competitve analysis" /> 
+            <div className="w-full flex flex-col md:grid md:grid-cols-3 md:gap-3">
+             <img className="w-full " src="./assets/chainreactive/Doordash.png" alt="Doordash competitve analysis" />
+             <img className="w-full " src="./assets/chainreactive/Postmates.png" alt="Postmates competitve analysis" />
+             <img className="w-full " src="./assets/chainreactive/UberEats.png" alt="Uber Eats competitve analysis" /> 
             </div>
 
             <div className="mt-20">
@@ -233,7 +240,7 @@ export default function Home() {
                 Findings -
               </Type>
 
-            <div className="flex flex-col md:grid md:grid-cols-3 gap-20 p-20">
+            <div className="flex flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
               <ListItem number="01" name="Scheduling Times">
               All of the competitors offer choices between group of options
               </ListItem>
@@ -247,10 +254,64 @@ export default function Home() {
             </div>
           </Section>
           <Section theme={"light"} name="Sketching Solutions" number="07">
-
+          <div className="w-full flex flex-col md:grid md:grid-cols-2 md:gap-20">
+            <Type variant="body">
+            After gathering research insights, I engaged in ideation to explore potential solutions and user flows. To solidify ideas and visualize the interactions, I initiated the process by creating sketches.
+            </Type>
+            <Type variant="body">
+            Since we were in the early stages of the product we did User testing on the paper prototypes itself
+            </Type>
+            </div>
+            <div className="mt-10 md:mt-20 grid grid-cols-3 md:grid-cols-2 justify-center gap-x-2 gap-y-10 md:gap-10">
+            <img className="w-full col-span-2 md:col-auto" src="./assets/chainreactive/prototyping1.png" alt="Doordash competitve analysis" />
+            <img className="w-full col-span-1 md:col-auto" src="./assets/chainreactive/prototyping1.png" alt="Doordash competitve analysis" />
+            <img className="w-full col-span-1 md:col-auto" src="./assets/chainreactive/prototyping2.png" alt="Doordash competitve analysis" />
+            <img className="w-full col-span-2 md:col-auto" src="./assets/chainreactive/prototyping2.png" alt="Doordash competitve analysis" />
+            </div>
+            <div className="mt-10">
+              <Type variant="h4">
+                Final Prototype Sketch
+              </Type>
+              <div className="grid grid-cols-3 md:grid-cols-2 justify-center gap-x-2 gap-y-10 md:gap-10 mt-10">
+              <img className="w-full col-span-2" src="./assets/chainreactive/finalPrototype.png" alt="Final prototype sketch" />
+              </div>
+            </div>
           </Section>
 
         </ProcessSection>
+      </PageSection>
+      <PageSection theme="dark">
+      <ResultSection>
+
+        <div className="w-2/3">
+        <Type variant="body">
+        We were able to come up with a design that satisfied the needs of the business owners while also keeping the complexity to a minimum for the consumers.
+        </Type>
+        </div>
+        <div className="mt-10">
+          <Type variant="emphasized-body">
+          Keeping all <span className="italic font-serif font-normal">stakeholders</span> happy
+          </Type>
+
+          
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
+              <ListItem number="01" name="Business Owners">
+              The business owner's requirement of having the user select the pickup/delivery time was addressed by making a default selection which would be handled by code.
+              </ListItem>
+              <ListItem number="02" name="Customers">
+              The end design was a very simple dropdown which didn’t clutter the screen unnecessarily. This worked from the user's perspective.
+              </ListItem>
+          
+          </div>
+
+          <Type variant="body">
+          Throughout this process, I gained valuable insights on the importance of considering the requirements of all user groups and crafting a design that caters to their needs. Different user groups may have distinct roles and perform diverse actions. By avoiding assumptions and following a structured design process, we were able to create a solution that fulfilled the expectations of all stakeholders. 
+          </Type>
+
+        </div>
+      </ResultSection>
+
+      
       </PageSection>
 
     </DefaultPage>

@@ -14,7 +14,7 @@ export default function DefaultPage({
     selected:string,
   }) {
   return (
-    <main className={`flex flex-col "}`}>
+    <main className={`flex flex-col "`}>
        
         <Navbar/>
         {children}

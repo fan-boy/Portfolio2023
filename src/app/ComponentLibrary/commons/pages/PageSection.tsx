@@ -8,12 +8,18 @@ export type theme =
 
 export default function PageSection({
     children,
-    theme
+    theme,
+    isFullWidth
   }: {
     children: React.ReactNode,
-    theme:theme
+    theme:theme,
+    isFullWidth?:boolean
   }) {
   return (
+    isFullWidth?(
+    <div className="w-full">
+      {children}
+    </div> ):(
     <main className={`flex flex-col `}>
        
         <div className={`flex  justify-center ${theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
@@ -23,6 +29,6 @@ export default function PageSection({
         </div>
         </div>
         </div>
-    </main>
+    </main>)
   )
 }
