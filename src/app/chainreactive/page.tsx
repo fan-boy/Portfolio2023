@@ -299,10 +299,10 @@ export default function Home() {
           
           <div className="flex flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
               <ListItem number="01" name="Business Owners">
-              The business owner's requirement of having the user select the pickup/delivery time was addressed by making a default selection which would be handled by code.
+              The business owner&#x27;s requirement of having the user select the pickup/delivery time was addressed by making a default selection which would be handled by code.
               </ListItem>
               <ListItem number="02" name="Customers">
-              The end design was a very simple dropdown which didn’t clutter the screen unnecessarily. This worked from the user's perspective.
+              The end design was a very simple dropdown which didn’t clutter the screen unnecessarily. This worked from the user&#x27;s perspective.
               </ListItem>
           
           </div>
