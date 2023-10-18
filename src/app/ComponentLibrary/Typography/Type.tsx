@@ -60,7 +60,7 @@ const sizes: Record<Variant, string> = {
     h2: "font-serif md:text-5xl  text-3xl",
     h3: "font-serif md:text-4xl  text-2xl",
     h4: "font-serif md:text-3xl text-xl",
-    h5: "font-sans md:text-2xl font-bold text-lg",
+    h5: "font-serif md:text-2xl font-bold text-lg",
     "emphasized-body": "font-sans not-italic text-md md:text-2xl",
     body: "font-sans md:text-lg text-md",
     "body-small": "font-sans text-md sm:text-sm",
@@ -69,12 +69,10 @@ const sizes: Record<Variant, string> = {
 
 export const Type = ({ variant, children, className,fontType, as }: Props) => {
     const sizeClasses = sizes[variant];
-    if(fontType ){
-        if(sizeClasses.search("font-sans") !== -1){
-            sizeClasses.replace("font-sans", fontType);
-        }else if(sizeClasses.search("font-serif") !== -1){
-            sizeClasses.replace("font-serif", fontType);
-        }
+    if(fontType && fontType.length > 0 ){
+       sizeClasses.replace("font-sans", fontType);
+       sizeClasses.replace("font-serif", fontType);
+       
     }
     const Tag = as || tags[variant];
 

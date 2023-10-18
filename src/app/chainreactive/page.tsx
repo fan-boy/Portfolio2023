@@ -18,6 +18,12 @@ import UberEatsImage from '../../../public/assets/chainreactive/UberEats.png'
 import Sketch1 from '../../../public/assets/chainreactive/prototyping1.png'
 import Sketch2 from '../../../public/assets/chainreactive/prototyping2.png'
 import FinalSketch from '../../../public/assets/chainreactive/finalPrototype.png'
+import CustomerHungry from '../../../public/assets/chainreactive/CustomerHungry.png'
+import BusinessOwnerMoney from '../../../public/assets/chainreactive/BusinessOwnerMoney.png'
+import CustomerOwnerIssues from '../../../public/assets/chainreactive/Customer&OwnerIssues.png'
+import BusinessOwnerHappy from '../../../public/assets/chainreactive/BusinessOwnerHappy.png'
+import CustomerHappy from '../../../public/assets/chainreactive/CustomerHappy.png'
+import BothHappy from '../../../public/assets/chainreactive/BothHappy.png'
 
 
 
@@ -28,9 +34,9 @@ export default function Home() {
       <PageSection theme="dark" isFullWidth>
         {/* Hero Section */}
         <>
-            
+            <div className="max-h-[75vh]">
               <Image  src={HeroImage}  alt="Chain Reactive LLC - Order Scheduling Case study" />
-           
+              </div>
           </>
       </PageSection>
       <PageSection theme="dark">
@@ -166,17 +172,17 @@ export default function Home() {
 
                   </div>
                 </div>
-                <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
+                <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
                   <div className="w-2/3">
-
+                      <Image className="w-1/2" src={CustomerHungry} alt="Hungry Customers" />
                   </div>
                 </div>
 
               </div>
               <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
-                  <div className="w-2/3">
-
+                <div className="w-full md:w-1/2 flex flex-col items-end justify-start">
+                  <div className="w-2/3 ">
+                  <Image className="w-1/2" src={BusinessOwnerMoney} alt="Business Owner" />
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
@@ -202,7 +208,7 @@ export default function Home() {
                 To get a baseline understanding of the public space, I conducted semi-structured interviews with businesses and customers. Here are the findings.
               </Type>
             </div>
-            <div className="flex flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
+            <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
               <ListItem number="01">
                 The business owners wanted the customers to schedule the order at a specific time so that they could plan their resources accordingly.
               </ListItem>
@@ -218,7 +224,9 @@ export default function Home() {
               <ListItem number="05">
                 Customers wanted the ability to plan their meals for the week and hence needed this feature of being able to schedule the order.
               </ListItem>
-
+            <div className = "">
+            <Image className="" src={CustomerOwnerIssues} alt="Business Owner" />
+            </div>
 
             </div>
             <div className="mt-8 w-full md:w-3/4 flex flex-col gap-6">
@@ -265,18 +273,20 @@ export default function Home() {
             Since we were in the early stages of the product we did User testing on the paper prototypes itself
             </Type>
             </div>
-            <div className="mt-10 md:mt-20 grid grid-cols-3 md:grid-cols-2 justify-center gap-x-2 gap-y-10 md:gap-10">
-            <Image className="w-full col-span-2 md:col-auto" src={Sketch1} alt="Doordash competitve analysis" />
-            <Image className="w-full col-span-1 md:col-auto" src={Sketch2} alt="Doordash competitve analysis" />
-            <Image className="w-full col-span-1 md:col-auto" src={Sketch2} alt="Doordash competitve analysis" />
-            <Image className="w-full col-span-2 md:col-auto" src={Sketch2} alt="Doordash competitve analysis" />
+            <div className="mt-10 md:mt-20 grid grid-cols-3 md:grid-cols-2  justify-items-center items-center gap-x-2 gap-y-10 md:gap-10">
+            <Image className="w-full col-span-2 md:col-span-1" src={Sketch1} alt="A 3 step time picker" />
+            <Image className="w-1/2 col-span-1 " src={BusinessOwnerHappy} alt="Happy Business Owners" />
+            <Image className="w-1/2 col-span-2 md:col-auto" src={CustomerHappy} alt="Happy customers" />
+            <Image className="w-full col-span-1 md:col-auto" src={Sketch2} alt="A one screen timepicker" />
+            
             </div>
             <div className="mt-10">
               <Type variant="h4">
                 Final Prototype Sketch
               </Type>
-              <div className="grid grid-cols-3 md:grid-cols-2 justify-center gap-x-2 gap-y-10 md:gap-10 mt-10">
-               <Image className="w-full col-span-2"  src={FinalSketch} alt="Final prototype sketch" />
+              <div className="grid grid-cols-3 justify-items-center items-end gap-x-2 gap-y-10 md:gap-10 mt-10">
+               <Image className="col-span-2"  src={FinalSketch} alt="Final prototype sketch" />
+               <Image className="w-3/5 col-span-1"  src={BothHappy} alt="Happy Customers and Business Owners" />
               </div>
             </div>
           </Section>
