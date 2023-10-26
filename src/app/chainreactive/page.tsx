@@ -28,7 +28,7 @@ import BothHappy from '../../../public/assets/chainreactive/BothHappy.png'
 
 
 
-export default function Home() {
+export default function ChainReactive() {
   return (
     <DefaultPage selected="work">
       <PageSection theme="dark" isFullWidth>
@@ -201,7 +201,7 @@ export default function Home() {
             </div>
           </Section>
 
-          <Section theme={"light"} name="User Research - Uncovering Issues" number="05" classname="mt-20">
+          <Section theme={"light"} name="User Research - Uncovering Issues" number="05" classname="my-20 ">
 
             <div className="w-full md:w-2/3">
               <Type variant="body">
@@ -296,7 +296,7 @@ export default function Home() {
       <PageSection theme="dark">
       <ResultSection>
 
-        <div className="w-2/3">
+        <div className="md:w-2/3">
         <Type variant="body">
         We were able to come up with a design that satisfied the needs of the business owners while also keeping the complexity to a minimum for the consumers.
         </Type>

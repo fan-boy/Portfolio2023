@@ -12,10 +12,15 @@ interface SectionProps{
 
 const Section = (props:SectionProps) =>{
 
-    if(props.classname) debugger;
+    let classname= "";
+
+    if(props.classname && props.classname.length>0) {
+        classname = props.classname;
+        
+    }
 
     return(
-        <div className="w-full">
+        <div className={`w-full ${classname}`}>
             <SectionDivider theme = {props.theme} name={props.name} number={props.number}/>
 
             <div className="mt-5 md:mt-8">

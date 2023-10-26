@@ -14,7 +14,8 @@ export interface Variants {
     h5: "h5",
     body: "body",
     bodySmall: "body-small",
-    small: "small"
+    small: "small",
+    ul:"ul"
 }
 
 type FontType = 
@@ -31,7 +32,8 @@ type Variant =
     | "emphasized-body"
     | "body"
     | "body-small"
-    | "small";
+    | "small"
+    | "ul";
 
 interface Props {
     variant: Variant;
@@ -51,7 +53,8 @@ const tags: Record<Variant, ElementType> = {
     "emphasized-body": "p",
     body: "p",
     "body-small": "p",
-    small: "small"
+    small: "small",
+    ul: "ul"
 };
 
 const sizes: Record<Variant, string> = {
@@ -60,11 +63,12 @@ const sizes: Record<Variant, string> = {
     h2: "font-serif md:text-5xl  text-3xl",
     h3: "font-serif md:text-4xl  text-2xl",
     h4: "font-serif md:text-3xl text-xl",
-    h5: "font-serif md:text-2xl font-bold text-lg",
+    h5: "font-serif md:text-2xl  text-lg",
     "emphasized-body": "font-sans not-italic text-md md:text-2xl",
     body: "font-sans md:text-lg text-md",
     "body-small": "font-sans text-md sm:text-sm",
-    small: "font-sans text-xxs sm:text-xs"
+    small: "font-sans text-xs sm:text-sm font-semibold",
+    ul:"font-sans md:text-lg text-md"
 };
 
 export const Type = ({ variant, children, className,fontType, as }: Props) => {

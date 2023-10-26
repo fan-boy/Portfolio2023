@@ -16,7 +16,7 @@ const SectionDivider = (props: SectionDividerProps) => {
                 <Type variant="small">{props.name}</Type>
                 <Type variant="small">{props.number}</Type>
             </div>
-            <hr className={`h-px  ${props.theme == "dark"?"bg-white":"bg-black"} border-0 `}></hr>
+            <hr className={`h-0.25  ${props.theme == "dark"?"bg-fontDark":"bg-fontLight"} border-0 mt-2`}></hr>
         </div>
     );
 }

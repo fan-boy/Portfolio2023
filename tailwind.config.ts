@@ -15,6 +15,9 @@ const config: Config = {
         serif: ['var(--font-esperanto)'],
         sans: ['var(--font-quicksand)']
       },
+      height: {
+        '0.25': '0.07rem',
+      },
       colors:{
         backgroundDark: '#1B1B1B',
         backgroundLight: '#FAFAFA',
