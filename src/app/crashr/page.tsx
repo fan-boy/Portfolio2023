@@ -127,7 +127,7 @@ export default function Crashr() {
                                 Crashr - The ultimate NFT platform that’s more than just trading.
                             </Type>
                             <Type variant="body">
-                                Bombers - The fun little brother focusing on NFT's.
+                                Bombers - The fun little brother focusing on NFT&#x27;s.
                             </Type>
                         </div>
                         <div className="w-full mt-12">
@@ -144,7 +144,7 @@ export default function Crashr() {
                                     As a tech-driven platform in the NFT space, Crashr should reflect a modern and innovative tone to stay current with industry trends.
                                 </ListItem>
                                 <ListItem number="03" name="Trustworthy">
-                                    Users need to have confidence in Crashr's security and reliability, so the tone should convey trustworthiness.
+                                    Users need to have confidence in Crashr&#x27;s security and reliability, so the tone should convey trustworthiness.
                                 </ListItem>
                                 <ListItem number="04" name="Serious">
                                     Balances professionalism, particularly with valuable digital assets.
@@ -184,7 +184,7 @@ export default function Crashr() {
                                             </li>
                                             <li>
                                                 <Type variant="body">
-                                                    Minimalist design embodies Crashr's simplicity and elegance, aligning with brand identity.
+                                                    Minimalist design embodies Crashr&#x27;s simplicity and elegance, aligning with brand identity.
                                                 </Type>
                                             </li>
                                         </ol>
@@ -387,7 +387,7 @@ export default function Crashr() {
 
                         <div className="flex flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
                             <ListItem number="01" name="Embrace Flexibility in Design Systems">
-                            I've learned that a successful design system should strike a balance between consistency and brand individuality. To accommodate contrasting brand identities like Crashr and Bombers, a design system must be flexible, allowing each brand to express its unique visual elements while maintaining a cohesive structure.
+                            I&#x27;ve learned that a successful design system should strike a balance between consistency and brand individuality. To accommodate contrasting brand identities like Crashr and Bombers, a design system must be flexible, allowing each brand to express its unique visual elements while maintaining a cohesive structure.
                             </ListItem>
                             <ListItem number="02" name="Collaboration Drives Success">
                             Throughout this project, I realized the immense value of collaboration. Effective communication and collaboration between design, development, and marketing teams were vital to ensure the design system catered to the distinct needs of both brands, resulting in a harmonious yet unique user experience.
