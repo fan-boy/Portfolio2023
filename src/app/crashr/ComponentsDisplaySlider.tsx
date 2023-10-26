@@ -26,7 +26,7 @@ import CustomDot from "./CustomDots/CustomDots";
 
 const ComponentsDisplaySlider = () => {
 
-    const [selectedIndex,setSelectedIndex] = useState(1);
+    const [selectedIndex,setSelectedIndex] = useState(0);
 
     let imageArray =
         [
