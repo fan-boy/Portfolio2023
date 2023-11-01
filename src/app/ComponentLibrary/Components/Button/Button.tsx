@@ -7,7 +7,7 @@ const buttonStyles = cva(
 		variants: {
 			intent: {
                 navbar:'',
-				primary: ' rounded-full border border-2 hover:bg-gray-800 dark:hover:bg-gray-600 dark:text-gray-100 focus:ring-gray-500',
+				primary: ' rounded-full border border-2 border-fontLight hover:bg-backgroundDark hover:text-fontDark focus:ring-gray-500',
 				secondary:
 					'bg-gray-200 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 focus:ring-gray-500',
 				danger: 'bg-red-500 text-white focus:ring-red-500',
