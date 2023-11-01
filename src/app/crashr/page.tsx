@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image'
 import InfoSection from '../ComponentLibrary/commons/sections/InfoSection'
 import OverviewSection from '../ComponentLibrary/commons/sections/OverviewSection'
@@ -10,6 +12,7 @@ import { Type } from '../ComponentLibrary/Typography/Type'
 import PageSection from '../ComponentLibrary/commons/pages/PageSection'
 import ListItem from '../ComponentLibrary/Components/List Items/listitem'
 import ResultSection from '../ComponentLibrary/commons/sections/ResultSection'
+import { motion, AnimatePresence } from "framer-motion";
 
 
 import HeroImage from '../../../public/assets/crashr/hero.png';
@@ -28,6 +31,8 @@ import BombersColor from '../../../public/assets/crashr/BombersColor.png'
 import BrandLogoIconVariants from '../../../public/assets/crashr/LogoIconVariants.png'
 import SpecialIcons from '../../../public/assets/crashr/SpecialIcons.png'
 import ComponentsDisplaySlider from './ComponentsDisplaySlider'
+import PasswordProtected from '../ComponentLibrary/commons/sections/PasswordSection'
+import { useState } from 'react'
 
 
 
@@ -36,6 +41,12 @@ import ComponentsDisplaySlider from './ComponentsDisplaySlider'
 
 export default function Crashr() {
     let spacing = "my-20 md:my-32 p-5";
+
+    const [isPasswordProvided, setIsPasswordProvided] = useState(false);
+
+    const isCorrectPassowrd = () =>{
+        setIsPasswordProvided(true);
+    }
     return (
         <DefaultPage selected="work">
             <PageSection theme="dark" isFullWidth>
@@ -113,11 +124,37 @@ export default function Crashr() {
                                 </OverviewSection.Outcome>
                             </div>
                         </OverviewSection>
-
+                        
                     </div>
                 </div>
+
             </PageSection>
+           
+<AnimatePresence>
+{!isPasswordProvided &&
+<motion.div
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
             <PageSection theme="light">
+               
+            <PasswordProtected isCorrectPassordProvided={isCorrectPassowrd}/>
+           
+            </PageSection>
+            </motion.div>
+}
+            </AnimatePresence>
+            <AnimatePresence>
+            {isPasswordProvided &&
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            >
+            <PageSection theme="light">
+
+               
                 {/* Process */}
                 <ProcessSection>
 
@@ -367,7 +404,10 @@ export default function Crashr() {
 
                 </ProcessSection>
             </PageSection>
-            <PageSection theme="dark">
+            </motion.div>
+}
+</AnimatePresence>
+           <PageSection theme="dark">
                 <ResultSection>
                 <Type variant="emphasized-body">
                             Balancing brand <span className="italic font-serif font-normal">identity</span> with design <span className="italic font-serif font-normal">consistency</span>
