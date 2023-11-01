@@ -28,6 +28,8 @@ const ComponentsDisplaySlider = () => {
 
     const [selectedIndex,setSelectedIndex] = useState(0);
 
+    const [hasUserClicked,setHasUserClicked] = useState(false);
+
     let imageArray =
         [
             {
@@ -81,6 +83,10 @@ const ComponentsDisplaySlider = () => {
         ]
 
 
+        const userClick = () =>{
+            setHasUserClicked(true);
+        }
+
     var settings = {
 
         dots: true,
@@ -88,11 +94,19 @@ const ComponentsDisplaySlider = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows:false,
+        accessibility:true,
+        autoplay:!hasUserClicked,
+        autoplaySpeed:3000,
         dotsClass: "!grid grid-cols-6 flex justify-center",
         customPaging: function (i: number) {
             return (
-                <div className="">
-                    <Image className={` ${selectedIndex === i?"border border-2 border-slate-300 p-1":"bg-blend-lighten hover:bg-blend-darken p-3"} cursor-pointer`} src={imageArray[i].imageSrc} alt={`Dot ${i}`} />
+                <div >
+                    
+                    
+                    <Image className={` ${selectedIndex === i?"border border-2 border-slate-500 p-1":" opacity-50 p-2"} cursor-pointer`} onClick={userClick} src={imageArray[i].imageSrc} alt={`Dot ${i}`} />
+                    
+                    
                 </div>
             );
         },
