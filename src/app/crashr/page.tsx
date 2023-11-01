@@ -42,7 +42,7 @@ import { useState } from 'react'
 export default function Crashr() {
     let spacing = "my-20 md:my-32 p-5";
 
-    const [isPasswordProvided, setIsPasswordProvided] = useState(false);
+    const [isPasswordProvided, setIsPasswordProvided] = useState(true);
 
     const isCorrectPassowrd = () =>{
         setIsPasswordProvided(true);

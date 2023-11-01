@@ -30,7 +30,7 @@ interface TextFieldProps{
 const TextField = (props:TextFieldProps) =>{
     return(
         <input 
-        className="bg-gray-200 p-5 rounded-full text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 focus:ring-gray-500"
+        className="bg-gray-200 p-5 rounded-full text-gray-900 focus:ring-gray-500"
         value={props.value}
         onChange={({ target: { value } }) => props.onChange(value)}
         />
