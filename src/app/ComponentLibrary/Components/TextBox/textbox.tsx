@@ -24,15 +24,19 @@ const buttonStyles = cva(
 interface TextFieldProps{
     value:string,
     onChange: (val: string) => void;
+	placeholder:string,
+	type:string
 
 }
 
 const TextField = (props:TextFieldProps) =>{
     return(
         <input 
-        className="bg-gray-200 p-5 rounded-full text-gray-900 focus:ring-gray-500"
+        className="bg-gray-200 p-5 font-sans rounded-full text-gray-900 focus:ring-gray-500"
         value={props.value}
         onChange={({ target: { value } }) => props.onChange(value)}
+		placeholder={props.placeholder}
+		type={props.type}
         />
     )
 }

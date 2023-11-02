@@ -42,6 +42,8 @@ const PasswordProtected = (props:PasswordProtectedProps) =>{
             <div className="flex flex-col md:flex-row gap-5">
                 <TextField 
                 value={value}
+                placeholder="Enter Password"
+                type="password"
                 onChange={onChangeValue} />
 
                 <Button intent={"primary"} onClick={onClickButton}>

@@ -32,7 +32,7 @@ import BrandLogoIconVariants from '../../../public/assets/crashr/LogoIconVariant
 import SpecialIcons from '../../../public/assets/crashr/SpecialIcons.png'
 import ComponentsDisplaySlider from './ComponentsDisplaySlider'
 import PasswordProtected from '../ComponentLibrary/commons/sections/PasswordSection'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 
@@ -42,10 +42,17 @@ import { useState } from 'react'
 export default function Crashr() {
     let spacing = "my-20 md:my-32 p-5";
 
-    const [isPasswordProvided, setIsPasswordProvided] = useState(true);
+    
+
+    const [isPasswordProvided, setIsPasswordProvided] = useState(false);
+     useEffect(()=>{
+        let isPasswordAlreadyProvided = localStorage.getItem("CrashrPasswordProvided");
+        if(isPasswordAlreadyProvided) setIsPasswordProvided(true);
+     },[])
 
     const isCorrectPassowrd = () =>{
         setIsPasswordProvided(true);
+        localStorage.setItem("CrashrPasswordProvided","true");
     }
     return (
         <DefaultPage selected="work">

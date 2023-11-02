@@ -49,7 +49,7 @@ export default function ChainReactive() {
 
                 <ProjectSection>
                   <ProjectSection.IndentedLine>
-                    Eabling a safe<span className="italic font-serif font-normal">return to work</span> environment.
+                    Eabling a safe <span className="italic font-serif font-normal">return to work</span> environment.
                   </ProjectSection.IndentedLine>
                   <ProjectSection.FirstPara>
                     After the COVID - 19 pandemic when offices started reopening,
@@ -87,8 +87,8 @@ export default function ChainReactive() {
                     </InfoSection.Tools>
                     <InfoSection.Team>
                       Yusuf Ratlamwala - Team Lead<br />
-                      Pradyuman Pareek- iOS developer<br />
-                      Nandinee Holkar- HR representative<br />
+                      Pradyuman Pareek- Developer<br />
+                      Nandinee Holkar- HR <br />
                       Pransu Kushwah- Tester
                     </InfoSection.Team>
                   </InfoSection.Column>
@@ -153,17 +153,17 @@ export default function ChainReactive() {
         {/* Process */}
         <ProcessSection>
 
-          <Section theme={"light"} name="Understanding Users" number="04">
+        <Section theme={"light"} name="Understanding People Involved" number="04">
             <Type variant="body">
-              First step was to get an understanding of who the users were.
+              Based on the initial breif provided to us, we tried to understand who the users would mainly be. We were able to think of mainly 3  categories of users.
             </Type>
 
             <div className="w-full flex flex-col mt-12 gap-20">
               <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
                   <div className="w-2/3">
-                    <ListItem number="01" name="Restaurant Customers">
-                      The customers who would come to the restaurant to grab food. These were mostly college students with a small population of families and empty nesters.
+                    <ListItem number="01" name="HR Team">
+                    HR staff were responsible for uploading employee schedules and managing attendance. They needed efficient tools to streamline their work and ensure employee safety.
                     </ListItem>
 
                   </div>
@@ -184,8 +184,8 @@ export default function ChainReactive() {
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
                   <div className="w-2/3">
 
-                    <ListItem number="02" name="Business Owners">
-                      Business owners were mostly people in the age group of 30-50. They were mostly focused on keeping their business running while also thinking about expanding their income sources.
+                    <ListItem number="02" name="Admin Staff">
+                    Admin staff, particularly security personnel, controlled access to the office. Their role was critical in ensuring that only authorized and healthy employees could enter the premises.
                     </ListItem>
 
                   </div>
@@ -193,32 +193,53 @@ export default function ChainReactive() {
 
 
               </div>
+              <div className="flex flex-col md:flex-row">
+                <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
+                  <div className="w-2/3">
+                    <ListItem number="03" name="Employees">
+                    The employees were going to be the end-users of the app. They relied on the app for accessing their schedules, making ad-hoc requests, and ensuring their safety and compliance with health protocols.
+                    </ListItem>
+
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
+                  <div className="w-2/3">
+                    <Image className="w-1/2" src={CustomerHungry} alt="Hungry Customers" />
+                  </div>
+                </div>
+
+              </div>
 
             </div>
           </Section>
 
-          <Section theme={"light"} name="User Research - Uncovering Issues" number="05" classname="my-20 ">
+         
+
+          <Section theme={"light"} name="Research - Uncovering Issues" number="05" classname="my-20 ">
 
             <div className="w-full md:w-2/3">
               <Type variant="body">
-                To get a baseline understanding of the public space, I conducted semi-structured interviews with businesses and customers. Here are the findings.
+                To get a better understanding of the problem, we interviewed the HR and some employees.  
               </Type>
             </div>
             <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
               <ListItem number="01">
-                The business owners wanted the customers to schedule the order at a specific time so that they could plan their resources accordingly.
+              HR wanted a way to easily upload and manage employee schedules in batches.
               </ListItem>
               <ListItem number="02">
-                The menu items or the pricing of items could differ depending upon the requested delivery time.
+              HR wanted way to send announcements to employees about changes to office hours, safety protocols, and other important information.
               </ListItem>
               <ListItem number="03">
-                Traditionally, they took orders over the phone so they didn’t face this issue as they could inform the consumer about any changes immediately.
+                HR wanted a way to ensure the safety of employees by disabling features for employees who are sick.
               </ListItem>
               <ListItem number="04">
-                Customers wanted the ability to order in advance for special occasions like parties.
+              Employees wanted a way to request ad-hoc office visits through the app.
               </ListItem>
               <ListItem number="05">
-                Customers wanted the ability to plan their meals for the week and hence needed this feature of being able to schedule the order.
+                Employees wanted a way to easily enter the office without having to go through a lengthy check-in process
+              </ListItem>
+              <ListItem number="06">
+              Employees wanted a way to feel safe and informed as they return to the office by having access to information about the company's safety protocols and the number of employees who are sick.
               </ListItem>
               <div className="">
                 <Image className="" src={CustomerOwnerIssues} alt="Business Owner" />
@@ -234,6 +255,7 @@ export default function ChainReactive() {
               </Type>
             </div>
           </Section>
+          
           <Section theme={"light"} name="Competitor Analysis" number="06">
 
             <div className="w-full flex flex-col md:grid md:grid-cols-3 md:gap-3">
