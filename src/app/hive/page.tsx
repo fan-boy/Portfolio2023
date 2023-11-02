@@ -239,7 +239,7 @@ export default function ChainReactive() {
                 Employees wanted a way to easily enter the office without having to go through a lengthy check-in process
               </ListItem>
               <ListItem number="06">
-              Employees wanted a way to feel safe and informed as they return to the office by having access to information about the company's safety protocols and the number of employees who are sick.
+              Employees wanted a way to feel safe and informed as they return to the office by having access to information about the company&#x27;s safety protocols and the number of employees who are sick.
               </ListItem>
               <div className="">
                 <Image className="" src={CustomerOwnerIssues} alt="Business Owner" />
