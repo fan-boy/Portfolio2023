@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import DefaultPage from './ComponentLibrary/commons/pages/DefaultPage'
 import PageSection from './ComponentLibrary/commons/pages/PageSection'
+import Footer from './ComponentLibrary/Components/footer'
 import Navbar from './ComponentLibrary/Components/Navbar'
 import { Type, Variants } from './ComponentLibrary/Typography/Type'
 
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <DefaultPage selected="work">
       <PageSection theme="dark">
-      <div className="flex flex-col mt-14">
+      <div className="flex flex-col mt-14 mb-14">
         <div className="md:flex md:flex-row md:items-end md:gap-10">
           <div className="flex mt-4 flex-col text-center md:text-left  md:min-w-1/2 gap-4 md:gap-0">
             <span>
@@ -57,6 +58,12 @@ export default function Home() {
           </Type>
         </div>
       </div>
+      
+      </PageSection>
+      <PageSection theme="light">
+        <div className="w-full h-48">
+
+        </div>
       </PageSection>
     </DefaultPage>
   )

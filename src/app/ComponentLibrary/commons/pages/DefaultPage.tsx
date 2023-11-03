@@ -1,4 +1,5 @@
 import { propagateServerField } from "next/dist/server/lib/render-server";
+import Footer from "../../Components/footer";
 import Navbar from "../../Components/Navbar";
 
 
@@ -18,7 +19,7 @@ export default function DefaultPage({
        
         <Navbar/>
         {children}
-        
+        <Footer/>
     </main>
   )
 }
