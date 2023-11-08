@@ -392,7 +392,8 @@ export default function Crashr() {
                       
                     </Section>
                     <Section theme={"light"} name="Creating the Components" number="07">
-                        <div className=" flex flex-col md:w-2/3">
+                        <div>
+                        <div className=" md:w-2/3">
                             <Type variant="body">
                                 We started out by creating the screens. We created components and modified them as and when required.
                             </Type>
@@ -406,6 +407,7 @@ export default function Crashr() {
                             <ComponentsDisplaySlider />
                             </div>
 
+                        </div>
                         </div>
                     </Section>
 

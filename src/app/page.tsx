@@ -1,8 +1,11 @@
 import Image from 'next/image'
+import React from 'react'
 import DefaultPage from './ComponentLibrary/commons/pages/DefaultPage'
 import PageSection from './ComponentLibrary/commons/pages/PageSection'
+import Card from './ComponentLibrary/Components/Card/Card'
 import Footer from './ComponentLibrary/Components/footer'
 import Navbar from './ComponentLibrary/Components/Navbar'
+import BouncingArrow from './ComponentLibrary/Specials/BouncingArrow'
 import { Type, Variants } from './ComponentLibrary/Typography/Type'
 
 export default function Home() {
@@ -53,18 +56,30 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full text-center md:text-left mt-10 md:mt-28 md:flex md:flex-row-reverse">
-          <Type variant={"h4"}>
+          <div className="flex flex-row gap-5">
+          <Type variant="emphasized-body">
               Selected Work
           </Type>
+          <BouncingArrow />
+          </div>
         </div>
       </div>
       
       </PageSection>
-      <PageSection theme="light">
-        <div className="w-full h-48">
-
+      <PageSection theme="light"  >
+        <div className="w-full flex my-10 md:flex-wrap md:gap-5">
+          <div className="min-w-full w-full md:w-2/5 md:min-w-2/5 flex-1 ">
+         <Card title="Crashr" intent="primary"/>
+         </div>
+         <div className="min-w-2/5 flex-1 md:translate-y-1/2">
+         <Card title="Chain Reactive LLC" intent="primary"/>
+         </div>
+         <div className="min-w-2/5 w-1/2 ">
+         <Card title="Crashr" intent="primary"/>
+         </div>
         </div>
       </PageSection>
+      
     </DefaultPage>
   )
 }

@@ -33,6 +33,7 @@ type Variant =
     | "body"
     | "body-small"
     | "small"
+    | "smallest"
     | "ul";
 
 interface Props {
@@ -54,6 +55,7 @@ const tags: Record<Variant, ElementType> = {
     body: "p",
     "body-small": "p",
     small: "small",
+    smallest:"small",
     ul: "ul"
 };
 
@@ -68,6 +70,7 @@ const sizes: Record<Variant, string> = {
     body: "font-sans md:text-lg text-md",
     "body-small": "font-sans text-md sm:text-sm",
     small: "font-sans text-xs sm:text-sm font-semibold",
+    smallest: "font-sans text-xxs sm:text-xs",
     ul:"font-sans md:text-lg text-md"
 };
 

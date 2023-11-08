@@ -1,4 +1,5 @@
 import { propagateServerField } from "next/dist/server/lib/render-server";
+import { cva, VariantProps } from 'class-variance-authority';
 import Navbar from "../../Components/Navbar";
 
 
@@ -17,7 +18,7 @@ export default function PageSection({
   }) {
   return (
     isFullWidth?(
-    <div className="w-full">
+    <div className={`w-full ${theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
       {children}
     </div> ):(
     <main className={`flex flex-col `}>
