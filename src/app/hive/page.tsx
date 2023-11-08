@@ -303,7 +303,7 @@ export default function ChainReactive() {
                           <TaskFlow>
                             <TaskFlow.task color="green" task="HR staff log in to the Hive app." />
                             <TaskFlow.task color="green" task='They navigate to the "Ad-Hoc Requests" section to review pending requests.' />
-                            <TaskFlow.task color="green" task="HR staff assess the employee's request, considering its urgency and necessity." />
+                            <TaskFlow.task color="green" task="HR staff assess the employee&#x27;s request, considering its urgency and necessity." />
                             <TaskFlow.task color="green" task="If approved, HR staff grant the employee permission to make the ad-hoc visit." />
                             <TaskFlow.task isLast color="green" task="The app notifies the employee of the approval." />
                           </TaskFlow>
@@ -369,7 +369,7 @@ export default function ChainReactive() {
 
                           <TaskFlow>
                             <TaskFlow.task color="green" task="Employee arrives at the office entrance." />
-                            <TaskFlow.task color="green" task="Security personnel use the Hive app to scan the employee's QR code." />
+                            <TaskFlow.task color="green" task="Security personnel use the Hive app to scan the employee&#x27;s QR code." />
                             <TaskFlow.task color="green" task="The app verifies the QR code, granting access to the employee." />
                             <TaskFlow.task color="green" task="The employee enters the office if access is granted." />
                             <TaskFlow.task isLast color="green" task="Employee gets notified at the end of their shift to leave the office" />
@@ -409,10 +409,10 @@ export default function ChainReactive() {
                           Successfully gaining access to the office reassures employees of their compliance with safety measures. They feel safe, compliant, and part of a responsible work community.
                         </ListItem>
                         <ListItem number="03" name="Ad-Hoc Request">
-                          When the need arises for an unplanned office visit, employees can use the app to request access. However, the process requires HR approval, which may introduce an element of uncertainty or anticipation for the request's outcome.
+                          When the need arises for an unplanned office visit, employees can use the app to request access. However, the process requires HR approval, which may introduce an element of uncertainty or anticipation for the request&#x27;s outcome.
                         </ListItem>
                         <ListItem number="04" name="Convenience and Control">
-                          Throughout the workday, the app provides convenience and control. Employees are confident and appreciate the app's features for schedule management, communication, and requesting ad-hoc visits.
+                          Throughout the workday, the app provides convenience and control. Employees are confident and appreciate the app&#x27;s features for schedule management, communication, and requesting ad-hoc visits.
                         </ListItem>
 
                         <div className="flex md:col-span-2 justify-center">
