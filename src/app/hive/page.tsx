@@ -13,9 +13,11 @@ import PageSection from '../ComponentLibrary/commons/pages/PageSection'
 import ListItem from '../ComponentLibrary/Components/List Items/listitem'
 import ResultSection from '../ComponentLibrary/commons/sections/ResultSection'
 
-import Sketch1 from '../../../public/assets/chainreactive/prototyping1.png'
-import Sketch2 from '../../../public/assets/chainreactive/prototyping2.png'
-import FinalSketch from '../../../public/assets/chainreactive/finalPrototype.png'
+import HR1 from '../../../public/assets/hive/HR1.png'
+import HR2 from '../../../public/assets/hive/HR2.png'
+import HR3 from '../../../public/assets/hive/HR3.png'
+import HR4 from '../../../public/assets/hive/HR4.png'
+import HeroImage from '../../../public/assets/hive/hero.png';
 import CustomerHungry from '../../../public/assets/chainreactive/CustomerHungry.png'
 import BusinessOwnerMoney from '../../../public/assets/chainreactive/BusinessOwnerMoney.png'
 import CustomerOwnerIssues from '../../../public/assets/chainreactive/Customer&OwnerIssues.png'
@@ -40,7 +42,7 @@ export default function ChainReactive() {
         {/* Hero Section */}
         <>
           <div className="max-h-[75vh]">
-            {/* <Image src={HeroImage} alt="Chain Reactive LLC - Order Scheduling Case study" /> */}
+            <Image src={HeroImage} alt="Hive - Enabling a safe return to work environment" />
           </div>
         </>
       </PageSection>
@@ -128,19 +130,17 @@ export default function ChainReactive() {
                 </OverviewSection.Outcome>
               </div>
               <OverviewSection.Solution>
-                <div className="flex flex-col gap-y-20">
-
-                  <div className="w-full md:w-1/3 flex justify-center items-center">
-                    <Type variant="h5" fontType="font-serif"> Mobile app for employees</Type>
-                  </div>
-                  <div className="py-10 md:p-20 flex w-full justify-center">
-                    <div className="w-full ">
-                      <Carousel />
+              <div className="flex flex-col md:flex-row">
+                    <div className="w-full md:w-2/3 flex flex-col gap-4 justify-center ">
+                      <Type variant="h5" fontType="font-serif"> Mobile Solution</Type>
+                      <Type variant="body" fontType="font-serif"> Screenshots from the mobile app for employees</Type>
                     </div>
-
-                  </div>
-
-                </div>
+                    <div className="w-full md:w-1/2">
+                      <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                        <source src="./assets/hive/screens/mobile.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+              </div>
               </OverviewSection.Solution>
             </OverviewSection>
 
@@ -519,59 +519,59 @@ export default function ChainReactive() {
           <Section theme={"light"} name="Sketching Solutions" number="08">
             <div className="w-full flex flex-col md:grid md:grid-cols-2 md:gap-20">
               <Type variant="body">
-                We conducted participatory design sessions with all the stakeholders involved to speed up the design process. We needed to get from design to development asap.
+                We conducted participatory design sessions with all the stakeholders involved to speed up the design process. We needed to get from design to development asap. I was mainly involved with the HR/Admin portal that was a web app. 
               </Type>
               <Type variant="body">
                 Once the designs were approved, we built out the app and then conducted testing. Here are some of our sketches
               </Type>
             </div>
-            <div className="mt-10 md:mt-20 grid grid-cols-3 md:grid-cols-2  justify-items-center items-center gap-x-2 gap-y-10 md:gap-10">
-              <Image className="w-full col-span-2 md:col-span-1" src={Sketch1} alt="A 3 step time picker" />
-              <Image className="w-1/2 col-span-1 " src={BusinessOwnerHappy} alt="Happy Business Owners" />
-              <Image className="w-1/2 col-span-2 md:col-auto" src={CustomerHappy} alt="Happy customers" />
-              <Image className="w-full col-span-1 md:col-auto" src={Sketch2} alt="A one screen timepicker" />
-
-            </div>
             <div className="mt-10">
               <Type variant="h4">
-                Final Prototype Sketch
+                HR app sketches
               </Type>
-              <div className="grid grid-cols-3 justify-items-center items-end gap-x-2 gap-y-10 md:gap-10 mt-10">
-                <Image className="col-span-2" src={FinalSketch} alt="Final prototype sketch" />
-                <Image className="w-3/5 col-span-1" src={BothHappy} alt="Happy Customers and Business Owners" />
-              </div>
+              <div className=" mt-10 grid grid-cols-5  justify-items-center items-center gap-x-2 gap-y-2">
+              <Image className=" col-span-2 " src={HR1} alt="A 3 step time picker" />
+              <Image className="col-span-2 " src={HR2} alt="Happy Business Owners" />
+              <Image className=" col-span-1 row-span-2 md:col-auto" src={HR3} alt="Happy customers" />
+              <Image className=" col-span-2 " src={HR3} alt="Happy customers" />
+              <Image className="col-span-2 " src={HR4} alt="A one screen timepicker" />
+
             </div>
+            </div>
+            
+            
           </Section>
 
         </ProcessSection>
       </PageSection>
       <PageSection theme="dark">
         <ResultSection>
-
-          <div className="md:w-2/3">
+        <Type variant="emphasized-body">
+              Building <span className="italic font-serif font-normal">trust</span> and ensuring a <span className="italic font-serif font-normal">safe return to work</span> environment
+            </Type>
+          <div className="mt-10 md:w-2/3">
             <Type variant="body">
-              We were able to come up with a design that satisfied the needs of the business owners while also keeping the complexity to a minimum for the consumers.
+              We designed and implemented a highly succesful system in a very short span of 4 months. This system got adopted by Ingram Micro offices worldwide. 
             </Type>
           </div>
           <div className="mt-10">
-            <Type variant="emphasized-body">
-              Keeping all <span className="italic font-serif font-normal">stakeholders</span> happy
-            </Type>
+            
+            <Type variant="h5" >
+                           My key learnings - 
+                        </Type>
 
 
             <div className="flex flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
-              <ListItem number="01" name="Business Owners">
-                The business owner&#x27;s requirement of having the user select the pickup/delivery time was addressed by making a default selection which would be handled by code.
+              <ListItem number="01" name="Balancing Speed and Quality">
+              While speed is essential, it should not come at the expense of quality. The team successfully managed to develop an enterprise-scale application under time constraints, demonstrating the value of finding the right balance between speed and the quality of the final product.
               </ListItem>
-              <ListItem number="02" name="Customers">
-                The end design was a very simple dropdown which didn’t clutter the screen unnecessarily. This worked from the user&#x27;s perspective.
+              <ListItem number="02" name="Project Management">
+                Managing such a project with tight deadlines taught me the importance of effective project management, including setting priorities, allocating resources, and meeting milestones.
               </ListItem>
 
             </div>
 
-            <Type variant="body">
-              Throughout this process, I gained valuable insights on the importance of considering the requirements of all user groups and crafting a design that caters to their needs. Different user groups may have distinct roles and perform diverse actions. By avoiding assumptions and following a structured design process, we were able to create a solution that fulfilled the expectations of all stakeholders.
-            </Type>
+          
 
           </div>
         </ResultSection>
