@@ -1,5 +1,8 @@
+'use client'
+
 import React from "react";
 import { Type } from "../../Typography/Type";
+import { cva, VariantProps } from 'class-variance-authority';
 
 
 
@@ -8,10 +11,31 @@ interface TaskFlowProps {
 }
 
 interface taskProps{
-    color:string,
     task:string
     isLast?:boolean
 }
+
+interface Props extends
+    taskProps,
+    VariantProps<typeof taskStyles> { }
+
+const taskStyles = cva(
+    'flex w-full rounded-sm h-full items-center p-3',
+    {
+        variants: {
+            intent: {
+                hr: 'bg-[#D7DDFD]',
+                employees:
+                    'bg-[#C3DED6]',
+                admin: 'bg-[#FBEAAC]',
+            },
+            fullWidth: {
+                true: 'w-full',
+            },
+        }
+
+    },
+);
 
 
 const TaskFlow = (props: TaskFlowProps) => {
@@ -24,9 +48,9 @@ const TaskFlow = (props: TaskFlowProps) => {
     
   );
 }
-TaskFlow.task = (props:taskProps ) => (
+TaskFlow.task = ({ intent, fullWidth, ...props }: Props ) => (
   <div className="flex flex-col md:flex-row w-full md:h-full items-center ">
-     <div className=" flex w-full rounded-sm h-full items-center p-3 bg-green-200">
+     <div className={taskStyles({ intent, fullWidth })}>
             <Type variant="smallest">
               {props.task}
             </Type> 

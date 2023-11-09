@@ -17,13 +17,13 @@ import HR1 from '../../../public/assets/hive/HR1.png'
 import HR2 from '../../../public/assets/hive/HR2.png'
 import HR3 from '../../../public/assets/hive/HR3.png'
 import HR4 from '../../../public/assets/hive/HR4.png'
+import HR from '../../../public/assets/hive/HR.png'
+import HR100 from '../../../public/assets/hive/HR100.png'
+import Emp from '../../../public/assets/hive/Emp.png'
+import Admin from '../../../public/assets/hive/Admin.png'
+import HREmpIssues from '../../../public/assets/hive/HREmpIssues.png'
+import AllHappy from '../../../public/assets/hive/allthreehappy.png'
 import HeroImage from '../../../public/assets/hive/hero.png';
-import CustomerHungry from '../../../public/assets/chainreactive/CustomerHungry.png'
-import BusinessOwnerMoney from '../../../public/assets/chainreactive/BusinessOwnerMoney.png'
-import CustomerOwnerIssues from '../../../public/assets/chainreactive/Customer&OwnerIssues.png'
-import BusinessOwnerHappy from '../../../public/assets/chainreactive/BusinessOwnerHappy.png'
-import CustomerHappy from '../../../public/assets/chainreactive/CustomerHappy.png'
-import BothHappy from '../../../public/assets/chainreactive/BothHappy.png'
 import TaskFlow from '../ComponentLibrary/Components/TaskFlow/taskFlow'
 
 import Carousel from './carousel'
@@ -161,14 +161,14 @@ export default function ChainReactive() {
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
                   <div className="w-2/3">
                     <ListItem number="01" name="HR Team">
-                      HR staff were responsible for uploading employee schedules and managing attendance. They needed efficient tools to streamline their work and ensure employee safety.
+                      HR staff were responsible for uploading employee schedules and managing attendance. They needed efficient tools to streamline their work and ensure employee safety and increase in office attendance.
                     </ListItem>
 
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
                   <div className="w-2/3">
-                    <Image className="w-1/2" src={CustomerHungry} alt="Hungry Customers" />
+                    <Image className="w-1/2" src={HR} alt="HR seeking attendance" />
                   </div>
                 </div>
 
@@ -176,7 +176,7 @@ export default function ChainReactive() {
               <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 flex flex-col items-end justify-start">
                   <div className="w-2/3 ">
-                    <Image className="w-1/2" src={BusinessOwnerMoney} alt="Business Owner" />
+                    <Image className="w-1/2" src={Admin} alt="Business Owner" />
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
@@ -202,7 +202,7 @@ export default function ChainReactive() {
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
                   <div className="w-2/3">
-                    <Image className="w-1/2" src={CustomerHungry} alt="Hungry Customers" />
+                    <Image className="w-1/2" src={Emp} alt="Employees concerned about safety" />
                   </div>
                 </div>
 
@@ -240,7 +240,7 @@ export default function ChainReactive() {
                 Employees want safety info and sick employee numbers to feel confident returning to the office.
               </ListItem>
               <div className="flex md:col-span-3  justify-center">
-                <Image className="w-1/4" src={CustomerOwnerIssues} alt="Business Owner" />
+                <Image className="w-1/4" src={HREmpIssues} alt="HR and Employee issues" />
               </div>
 
             </div>
@@ -266,11 +266,11 @@ export default function ChainReactive() {
                       <div>
                         <div className="w-full">
                           <TaskFlow>
-                            <TaskFlow.task color="green" task="HR staff login to the hive app" />
-                            <TaskFlow.task color="green" task="They select the location or branch for which they need to manage schedules." />
-                            <TaskFlow.task color="green" task="HR staff upload the employee schedule, ensuring accuracy and compliance with scheduling guidelines." />
-                            <TaskFlow.task color="green" task="The app validates and processes the schedule data, alerting HR staff of any errors or inconsistencies." />
-                            <TaskFlow.task isLast color="green" task="The app validates and processes the schedule data, alerting HR staff of any errors or inconsistencies." />
+                            <TaskFlow.task intent="hr" task="HR staff login to the hive app" />
+                            <TaskFlow.task intent="hr" task="They select the location or branch for which they need to manage schedules." />
+                            <TaskFlow.task intent="hr" task="HR staff upload the employee schedule, ensuring accuracy and compliance with scheduling guidelines." />
+                            <TaskFlow.task intent="hr" task="The app validates and processes the schedule data, alerting HR staff of any errors or inconsistencies." />
+                            <TaskFlow.task isLast intent="hr" task="The app validates and processes the schedule data, alerting HR staff of any errors or inconsistencies." />
                           </TaskFlow>
                         </div>
                       </div>
@@ -283,11 +283,11 @@ export default function ChainReactive() {
                         <div className="w-full">
 
                           <TaskFlow>
-                            <TaskFlow.task color="green" task="HR staff select the location or branch for which they need to generate reports." />
-                            <TaskFlow.task color="green" task="They choose the type of report they need (e.g., Health Report, Attendance Report,)." />
-                            <TaskFlow.task color="green" task="HR staff select the date range or parameters for the report." />
-                            <TaskFlow.task color="green" task="The app generates the report with the relevant data." />
-                            <TaskFlow.task isLast color="green" task="HR staff download the report in their preferred format (e.g., PDF, CSV)." />
+                            <TaskFlow.task intent="hr" task="HR staff select the location or branch for which they need to generate reports." />
+                            <TaskFlow.task intent="hr" task="They choose the type of report they need (e.g., Health Report, Attendance Report,)." />
+                            <TaskFlow.task intent="hr" task="HR staff select the date range or parameters for the report." />
+                            <TaskFlow.task intent="hr" task="The app generates the report with the relevant data." />
+                            <TaskFlow.task isLast intent="hr" task="HR staff download the report in their preferred format (e.g., PDF, CSV)." />
                           </TaskFlow>
                         </div>
                       </div>
@@ -301,11 +301,11 @@ export default function ChainReactive() {
                         <div className="w-full">
 
                           <TaskFlow>
-                            <TaskFlow.task color="green" task="HR staff log in to the Hive app." />
-                            <TaskFlow.task color="green" task='They navigate to the "Ad-Hoc Requests" section to review pending requests.' />
-                            <TaskFlow.task color="green" task="HR staff assess the employee&#x27;s request, considering its urgency and necessity." />
-                            <TaskFlow.task color="green" task="If approved, HR staff grant the employee permission to make the ad-hoc visit." />
-                            <TaskFlow.task isLast color="green" task="The app notifies the employee of the approval." />
+                            <TaskFlow.task intent="hr" task="HR staff log in to the Hive app." />
+                            <TaskFlow.task intent="hr" task='They navigate to the "Ad-Hoc Requests" section to review pending requests.' />
+                            <TaskFlow.task intent="hr" task="HR staff assess the employee&#x27;s request, considering its urgency and necessity." />
+                            <TaskFlow.task intent="hr" task="If approved, HR staff grant the employee permission to make the ad-hoc visit." />
+                            <TaskFlow.task isLast intent="hr" task="The app notifies the employee of the approval." />
                           </TaskFlow>
                         </div>
                       </div>
@@ -329,9 +329,7 @@ export default function ChainReactive() {
                           Effective communication is critical for HR staff, both within the Hive app (reporting and responding to issues) and external communication with relevant departments or employees for issue resolution.
                         </ListItem>
 
-                        <div className="flex md:col-span-2 justify-center">
-                          <Image className="w-1/4" src={CustomerOwnerIssues} alt="Business Owner" />
-                        </div>
+                    
 
                       </div>
                     </div>
@@ -350,12 +348,12 @@ export default function ChainReactive() {
                       <div>
                         <div className="w-full">
                           <TaskFlow>
-                            <TaskFlow.task color="green" task="Employee logs into the Hive app." />
-                            <TaskFlow.task color="green" task="They view the home screen to check their schedule for the day." />
-                            <TaskFlow.task color="green" task="The app displays their upcoming schedule, including start and end times, location, and any other relevant details." />
-                            <TaskFlow.task color="green" task="Employee reviews the self-declaration questions related to health and safety." />
-                            <TaskFlow.task color="green" task="They provide responses to the self-declaration questions." />
-                            <TaskFlow.task isLast color="green" task="On successful completion of self declaration, employee gets an entry QR code" />
+                            <TaskFlow.task intent="employees" task="Employee logs into the Hive app." />
+                            <TaskFlow.task intent="employees" task="They view the home screen to check their schedule for the day." />
+                            <TaskFlow.task intent="employees" task="The app displays their upcoming schedule, including start and end times, location, and any other relevant details." />
+                            <TaskFlow.task intent="employees" task="Employee reviews the self-declaration questions related to health and safety." />
+                            <TaskFlow.task intent="employees" task="They provide responses to the self-declaration questions." />
+                            <TaskFlow.task isLast intent="employees" task="On successful completion of self declaration, employee gets an entry QR code" />
                           </TaskFlow>
                         </div>
                       </div>
@@ -368,11 +366,11 @@ export default function ChainReactive() {
                         <div className="w-full">
 
                           <TaskFlow>
-                            <TaskFlow.task color="green" task="Employee arrives at the office entrance." />
-                            <TaskFlow.task color="green" task="Security personnel use the Hive app to scan the employee&#x27;s QR code." />
-                            <TaskFlow.task color="green" task="The app verifies the QR code, granting access to the employee." />
-                            <TaskFlow.task color="green" task="The employee enters the office if access is granted." />
-                            <TaskFlow.task isLast color="green" task="Employee gets notified at the end of their shift to leave the office" />
+                            <TaskFlow.task intent="employees" task="Employee arrives at the office entrance." />
+                            <TaskFlow.task intent="employees" task="Security personnel use the Hive app to scan the employee&#x27;s QR code." />
+                            <TaskFlow.task intent="employees" task="The app verifies the QR code, granting access to the employee." />
+                            <TaskFlow.task intent="employees" task="The employee enters the office if access is granted." />
+                            <TaskFlow.task isLast intent="employees" task="Employee gets notified at the end of their shift to leave the office" />
                           </TaskFlow>
                         </div>
                       </div>
@@ -386,12 +384,12 @@ export default function ChainReactive() {
                         <div className="w-full">
 
                           <TaskFlow>
-                            <TaskFlow.task color="green" task="Employee realizes the need for an ad-hoc visit for work-related reasons." />
-                            <TaskFlow.task color="green" task='They open the Hive app and navigate to the "Ad-Hoc Request" section.' />
-                            <TaskFlow.task color="green" task="The employee selects the purpose of the visit and specifies the desired date and time." />
-                            <TaskFlow.task color="green" task="They provide any additional details or justifications for the visit." />
-                            <TaskFlow.task color="green" task="The employee submits the ad-hoc request through the app." />
-                            <TaskFlow.task isLast color="green" task="The app sends the request to HR for approval." />
+                            <TaskFlow.task intent="employees" task="Employee realizes the need for an ad-hoc visit for work-related reasons." />
+                            <TaskFlow.task intent="employees" task='They open the Hive app and navigate to the "Ad-Hoc Request" section.' />
+                            <TaskFlow.task intent="employees" task="The employee selects the purpose of the visit and specifies the desired date and time." />
+                            <TaskFlow.task intent="employees" task="They provide any additional details or justifications for the visit." />
+                            <TaskFlow.task intent="employees" task="The employee submits the ad-hoc request through the app." />
+                            <TaskFlow.task isLast intent="employees" task="The app sends the request to HR for approval." />
                           </TaskFlow>
                         </div>
                       </div>
@@ -415,9 +413,7 @@ export default function ChainReactive() {
                           Throughout the workday, the app provides convenience and control. Employees are confident and appreciate the app&#x27;s features for schedule management, communication, and requesting ad-hoc visits.
                         </ListItem>
 
-                        <div className="flex md:col-span-2 justify-center">
-                          <Image className="w-1/4" src={CustomerOwnerIssues} alt="Business Owner" />
-                        </div>
+                       
 
                       </div>
                     </div>
@@ -436,10 +432,10 @@ export default function ChainReactive() {
                       <div>
                         <div className="w-full">
                           <TaskFlow>
-                            <TaskFlow.task color="green" task="Admin staff stand at the office entrance and prepare to scan employee QR codes" />
-                            <TaskFlow.task color="green" task="Admin staff scan the QR code" />
-                            <TaskFlow.task color="green" task="They conduct temperature and oximeter checks and add that information to the app" />
-                            <TaskFlow.task color="green" isLast task="They allow the employees that satisfy all safety requirements in the office" />
+                            <TaskFlow.task intent="admin" task="Admin staff stand at the office entrance and prepare to scan employee QR codes" />
+                            <TaskFlow.task intent="admin" task="Admin staff scan the QR code" />
+                            <TaskFlow.task intent="admin" task="They conduct temperature and oximeter checks and add that information to the app" />
+                            <TaskFlow.task intent="admin" isLast task="They allow the employees that satisfy all safety requirements in the office" />
                           </TaskFlow>
                         </div>
                       </div>
@@ -452,10 +448,10 @@ export default function ChainReactive() {
                         <div className="w-full">
 
                           <TaskFlow>
-                            <TaskFlow.task color="green" task="Admin gets notified at employees end of shift" />
-                            <TaskFlow.task color="green" task="They check if the employee has left the office" />
-                            <TaskFlow.task color="green" task="If not they ask the employee to leave" />
-                            <TaskFlow.task color="green" isLast task="They mark the exit time of the employee on the app." />
+                            <TaskFlow.task intent="admin" task="Admin gets notified at employees end of shift" />
+                            <TaskFlow.task intent="admin" task="They check if the employee has left the office" />
+                            <TaskFlow.task intent="admin" task="If not they ask the employee to leave" />
+                            <TaskFlow.task intent="admin" isLast task="They mark the exit time of the employee on the app." />
 
                           </TaskFlow>
                         </div>
@@ -475,10 +471,7 @@ export default function ChainReactive() {
                           Admin staff must be vigilant in ensuring the safety and compliance of employees by verifying QR codes and self-declarations.
                         </ListItem>
 
-                        <div className="flex md:col-span-2 justify-center">
-                          <Image className="w-1/4" src={CustomerOwnerIssues} alt="Business Owner" />
-                        </div>
-
+                        
                       </div>
                     </div>
                   </div>
@@ -514,6 +507,9 @@ export default function ChainReactive() {
                   A mobile app for the security personnel to check-in / check-out employees in the office.
                 </ListItem>
               </div>
+              <div className="flex md:col-span-2 justify-center">
+                          <Image className="w-1/4" src={AllHappy} alt="Business Owner" />
+                        </div>
             </div>
           </Section>
           <Section theme={"light"} name="Sketching Solutions" number="08">
@@ -529,12 +525,13 @@ export default function ChainReactive() {
               <Type variant="h4">
                 HR app sketches
               </Type>
-              <div className=" mt-10 grid grid-cols-5  justify-items-center items-center gap-x-2 gap-y-2">
+              <div className=" mt-10 flex flex-col md:grid md:grid-cols-5  justify-items-center items-center gap-x-2 gap-y-2">
               <Image className=" col-span-2 " src={HR1} alt="A 3 step time picker" />
               <Image className="col-span-2 " src={HR2} alt="Happy Business Owners" />
-              <Image className=" col-span-1 row-span-2 md:col-auto" src={HR3} alt="Happy customers" />
+              <Image className="hidden md:block col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy customers" />
               <Image className=" col-span-2 " src={HR3} alt="Happy customers" />
               <Image className="col-span-2 " src={HR4} alt="A one screen timepicker" />
+              <Image className="md:hidden col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy customers" />
 
             </div>
             </div>
