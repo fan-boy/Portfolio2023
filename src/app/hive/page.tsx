@@ -26,8 +26,6 @@ import AllHappy from '../../../public/assets/hive/allthreehappy.png'
 import HeroImage from '../../../public/assets/hive/hero.png';
 import TaskFlow from '../ComponentLibrary/Components/TaskFlow/taskFlow'
 
-import Carousel from './carousel'
-
 
 
 
