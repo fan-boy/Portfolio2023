@@ -30,7 +30,7 @@ import TaskFlow from '../ComponentLibrary/Components/TaskFlow/taskFlow'
 
 
 
-export default function ChainReactive() {
+export default function Hive() {
 
 
 
@@ -174,7 +174,7 @@ export default function ChainReactive() {
               <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 flex flex-col items-end justify-start">
                   <div className="w-2/3 ">
-                    <Image className="w-1/2" src={Admin} alt="Business Owner" />
+                    <Image className="w-1/2" src={Admin} alt="Admin" />
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
@@ -506,7 +506,7 @@ export default function ChainReactive() {
                 </ListItem>
               </div>
               <div className="flex md:col-span-2 justify-center">
-                          <Image className="w-1/4" src={AllHappy} alt="Business Owner" />
+                          <Image className="w-1/4" src={AllHappy} alt="All stakeholders happy!" />
                         </div>
             </div>
           </Section>
@@ -524,12 +524,12 @@ export default function ChainReactive() {
                 HR app sketches
               </Type>
               <div className=" mt-10 flex flex-col md:grid md:grid-cols-5  justify-items-center items-center gap-x-2 gap-y-2">
-              <Image className=" col-span-2 " src={HR1} alt="A 3 step time picker" />
-              <Image className="col-span-2 " src={HR2} alt="Happy Business Owners" />
-              <Image className="hidden md:block col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy customers" />
-              <Image className=" col-span-2 " src={HR3} alt="Happy customers" />
-              <Image className="col-span-2 " src={HR4} alt="A one screen timepicker" />
-              <Image className="md:hidden col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy customers" />
+              <Image className=" col-span-2 " src={HR1} alt="A page for adding emp schedule" />
+              <Image className="col-span-2 " src={HR2} alt="A page for adding employee schedule" />
+              <Image className="hidden md:block col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy HR" />
+              <Image className=" col-span-2 " src={HR3} alt="A page for sending out announcements" />
+              <Image className="col-span-2 " src={HR4} alt="A page for generating reports" />
+              <Image className="md:hidden col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy HR" />
 
             </div>
             </div>
