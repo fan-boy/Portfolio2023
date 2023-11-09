@@ -135,7 +135,7 @@ export default function Hive() {
                     </div>
                     <div className="w-full md:w-1/2">
                       <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
-                        <source src="./assets/hive/screens/mobile.mp4" type="video/mp4" />
+                        <source src="./assets/hive/mobile.mp4" type="video/mp4" />
                       </video>
                     </div>
               </div>
