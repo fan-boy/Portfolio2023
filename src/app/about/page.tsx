@@ -34,7 +34,7 @@ export default function Home() {
                 <div className="flex flex-col gap-10">
                   <div className="flex flex-col gap-2">
                     <Type variant="h2">
-                      Hello! I'm Aaditya but you can call me Adi
+                      Hello! I&#x27;m Aaditya but you can call me Adi
                     </Type>
                     <Type variant="body">
                       (aa-dit-yaa)
@@ -44,7 +44,7 @@ export default function Home() {
                     I am a Product Designer and Fullstack web developer based in Washington DC, USA.
                   </Type>
                   <Type variant="body">
-                  My professional journey spans diverse experiences, including shaping the visual identity at Crashr and delving into production-scale product design and development at Accenture. My time at Ingram Micro emphasized the importance of User Experience design, sparking my passion for understanding user behavior. Wearing dual hats as a User Experience designer and a full-stack web developer, I'm dedicated to creating exceptional digital experiences.
+                  My professional journey spans diverse experiences, including shaping the visual identity at Crashr and delving into production-scale product design and development at Accenture. My time at Ingram Micro emphasized the importance of User Experience design, sparking my passion for understanding user behavior. Wearing dual hats as a User Experience designer and a full-stack web developer, I&#x27;m dedicated to creating exceptional digital experiences.
                   </Type>
                   <Type variant="body">
                   Beyond the screen, I find joy in running, experimenting in the kitchen, gaming, exploring new destinations, and staying updated on technological advancements. The mountains, with their breathtaking sunrises and sunsets, hold a special place in my heart.
@@ -53,7 +53,7 @@ export default function Home() {
                   I believe in the power of design to address complex human challenges. Bridging the gap between design and development, I aspire to create visually appealing and functionally robust solutions. 
                   </Type>
                   <Type variant="body">
-                  Beyond pixels and code, I envision becoming a compassionate and approachable design leader and mentor, fostering creativity and innovation. For now, I'm thoroughly enjoying the journey of designing and developing cool things.
+                  Beyond pixels and code, I envision becoming a compassionate and approachable design leader and mentor, fostering creativity and innovation. For now, I&#x27;m thoroughly enjoying the journey of designing and developing cool things.
                   </Type>
                 </div>
               </Section>
