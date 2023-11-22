@@ -17,7 +17,7 @@ export default function DefaultPage({
   return (
     <main className={`flex flex-col "`}>
        
-        <Navbar/>
+        <Navbar selected = {selected}/>
         {children}
         <Footer/>
     </main>

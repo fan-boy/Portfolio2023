@@ -21,8 +21,8 @@ export interface Props
 	extends ButtonOrLinkProps,
 		VariantProps<typeof buttonStyles> {}
 
-export function NavbarButton({ intent,  ...props }: Props) {
+export function NavbarButton({ intent,href,  ...props }: Props) {
 	return (
-		<ButtonOrLink className={buttonStyles({ intent })} {...props} />
+		<ButtonOrLink href={href} className={buttonStyles({ intent })} {...props} />
 	);
 }

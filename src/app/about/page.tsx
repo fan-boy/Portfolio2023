@@ -6,80 +6,63 @@ import Card from '../ComponentLibrary/Components/Card/Card'
 import Footer from '../ComponentLibrary/Components/footer'
 import Navbar from '../ComponentLibrary/Components/Navbar'
 import BouncingArrow from '../ComponentLibrary/Specials/BouncingArrow'
+import Me from '../../../public/assets/about/me.png';
 import { Type, Variants } from '../ComponentLibrary/Typography/Type'
+import Section from '../ComponentLibrary/commons/sections/section'
 
 export default function Home() {
   return (
-    <DefaultPage selected="work">
-      <PageSection theme="dark">
-      <div className="flex flex-col mt-14 mb-14">
-        <div className="md:flex md:flex-row md:items-end md:gap-10">
-          <div className="flex mt-4 flex-col text-center md:text-left  md:min-w-1/2 gap-4 md:gap-0">
-            <span>
-              <Type variant={"body"}>Hi! I&#x27;m</Type>
-            </span>
-            <span >
-              <Type variant={"heroText"}>
-                Aaditya
-              </Type>
-            </span>
+    <DefaultPage selected="about">
+
+      <PageSection theme="dark" >
+        <div className="mt-20">
+          <div className="w-full md:flex md:flex-row ">
+            <div className="w-full md:w-5/12 p-5 relative">
+
+             
+              
+                <Image
+                  src={Me} alt="Me in the fall weather of Boston."
+                  fill={true}
+                  objectFit='contain'
+                />
+              
+              
+            </div>
+            <div className="w-full md:w-7/12 p-5">
+              <Section name="About me" number="01" theme="dark">
+                <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-2">
+                    <Type variant="h2">
+                      Hello! I'm Aaditya but you can call me Adi
+                    </Type>
+                    <Type variant="body">
+                      (aa-dit-yaa)
+                    </Type>
+                  </div>
+                  <Type variant="emphasized-body">
+                    I am a Product Designer and Fullstack web developer based in Washington DC, USA.
+                  </Type>
+                  <Type variant="body">
+                  My professional journey spans diverse experiences, including shaping the visual identity at Crashr and delving into production-scale product design and development at Accenture. My time at Ingram Micro emphasized the importance of User Experience design, sparking my passion for understanding user behavior. Wearing dual hats as a User Experience designer and a full-stack web developer, I'm dedicated to creating exceptional digital experiences.
+                  </Type>
+                  <Type variant="body">
+                  Beyond the screen, I find joy in running, experimenting in the kitchen, gaming, exploring new destinations, and staying updated on technological advancements. The mountains, with their breathtaking sunrises and sunsets, hold a special place in my heart.
+                  </Type>
+                  <Type variant="body">
+                  I believe in the power of design to address complex human challenges. Bridging the gap between design and development, I aspire to create visually appealing and functionally robust solutions. 
+                  </Type>
+                  <Type variant="body">
+                  Beyond pixels and code, I envision becoming a compassionate and approachable design leader and mentor, fostering creativity and innovation. For now, I'm thoroughly enjoying the journey of designing and developing cool things.
+                  </Type>
+                </div>
+              </Section>
+            </div>
+
           </div>
-          <div className="flex mt-9 flex-col text-center md:text-left md:min-w-1/2">
-            <span>
-              <Type variant={"h3"}> A product designer </Type>
-            </span>
-            <span className="font-serif text-2xl">
-              <Type variant={"h3"}> who codes </Type>
-            </span>
-          </div>
-        </div>
-        <div className=" md:flex md:flex-row md:gap-12">
-          <div className="hidden md:flex mt-20 md:flex-col text-center md:text-left gap-4 md:min-w-1/2">
-            <span >
-              <Type variant={"body"}>
-                I empathize with users to <br /> bridge the gap between the <br /> intent and impact of a product
-                
-              </Type>
-            </span>
-          </div>
-          <div className="flex mt-20 flex-col text-center md:text-left gap-4 md:min-w-1/2">
-            <span >
-              <Type variant={"body"}>
-                HCIM grad student at <br /> University of Maryland, CP
-              </Type>
-            </span>
-            <span >
-              <Type variant={"body"}>
-                Graduating May 2024
-              </Type>
-            </span>
-          </div>
-        </div>
-        <div className="w-full text-center md:text-left mt-10 md:mt-28 md:flex md:flex-row-reverse">
-          <div className="flex flex-row gap-5">
-          <Type variant="emphasized-body">
-              Selected Work
-          </Type>
-          <BouncingArrow />
-          </div>
-        </div>
-      </div>
-      
-      </PageSection>
-      <PageSection theme="light"  >
-        <div className="w-full flex my-10 md:flex-wrap md:gap-5">
-          <div className="min-w-full w-full md:w-2/5 md:min-w-2/5 flex-1 ">
-         <Card title="Crashr" intent="primary"/>
-         </div>
-         <div className="min-w-2/5 flex-1 md:translate-y-1/2">
-         <Card title="Chain Reactive LLC" intent="primary"/>
-         </div>
-         <div className="min-w-2/5 w-1/2 ">
-         <Card title="Crashr" intent="primary"/>
-         </div>
         </div>
       </PageSection>
-      
+
     </DefaultPage>
   )
 }
