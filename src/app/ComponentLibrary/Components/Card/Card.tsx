@@ -4,9 +4,9 @@ import { cva, VariantProps } from 'class-variance-authority';
 import { motion } from 'framer-motion';
 import { Type } from '../../Typography/Type';
 
-import ChainReactive from '../../../../../public/assets/home/ChainReactive/ChainReactiveImage.png'
-import Crashr from '../../../../../public/assets/home/crashr/CrashrImage.png'
-import Hive from '../../../../../public/assets/home/hive/hiveimage.png'
+import ChainReactive from 'public/assets/home/ChainReactive/ChainreactiveImage.png'
+import Crashr from 'public/assets/home/crashr/CrashrImage.png'
+import Hive from 'public/assets/home/hive/hiveimage.png'
 import React from 'react';
 import Link from 'next/link';
 
