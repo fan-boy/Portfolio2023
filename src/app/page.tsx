@@ -66,18 +66,24 @@ export default function Home() {
       </div>
       
       </PageSection>
-      <PageSection theme="light"  >
-        <div className="w-full flex my-10 md:flex-wrap md:gap-5">
-          <div className="min-w-full w-full md:w-2/5 md:min-w-2/5 flex-1 ">
-         <Card title="Crashr" intent="primary"/>
-         </div>
-         <div className="min-w-2/5 flex-1 md:translate-y-1/2">
-         <Card title="Chain Reactive LLC" intent="primary"/>
-         </div>
-         <div className="min-w-2/5 w-1/2 ">
-         <Card title="Crashr" intent="primary"/>
-         </div>
-        </div>
+      
+
+      <PageSection theme="dark"  >
+       <div className="w-full columns-2 md:flex-row pt-40 gap-10">
+       <div className="-mt-40"> 
+          
+          <Card title="Crashr" type="crashr" subtitle=" Streamlining the design process" tags="Visual design • Design System"/>
+          </div>
+          <div className="mt-10"> 
+          
+          <Card title="Hive" type="hive" subtitle=" Enabling a safe return to work" tags="Service design • Web design"/>
+          </div>
+          <div className="mt-10"> 
+          
+          <Card title="Chain Reactive" type="chainreactive" subtitle=" Simplyfing the ordering process" tags="UX design • Fullstack development"/>
+          </div>
+
+       </div>
       </PageSection>
       
     </DefaultPage>

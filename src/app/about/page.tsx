@@ -17,7 +17,7 @@ export default function Home() {
       <PageSection theme="dark" >
         <div className="mt-20">
           <div className="w-full md:flex md:flex-row ">
-            <div className="w-full md:w-5/12 p-5 relative">
+            <div className="w-full md:w-5/12 relative">
 
              
               

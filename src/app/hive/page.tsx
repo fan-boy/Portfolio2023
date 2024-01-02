@@ -25,6 +25,8 @@ import HREmpIssues from '../../../public/assets/hive/HREmpIssues.png'
 import AllHappy from '../../../public/assets/hive/allthreehappy.png'
 import HeroImage from '../../../public/assets/hive/hero.png';
 import TaskFlow from '../ComponentLibrary/Components/TaskFlow/taskFlow'
+import React from 'react'
+import Card from '../ComponentLibrary/Components/Card/Card'
 
 
 
@@ -572,6 +574,22 @@ export default function Hive() {
         </ResultSection>
 
 
+      </PageSection>
+      <PageSection theme="dark"  >
+            <Section theme={"dark"} name="Other work" number=""> 
+       <div className="w-full columns-2 md:flex-row gap-10">
+       
+          <div className=""> 
+          
+          <Card title="Crashr" type="crashr" subtitle=" Streamlining the design process" tags="Visual Design • Design System"/>
+          </div>
+          <div className=""> 
+          
+          <Card title="Chain Reactive" type="chainreactive" subtitle=" Simplyfing the ordering process" tags="UX design • Fullstack development"/>
+          </div>
+
+       </div>
+       </Section>
       </PageSection>
 
     </DefaultPage>

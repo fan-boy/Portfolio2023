@@ -32,7 +32,8 @@ import BrandLogoIconVariants from '../../../public/assets/crashr/LogoIconVariant
 import SpecialIcons from '../../../public/assets/crashr/SpecialIcons.png'
 import ComponentsDisplaySlider from './ComponentsDisplaySlider'
 import PasswordProtected from '../ComponentLibrary/commons/sections/PasswordSection'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import Card from '../ComponentLibrary/Components/Card/Card'
 
 
 
@@ -451,6 +452,22 @@ export default function Crashr() {
 
 
             </PageSection>
+            <PageSection theme="dark"  >
+            <Section theme={"dark"} name="Other work" number=""> 
+       <div className="w-full columns-2 md:flex-row gap-10">
+       
+          <div className=""> 
+          
+          <Card title="Hive" type="hive" subtitle=" Enabling a safe return to work" tags="Service design • Web design"/>
+          </div>
+          <div className=""> 
+          
+          <Card title="Chain Reactive" type="chainreactive" subtitle=" Simplyfing the ordering process" tags="UX design • Fullstack development"/>
+          </div>
+
+       </div>
+       </Section>
+      </PageSection>
 
         </DefaultPage>
     )
