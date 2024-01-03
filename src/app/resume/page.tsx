@@ -12,6 +12,16 @@ import { Type } from "../ComponentLibrary/Typography/Type";
 export default function Resume(){
     const onClickButton = () =>{
 
+        const a = document.createElement('a');
+        a.href="/assets/resume/Resume.pdf";
+        a.download="AadityaSheteResume.pdf";
+
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        
+
     }
 
     return(
@@ -24,7 +34,7 @@ export default function Resume(){
                   
                   />
                   <div className="flex w-full justify-center">
-                  <Button intent={"primary"}  onClick={onClickButton}>
+                  <Button intent={"primary"} theme={"dark"} onClick={onClickButton}>
                     <Type variant="body">
                     Download
                     </Type>

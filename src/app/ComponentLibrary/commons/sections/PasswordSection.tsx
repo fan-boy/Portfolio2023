@@ -46,7 +46,7 @@ const PasswordProtected = (props:PasswordProtectedProps) =>{
                 type="password"
                 onChange={onChangeValue} />
 
-                <Button intent={"primary"}  onClick={onClickButton}>
+                <Button intent={"primary"} theme={"light"}  onClick={onClickButton}>
                     <Type variant="body">
                     Submit
                     </Type>

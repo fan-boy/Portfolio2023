@@ -14,7 +14,8 @@ import Link from 'next/link';
 interface CardProps {
     title: string,
     subtitle:string,
-    tags:string
+    tags:string,
+    isLocked?:boolean
 }
 
 interface Props extends
@@ -83,9 +84,19 @@ const Card = ({ type, ...props }: Props) => {
                 <div className="max-w-full flex flex-col ">
                     <div className="w-full flex flex-col gap-16 pl-10 py-10">
                         <div className="w-full flex flex-col justify-between ">
+                            <div className="w-full flex flex-row justify-between">
+                            <div className="w-4/6">
                             <Type variant="h3">
                                 {props.title}
                             </Type>
+                            </div>
+                            {props.isLocked &&
+                            <div className="w-1/6">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5F5F5" viewBox="0 0 256 256"><path d="M208,80H176V56a48,48,0,0,0-96,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80ZM96,56a32,32,0,0,1,64,0V80H96ZM208,208H48V96H208V208Zm-68-56a12,12,0,1,1-12-12A12,12,0,0,1,140,152Z"></path></svg>
+                            </div>
+                            }
+                            </div>
                             <Type variant="h5">
                                {props.subtitle}
                             </Type>
