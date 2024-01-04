@@ -36,14 +36,14 @@ export default function ChainReactive() {
       <PageSection theme="dark" isFullWidth>
         {/* Hero Section */}
         <>
-            <div className="max-h-[75vh]">
-              <Image  src={HeroImage}  alt="Chain Reactive LLC - Order Scheduling Case study" />
-              </div>
-          </>
+          <div className="max-h-[75vh]">
+            <Image src={HeroImage} alt="Chain Reactive LLC - Order Scheduling Case study" />
+          </div>
+        </>
       </PageSection>
       <PageSection theme="dark">
         <div className="flex flex-col">
-          
+
           {/* Project and Info Section */}
           <>
             <div className="flex mt-10 flex-col md:flex-row gap-2">
@@ -176,7 +176,7 @@ export default function ChainReactive() {
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
                   <div className="w-2/3">
-                      <Image className="w-1/2" src={CustomerHungry} alt="Hungry Customers" />
+                    <Image className="w-1/2" src={CustomerHungry} alt="Hungry Customers" />
                   </div>
                 </div>
 
@@ -184,7 +184,7 @@ export default function ChainReactive() {
               <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 flex flex-col items-end justify-start">
                   <div className="w-2/3 ">
-                  <Image className="w-1/2" src={BusinessOwnerMoney} alt="Business Owner" />
+                    <Image className="w-1/2" src={BusinessOwnerMoney} alt="Business Owner" />
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
@@ -226,9 +226,9 @@ export default function ChainReactive() {
               <ListItem number="05">
                 Customers wanted the ability to plan their meals for the week and hence needed this feature of being able to schedule the order.
               </ListItem>
-            <div className = "">
-            <Image className="" src={CustomerOwnerIssues} alt="Business Owner" />
-            </div>
+              <div className="">
+                <Image className="" src={CustomerOwnerIssues} alt="Business Owner" />
+              </div>
 
             </div>
             <div className="mt-8 w-full md:w-3/4 flex flex-col gap-6">
@@ -243,52 +243,52 @@ export default function ChainReactive() {
           <Section theme={"light"} name="Competitor Analysis" number="06">
 
             <div className="w-full flex flex-col md:grid md:grid-cols-3 md:gap-3">
-             <Image  src={DoordashImage} alt="Doordash competitve analysis" />
-             <Image  src={PostmatesImage} alt="Postmates competitve analysis" />
-             <Image src={UberEatsImage} alt="Uber Eats competitve analysis" /> 
+              <Image src={DoordashImage} alt="Doordash competitve analysis" />
+              <Image src={PostmatesImage} alt="Postmates competitve analysis" />
+              <Image src={UberEatsImage} alt="Uber Eats competitve analysis" />
             </div>
 
             <div className="mt-20">
-            <Type variant="h4">
+              <Type variant="h4">
                 Findings -
               </Type>
 
-            <div className="flex flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
-              <ListItem number="01" name="Scheduling Times">
-              All of the competitors offer choices between group of options
-              </ListItem>
-              <ListItem number="02" name="Optional order scheduling">
-              Most of the competitors had optional order scheduling. Some of them had it right on the first page. 
-              </ListItem>
-              <ListItem number="03" name="Complicated time pickers">
-              The time pickers offered by most of the competitors were too clustered.
-              </ListItem>
-            </div>
+              <div className="flex flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
+                <ListItem number="01" name="Scheduling Times">
+                  All of the competitors offer choices between group of options
+                </ListItem>
+                <ListItem number="02" name="Optional order scheduling">
+                  Most of the competitors had optional order scheduling. Some of them had it right on the first page.
+                </ListItem>
+                <ListItem number="03" name="Complicated time pickers">
+                  The time pickers offered by most of the competitors were too clustered.
+                </ListItem>
+              </div>
             </div>
           </Section>
           <Section theme={"light"} name="Sketching Solutions" number="07">
-          <div className="w-full flex flex-col md:grid md:grid-cols-2 md:gap-20">
-            <Type variant="body">
-            After gathering research insights, I engaged in ideation to explore potential solutions and user flows. To solidify ideas and visualize the interactions, I initiated the process by creating sketches.
-            </Type>
-            <Type variant="body">
-            Since we were in the early stages of the product we did User testing on the paper prototypes itself
-            </Type>
+            <div className="w-full flex flex-col md:grid md:grid-cols-2 md:gap-20">
+              <Type variant="body">
+                After gathering research insights, I engaged in ideation to explore potential solutions and user flows. To solidify ideas and visualize the interactions, I initiated the process by creating sketches.
+              </Type>
+              <Type variant="body">
+                Since we were in the early stages of the product we did User testing on the paper prototypes itself
+              </Type>
             </div>
             <div className="mt-10 md:mt-20 grid grid-cols-3 md:grid-cols-2  justify-items-center items-center gap-x-2 gap-y-10 md:gap-10">
-            <Image className="w-full col-span-2 md:col-span-1" src={Sketch1} alt="A 3 step time picker" />
-            <Image className="w-1/2 col-span-1 " src={BusinessOwnerHappy} alt="Happy Business Owners" />
-            <Image className="w-1/2 col-span-2 md:col-auto" src={CustomerHappy} alt="Happy customers" />
-            <Image className="w-full col-span-1 md:col-auto" src={Sketch2} alt="A one screen timepicker" />
-            
+              <Image className="w-full col-span-2 md:col-span-1" src={Sketch1} alt="A 3 step time picker" />
+              <Image className="w-1/2 col-span-1 " src={BusinessOwnerHappy} alt="Happy Business Owners" />
+              <Image className="w-1/2 col-span-2 md:col-auto" src={CustomerHappy} alt="Happy customers" />
+              <Image className="w-full col-span-1 md:col-auto" src={Sketch2} alt="A one screen timepicker" />
+
             </div>
             <div className="mt-10">
               <Type variant="h4">
                 Final Prototype Sketch
               </Type>
               <div className="grid grid-cols-3 justify-items-center items-end gap-x-2 gap-y-10 md:gap-10 mt-10">
-               <Image className="col-span-2"  src={FinalSketch} alt="Final prototype sketch" />
-               <Image className="w-3/5 col-span-1"  src={BothHappy} alt="Happy Customers and Business Owners" />
+                <Image className="col-span-2" src={FinalSketch} alt="Final prototype sketch" />
+                <Image className="w-3/5 col-span-1" src={BothHappy} alt="Happy Customers and Business Owners" />
               </div>
             </div>
           </Section>
@@ -296,53 +296,56 @@ export default function ChainReactive() {
         </ProcessSection>
       </PageSection>
       <PageSection theme="dark">
-      <ResultSection>
+        <ResultSection>
 
-        <div className="md:w-2/3">
-        <Type variant="body">
-        We were able to come up with a design that satisfied the needs of the business owners while also keeping the complexity to a minimum for the consumers.
-        </Type>
-        </div>
-        <div className="mt-10">
-          <Type variant="emphasized-body">
-          Keeping all <span className="italic font-serif font-normal">stakeholders</span> happy
-          </Type>
+          <div className="md:w-2/3">
+            <Type variant="body">
+              We were able to come up with a design that satisfied the needs of the business owners while also keeping the complexity to a minimum for the consumers.
+            </Type>
+          </div>
+          <div className="mt-10">
+            <Type variant="emphasized-body">
+              Keeping all <span className="italic font-serif font-normal">stakeholders</span> happy
+            </Type>
 
-          
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
+
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
               <ListItem number="01" name="Business Owners">
-              The business owner&#x27;s requirement of having the user select the pickup/delivery time was addressed by making a default selection which would be handled by code.
+                The business owner&#x27;s requirement of having the user select the pickup/delivery time was addressed by making a default selection which would be handled by code.
               </ListItem>
               <ListItem number="02" name="Customers">
-              The end design was a very simple dropdown which didn’t clutter the screen unnecessarily. This worked from the user&#x27;s perspective.
+                The end design was a very simple dropdown which didn’t clutter the screen unnecessarily. This worked from the user&#x27;s perspective.
               </ListItem>
-          
+
+            </div>
+
+            <Type variant="body">
+              Throughout this process, I gained valuable insights on the importance of considering the requirements of all user groups and crafting a design that caters to their needs. Different user groups may have distinct roles and perform diverse actions. By avoiding assumptions and following a structured design process, we were able to create a solution that fulfilled the expectations of all stakeholders.
+            </Type>
+
           </div>
+        </ResultSection>
 
-          <Type variant="body">
-          Throughout this process, I gained valuable insights on the importance of considering the requirements of all user groups and crafting a design that caters to their needs. Different user groups may have distinct roles and perform diverse actions. By avoiding assumptions and following a structured design process, we were able to create a solution that fulfilled the expectations of all stakeholders. 
-          </Type>
 
-        </div>
-      </ResultSection>
-
-      
       </PageSection>
       <PageSection theme="dark"  >
-            <Section theme={"dark"} name="Other work" number=""> 
-       <div className="w-full columns-2 md:flex-row gap-10">
-       
-          <div className=""> 
-          
-          <Card title="Crashr" type="crashr" subtitle=" Streamlining the design process" tags="Visual Design • Design System"/>
-          </div>
-          <div className=""> 
-          
-          <Card title="Hive" type="hive" subtitle=" Enabling a safe return to work" tags="Service design • Web design"/>
-          </div>
+        <Section theme={"dark"} name="Other work" number="" classname="w-full my-20 md:mt-32 p-5 p-5 flex flex-col gap-20">
+          <div className=" sm:px-20 md:px-0 md:columns-2 md:flex-row gap-10">
+            <div className="">
 
-       </div>
-       </Section>
+              <Card title="Crashr" type="crashr" subtitle=" Streamlining the design process" tags="Visual Design • Design System" />
+            </div>
+
+            <div className="mt-10 md:mt-0">
+
+              <Card title="Hive" type="hive" subtitle=" Enabling a safe return to work" tags="Service design • Web design" />
+            </div>
+
+
+          </div>
+        </Section>
+
+
       </PageSection>
 
     </DefaultPage>

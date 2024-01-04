@@ -576,20 +576,22 @@ export default function Hive() {
 
       </PageSection>
       <PageSection theme="dark"  >
-            <Section theme={"dark"} name="Other work" number=""> 
-       <div className="w-full columns-2 md:flex-row gap-10">
-       
-          <div className=""> 
+      <Section theme={"dark"} name="Other work" number="" classname="w-full my-20 md:mt-32 p-5 p-5 flex flex-col gap-20">
+                    <div className=" sm:px-20 md:px-0 md:columns-2 md:flex-row gap-10">
+                    <div className=""> 
           
           <Card title="Crashr" type="crashr" subtitle=" Streamlining the design process" tags="Visual Design • Design System"/>
           </div>
-          <div className=""> 
-          
-          <Card title="Chain Reactive" type="chainreactive" subtitle=" Simplyfing the ordering process" tags="UX design • Fullstack development"/>
-          </div>
 
-       </div>
-       </Section>
+                        <div className="mt-10 md:mt-0">
+
+                        <Card title="Chain Reactive" type="chainreactive" subtitle=" Simplyfing the ordering process" tags="UX design • Fullstack development"/>
+                        </div>
+
+
+                    </div>
+                </Section>
+            
       </PageSection>
 
     </DefaultPage>

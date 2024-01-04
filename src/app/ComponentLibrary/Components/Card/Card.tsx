@@ -22,7 +22,7 @@ interface Props extends
     CardProps,
     VariantProps<typeof cardStyles> { }
 const cardStyles = cva(
-    'rounded-2xl w-full h-3/6 overflow-hidden items-center justify-center rounded focus:outline-none focus:ring-2 focus:ring-offset-white dark:focus:ring-offset-black focus:ring-offset-1 disabled:opacity-60 disabled:pointer-events-none hover:bg-opacity-80',
+    'rounded-2xl md:w-full h-3/6 overflow-hidden items-center justify-center rounded focus:outline-none focus:ring-2 focus:ring-offset-white dark:focus:ring-offset-black focus:ring-offset-1 disabled:opacity-60 disabled:pointer-events-none hover:bg-opacity-80',
     {
         variants: {
             type: {

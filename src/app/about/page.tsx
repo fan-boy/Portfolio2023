@@ -30,7 +30,7 @@ export default function Home() {
               
             </div>
             <div className="w-full md:w-7/12 p-5">
-              <Section name="About me" number="01" theme="dark">
+              <Section name="About me" number="" theme="dark">
                 <div className="flex flex-col gap-10">
                   <div className="flex flex-col gap-2">
                     <Type variant="h2">
@@ -41,24 +41,29 @@ export default function Home() {
                     </Type>
                   </div>
                   <Type variant="emphasized-body">
-                    I am a Product Designer and Fullstack web developer based in Washington DC, USA.
+                  I am a Product Designer and Fullstack web developer based in Washington DC, USA.
                   </Type>
                   <Type variant="body">
-                  My professional journey spans diverse experiences, including shaping the visual identity at Crashr and delving into production-scale product design and development at Accenture. My time at Ingram Micro emphasized the importance of User Experience design, sparking my passion for understanding user behavior. Wearing dual hats as a User Experience designer and a full-stack web developer, I&#x27;m dedicated to creating exceptional digital experiences.
+                  My professional journey spans diverse experiences, including shaping the visual identity at Crashr and delving into production-scale product development at Accenture. My time at Ingram Micro emphasized the importance of User Experience design, sparking my passion for understanding user behavior. Wearing dual hats as a User Experience designer and a full-stack web developer, I&#x27;m dedicated to creating exceptional digital experiences.
                   </Type>
                   <Type variant="body">
-                  Beyond the screen, I find joy in running, experimenting in the kitchen, gaming, exploring new destinations, and staying updated on technological advancements. The mountains, with their breathtaking sunrises and sunsets, hold a special place in my heart.
+                  Beyond the screen, I find joy in running, experimenting in the kitchen, gaming, exploring new destinations, and staying updated on technological advancements. Currenly obsessed with film photography. The mountains, with their breathtaking sunrises and sunsets, hold a special place in my heart.
                   </Type>
                   <Type variant="body">
                   I believe in the power of design to address complex human challenges. Bridging the gap between design and development, I aspire to create visually appealing and functionally robust solutions. 
                   </Type>
                   <Type variant="body">
-                  Beyond pixels and code, I envision becoming a compassionate and approachable design leader and mentor, fostering creativity and innovation. For now, I&#x27;m thoroughly enjoying the journey of designing and developing cool things.
+                  Beyond pixels and code, I envision becoming a compassionate and approachable design leader and mentor, fostering creativity and innovation. 
                   </Type>
                 </div>
               </Section>
             </div>
 
+          </div>
+          <div className="w-full mt-40">
+          {/* <Section name="" number="" theme="dark">
+            
+          </Section> */}
           </div>
         </div>
       </PageSection>
