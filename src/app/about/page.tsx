@@ -10,6 +10,7 @@ import Me from '../../../public/assets/about/me.png';
 import { Type, Variants } from '../ComponentLibrary/Typography/Type'
 import Section from '../ComponentLibrary/commons/sections/section'
 
+
 export default function Home() {
   return (
     <DefaultPage selected="about">
@@ -60,11 +61,7 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="w-full mt-40">
-          {/* <Section name="" number="" theme="dark">
-            
-          </Section> */}
-          </div>
+         
         </div>
       </PageSection>
 
