@@ -23,7 +23,7 @@ const PasswordProtected = (props:PasswordProtectedProps) =>{
 
 
     const onClickButton = () =>{
-        if(value === "pass"){
+        if(value === `${process.env.CRASHR_PASSWORD}`){
             props.isCorrectPassordProvided();
         }else{
             setError(true);

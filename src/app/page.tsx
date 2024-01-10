@@ -1,10 +1,7 @@
-import Image from 'next/image'
 import React from 'react'
 import DefaultPage from './ComponentLibrary/commons/pages/DefaultPage'
 import PageSection from './ComponentLibrary/commons/pages/PageSection'
 import Card from './ComponentLibrary/Components/Card/Card'
-import Footer from './ComponentLibrary/Components/footer'
-import Navbar from './ComponentLibrary/Components/Navbar'
 import BouncingArrow from './ComponentLibrary/Specials/BouncingArrow'
 import { Type, Variants } from './ComponentLibrary/Typography/Type'
 
@@ -29,7 +26,7 @@ export default function Home() {
                 <Type variant={"h3"}> A product designer </Type>
               </span>
               <span className="font-serif text-2xl">
-                
+
                 <Type variant={"h3"}> who codes </Type>
               </span>
             </div>
