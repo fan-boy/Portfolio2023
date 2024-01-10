@@ -1,5 +1,4 @@
 import { propagateServerField } from "next/dist/server/lib/render-server";
-import Head from "next/head";
 import Script from "next/script";
 import React from "react";
 import Footer from "../../Components/footer";
@@ -19,7 +18,7 @@ export default function DefaultPage({
 }) {
   return (
     <>
-      <Head>
+      
         <Script
           strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -35,7 +34,7 @@ export default function DefaultPage({
                     });
                 `}
         </Script>
-      </Head>
+     
       <main className={`flex flex-col "`}>
 
         <Navbar selected={selected} />
