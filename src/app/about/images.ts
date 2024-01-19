@@ -21,7 +21,7 @@ const photosArray = [
   { id: "15", width: 1080, height: 1620 },
   { id: "16", width: 1080, height: 810 },
   { id: "17", width: 1080, height: 610 },
-  { id: "18", width: 1080, height: 160 },
+  { id: "18", width: 1080, height: 810 },
   { id: "19", width: 1080, height: 810 },
   { id: "20", width: 1080, height: 720 },
   { id: "21", width: 2080, height: 1440 },

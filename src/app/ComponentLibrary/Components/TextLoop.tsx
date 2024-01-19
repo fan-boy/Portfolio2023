@@ -19,7 +19,7 @@ const TextLoop = () => {
 
   return (
     <h1>
-      <TextTransition springConfig={presets.wobbly}><Type variant={"h3"}> {TEXTS[index % TEXTS.length]} </Type></TextTransition>
+      <TextTransition springConfig={presets.wobbly} inline><Type variant={"h3"}> {TEXTS[index % TEXTS.length]} </Type></TextTransition>
     </h1>
   );
 };

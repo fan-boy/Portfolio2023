@@ -1,4 +1,5 @@
 import { propagateServerField } from "next/dist/server/lib/render-server";
+import { ButtonOrLink } from "./Button/LinkOrButton";
 import { NavbarButton } from "./Button/NavbarButton"
 
 
@@ -11,14 +12,14 @@ const Navbar = (props:NavbarProps) =>{
     return(
         <div className="w-full bg-[#E7E7E7] p-2   items-center sm:grid sm:grid-cols-3 ">
 
-            <span className="hidden sm:block font-sans text-fontLight ml-4">
+            <ButtonOrLink className="hidden sm:block font-sans text-fontLight ml-4" href="/">
             <span>
                 Aaditya Shete
             </span>
             <span className="font-thin ml-2">
                 Portfolio
             </span>
-            </span>
+            </ButtonOrLink>
 
             <div className=" flex items-center justify-center">
 
