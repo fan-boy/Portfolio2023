@@ -9,6 +9,7 @@ import BouncingArrow from '../ComponentLibrary/Specials/BouncingArrow'
 import Me from '../../../public/assets/about/me.png';
 import { Type, Variants } from '../ComponentLibrary/Typography/Type'
 import Section from '../ComponentLibrary/commons/sections/section'
+import Gallery from './photoalbum'
 
 
 export default function Home() {
@@ -61,9 +62,18 @@ export default function Home() {
             </div>
 
           </div>
-         
+          <Section name="Some of my 35mm Film Picture" number="" theme="dark">
+
+          </Section>
         </div>
       </PageSection>
+      <PageSection theme="dark" isFullWidth>
+                {/* Hero Section */}
+                <div className="w-full ">
+                
+                    <Gallery/>
+                </div>
+            </PageSection>
 
     </DefaultPage>
   )

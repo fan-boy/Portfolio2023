@@ -2,8 +2,10 @@ import React from 'react'
 import DefaultPage from './ComponentLibrary/commons/pages/DefaultPage'
 import PageSection from './ComponentLibrary/commons/pages/PageSection'
 import Card from './ComponentLibrary/Components/Card/Card'
+import TextLoop from './ComponentLibrary/Components/TextLoop'
 import BouncingArrow from './ComponentLibrary/Specials/BouncingArrow'
 import { Type, Variants } from './ComponentLibrary/Typography/Type'
+
 
 export default function Home() {
   return (
@@ -21,13 +23,12 @@ export default function Home() {
                 </Type>
               </span>
             </div>
-            <div className="flex mt-9 flex-col text-center md:text-left md:min-w-1/2">
+            <div className="flex mt-9 flex-col text-center md:text-left md:min-w-1/2 w-full">
               <span>
                 <Type variant={"h3"}> A product designer </Type>
               </span>
-              <span className="font-serif text-2xl">
-
-                <Type variant={"h3"}> who codes </Type>
+              <span className="w-full">
+                <TextLoop /> 
               </span>
             </div>
           </div>
@@ -83,6 +84,9 @@ export default function Home() {
 
         </div>
       </PageSection>
+
+
+    
 
     </DefaultPage>
   )

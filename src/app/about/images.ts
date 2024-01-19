@@ -1,83 +1,46 @@
-export const photos = [
-    {
-      src: "assets/about/pictures/img20231011_17042269.jpg",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "assets/about/pictures/img20231011_17080961.jpg",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "assets/about/pictures/img20231011_17265400.jpg",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "assets/about/pictures/img20231011_17363291.jpg",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "assets/about/pictures/img20231011_17371715.jpg",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/XiDA78wAZVw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/x8xJpClTvR0/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/qGQNmBE7mYw/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/NuO6iTBkHxE/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/pF1ug8ysTtY/600x400",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/A-fubu9QJxE/800x533",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/5P91SF0zNsI/740x494",
-      width: 4,
-      height: 3
-    }
-  ];
-  
+const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
+
+const link = (id: string) =>
+  `/assets/about/pictures/${id}.jpg`;
+
+const photosArray = [
+  { id: "1", width: 1080, height: 800 },
+  { id: "2", width: 1080, height: 1620 },
+  { id: "3", width: 1080, height: 720 },
+  { id: "4", width: 1080, height: 721 },
+  { id: "5", width: 1080, height: 1620 },
+  { id: "6", width: 1080, height: 607 },
+  { id: "7", width: 1080, height: 608 },
+  { id: "8", width: 1080, height: 720 },
+  { id: "9", width: 1080, height: 1549 },
+  { id: "10", width: 1080, height: 720 },
+  { id: "11", width: 1080, height: 694 },
+  { id: "12", width: 1080, height: 1620 },
+  { id: "13", width: 1080, height: 720 },
+  { id: "14", width: 1080, height: 1440 },
+  { id: "15", width: 1080, height: 1620 },
+  { id: "16", width: 1080, height: 810 },
+  { id: "17", width: 1080, height: 610 },
+  { id: "18", width: 1080, height: 160 },
+  { id: "19", width: 1080, height: 810 },
+  { id: "20", width: 1080, height: 720 },
+  { id: "21", width: 2080, height: 1440 },
+  { id: "22", width: 1080, height: 1440 },
+  { id: "23", width: 1080, height: 1440 },
+];
+
+const photos = photosArray.map((photo) => ({
+  src: link(photo.id),
+  width: photo.width,
+  height: photo.height,
+  srcSet: breakpoints.map((breakpoint) => {
+    const height = Math.round((photo.height / photo.width) * breakpoint);
+    return {
+      src: link(photo.id),
+      width: breakpoint,
+      height,
+    };
+  }),
+}));
+
+export default photos;
