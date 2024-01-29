@@ -71,7 +71,7 @@ export default function Home() {
         <div className="w-full sm:px-40 md:px-0 md:columns-2 md:flex-row pt-40 gap-10">
           <div className="-mt-40">
 
-            <Card title="Crashr" isLocked type="crashr" subtitle=" Streamlining the design process" tags="Visual design • Design System" />
+            <Card title="Crashr" type="crashr" subtitle=" Streamlining the design process" tags="Visual design • Design System" />
           </div>
           <div className="mt-10">
 
