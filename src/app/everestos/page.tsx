@@ -220,9 +220,9 @@ export default function ChainReactive() {
               <ListItem number="1970s - 1980s" >
                 The first graphical user interfaces (GUIs) emerged.<br /><br />
 
-                Apple's Lisa (1983) and Macintosh (1984) introduced the desktop metaphor with icons and a mouse.<br /><br />
+                Apple&#39;s Lisa (1983) and Macintosh (1984) introduced the desktop metaphor with icons and a mouse.<br /><br />
 
-                Microsoft's Windows 1.0 (1985) had a simple GUI, but it was not widely adopted.
+                Microsoft&#39;s Windows 1.0 (1985) had a simple GUI, but it was not widely adopted.
               </ListItem>
               <ListItem number="1980s - 1990s" >
                 Macintosh System Software evolved with each release, refining the visual design.<br /><br />
@@ -246,7 +246,7 @@ export default function ChainReactive() {
 
                 Windows 10 (2015) combined elements of Windows 7 and 8 for a more cohesive look.<br /><br />
 
-                macOS continued with visual updates like Mojave's Dark Mode (2018).<br /><br />
+                macOS continued with visual updates like Mojave&#39;s Dark Mode (2018).<br /><br />
 
                 Mobile OSes continued to evolve with iOS, Android, and the introduction of gesture-based navigation.<br /><br />
 
