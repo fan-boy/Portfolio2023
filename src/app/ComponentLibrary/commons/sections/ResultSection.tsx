@@ -5,6 +5,7 @@ import Section from "./section";
 
 interface SectionProps{
     children:React.ReactNode;
+    number:string
 }
 
 const ResultSection = (props:SectionProps) =>{
@@ -12,7 +13,7 @@ const ResultSection = (props:SectionProps) =>{
     return(
         <div className = "w-full my-20 p-5 flex flex-col gap-20">
        
-       <Section theme="dark" name="Results" number = "08" >
+       <Section theme="dark" name="Results" number = {props.number} >
           {props.children}
         </Section>
        

@@ -296,7 +296,7 @@ export default function ChainReactive() {
         </ProcessSection>
       </PageSection>
       <PageSection theme="dark">
-        <ResultSection>
+        <ResultSection number="08">
 
           <div className="md:w-2/3">
             <Type variant="body">

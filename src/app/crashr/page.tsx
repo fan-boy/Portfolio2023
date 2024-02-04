@@ -418,7 +418,7 @@ export default function Crashr() {
                 }
             </AnimatePresence>
             <PageSection theme="dark">
-                <ResultSection>
+                <ResultSection number="08">
                     <Type variant="emphasized-body">
                         Balancing brand <span className="italic font-serif font-normal">identity</span> with design <span className="italic font-serif font-normal">consistency</span>
                     </Type>

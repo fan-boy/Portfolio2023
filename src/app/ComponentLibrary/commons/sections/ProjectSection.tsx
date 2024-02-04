@@ -40,6 +40,13 @@ ProjectSection.SecondPara = (props: ProjectSectionProps) => (
                   </Type>
                 </div>
 )
+ProjectSection.ThirdPara = (props: ProjectSectionProps) => (
+  <div className="mt-8 md:mt-10 md:pr-20">
+  <Type variant="body">
+     {props.children} 
+  </Type>
+</div>
+)
 
 
 ProjectSection.displayName = 'ProjectSection';

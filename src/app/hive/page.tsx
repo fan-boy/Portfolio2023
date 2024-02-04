@@ -542,7 +542,7 @@ export default function Hive() {
         </ProcessSection>
       </PageSection>
       <PageSection theme="dark">
-        <ResultSection>
+        <ResultSection number="09">
         <Type variant="emphasized-body">
               Building <span className="italic font-serif font-normal">trust</span> and ensuring a <span className="italic font-serif font-normal">safe return to work</span> environment
             </Type>

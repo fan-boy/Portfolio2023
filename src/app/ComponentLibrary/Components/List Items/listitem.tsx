@@ -2,7 +2,7 @@ import React from "react";
 import { Type } from "../../Typography/Type";
 
 interface ListItemProps {
-    number: string,
+    number?: string,
     children?:React.ReactNode,
     name?: string,
 }
@@ -12,7 +12,7 @@ const ListItem = (props: ListItemProps) => {
     return (
         <div>
             <div >
-                      <Type variant="emphasized-body" className="font-semibold">{props.number}</Type>
+                      {props.number && <Type variant="emphasized-body" className="font-semibold">{props.number}</Type>}
                       {props.name && <Type variant="h4">{props.name}</Type>}
                     </div>
                    {props.children && <div className="mt-2">
