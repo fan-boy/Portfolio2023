@@ -62,7 +62,7 @@ export default function Home() {
             </div>
 
           </div>
-          <Section name="Some of my 35mm Film Pictures" number="" theme="dark">
+          <Section name="Some of my 35mm Film Pictures" number="" theme="dark" classname="mt-20">
 
           </Section>
         </div>

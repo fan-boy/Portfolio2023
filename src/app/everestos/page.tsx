@@ -25,7 +25,7 @@ import { Button } from '../ComponentLibrary/Components/Button/Button'
 
 
 
-export default function ChainReactive() {
+export default function EverestOS() {
   return (
     <DefaultPage selected="work">
       <PageSection theme="dark" isFullWidth>

@@ -29,10 +29,14 @@ const config: Config = {
         'chainReactiveCard':"url('/assets/home/ChainReactive/ChainreactiveLLCbackground.png')",
         'crashrCard':"url('/assets/home/crashr/Crashrbackground.png')",
         'hiveCard':"url('/assets/home/hive/hivebackground.png')",
+        'everestosCard':"url('/assets/home/everestos/everestosbackground.png')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      scale: {
+        '102': '1.02',
+      }
     },
   },
   plugins: [],

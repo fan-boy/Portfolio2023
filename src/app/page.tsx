@@ -28,7 +28,7 @@ export default function Home() {
                 <Type variant={"h3"}> A product designer </Type>
               </span>
               <span className="w-full">
-                <TextLoop /> 
+                <TextLoop />
               </span>
             </div>
           </div>
@@ -81,12 +81,16 @@ export default function Home() {
 
             <Card title="Chain Reactive" type="chainreactive" subtitle=" Simplyfing the ordering process" tags="UX design • Fullstack development" />
           </div>
+          <div className="mt-10">
+
+            <Card title="Everest OS" type="everestos" subtitle=" Simplyfing the ordering process" tags="UX design • Fullstack development" />
+          </div>
 
         </div>
       </PageSection>
 
 
-    
+
 
     </DefaultPage>
   )

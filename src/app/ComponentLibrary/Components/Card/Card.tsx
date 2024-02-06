@@ -7,6 +7,7 @@ import { Type } from '../../Typography/Type';
 import ChainReactive from 'public/assets/home/ChainReactive/ChainreactiveImage.png'
 import Crashr from 'public/assets/home/crashr/CrashrImage.png'
 import Hive from 'public/assets/home/hive/hiveimage.png'
+import EverestOS from 'public/assets/home/everestos/everestosCard.png'
 import React from 'react';
 import Link from 'next/link';
 
@@ -22,7 +23,7 @@ interface Props extends
     CardProps,
     VariantProps<typeof cardStyles> { }
 const cardStyles = cva(
-    'rounded-2xl md:w-full h-3/6 overflow-hidden items-center justify-center rounded focus:outline-none focus:ring-2 focus:ring-offset-white dark:focus:ring-offset-black focus:ring-offset-1 disabled:opacity-60 disabled:pointer-events-none hover:bg-opacity-80',
+    'rounded-2xl md:w-full group h-3/6 overflow-hidden items-center justify-center rounded focus:outline-none focus:ring-2 focus:ring-offset-white dark:focus:ring-offset-black focus:ring-offset-1 disabled:opacity-60 disabled:pointer-events-none hover:bg-opacity-80 ',
     {
         variants: {
             type: {
@@ -30,7 +31,7 @@ const cardStyles = cva(
                 chainreactive:
                     'bg-chainReactiveCard',
                 hive: 'bg-hiveCard text-white focus:ring-red-500',
-                everestos:''
+                everestos:'bg-everestosCard'
             },
             
         },
@@ -57,6 +58,10 @@ const Card = ({ type, ...props }: Props) => {
         case "Hive":
             image = Hive;
             link = "/hive"
+            break;
+        case "Everest OS":
+            image = EverestOS;
+            link = "/everestos"
             break;
         default:
             image= Crashr;
@@ -105,7 +110,7 @@ const Card = ({ type, ...props }: Props) => {
                             {props.tags}
                         </Type>
                     </div>
-                    <div className="ml-10">
+                    <div className="ml-10 group-hover:scale-102 transform transition duration-y">
                     <Image src={image}  alt={props.title} />
                     </div>    
                 </div>
