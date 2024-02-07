@@ -54,8 +54,14 @@ const quicksand = localFont({
 
 export const metadata: Metadata = {
   title: 'Aaditya Shete',
-  description: 'A collection of my works',
+  description: 'Aaditya Shete | Product Designer and Design advocate working towards bridging the gap between the intent and impact of a product.',
+  openGraph:{
+    title:'Aaditya Shete',
+    description:'Aaditya Shete | Product Designer and Design advocate working towards bridging the gap between the intent and impact of a product.'
+  }
 }
+
+
 
 export default function RootLayout({
   children,
