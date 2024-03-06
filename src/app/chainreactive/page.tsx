@@ -25,7 +25,8 @@ import BusinessOwnerHappy from '../../../public/assets/chainreactive/BusinessOwn
 import CustomerHappy from '../../../public/assets/chainreactive/CustomerHappy.png'
 import BothHappy from '../../../public/assets/chainreactive/BothHappy.png'
 import React from 'react'
-import Card from '../ComponentLibrary/Components/Card/Card'
+import {Card, varianttype} from '../ComponentLibrary/Components/Card/Card'
+import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork'
 
 
 
@@ -329,23 +330,7 @@ export default function ChainReactive() {
 
       </PageSection>
       <PageSection theme="dark"  >
-        <Section theme={"dark"} name="Other work" number="" classname="w-full my-20 md:mt-32 p-5 p-5 flex flex-col gap-20">
-          <div className=" sm:px-20 md:px-0 md:columns-2 md:flex-row gap-10">
-            <div className="">
-
-              <Card title="Crashr" type="crashr" subtitle=" Streamlining the design process" tags="Visual Design • Design System" />
-            </div>
-
-            <div className="mt-10 md:mt-0">
-
-              <Card title="Hive" type="hive" subtitle=" Enabling a safe return to work" tags="Service design • Web design" />
-            </div>
-
-
-          </div>
-        </Section>
-
-
+        <OtherWork currentProject={"chainreactive"}/>
       </PageSection>
 
     </DefaultPage>

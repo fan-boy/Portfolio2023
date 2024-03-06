@@ -1,13 +1,16 @@
 import React from 'react'
 import DefaultPage from './ComponentLibrary/commons/pages/DefaultPage'
 import PageSection from './ComponentLibrary/commons/pages/PageSection'
-import Card from './ComponentLibrary/Components/Card/Card'
+import {Card, varianttype} from './ComponentLibrary/Components/Card/Card'
 import TextLoop from './ComponentLibrary/Components/TextLoop'
 import BouncingArrow from './ComponentLibrary/Specials/BouncingArrow'
 import { Type, Variants } from './ComponentLibrary/Typography/Type'
+import projectlist from './projectlist.json';
 
 
 export default function Home() {
+
+  
   return (
     <DefaultPage selected="work">
       <PageSection theme="dark">
@@ -56,10 +59,10 @@ export default function Home() {
           </div>
           <div className="w-full text-center md:text-left mt-10 md:mt-28 md:flex md:flex-row-reverse">
             <div className="flex flex-row gap-5">
-              <Type variant="emphasized-body">
+              {/* <Type variant="emphasized-body">
                 Selected Work
               </Type>
-              <BouncingArrow />
+              <BouncingArrow /> */}
             </div>
           </div>
         </div>
@@ -71,19 +74,19 @@ export default function Home() {
         <div className="w-full sm:px-40 md:px-0 md:columns-2 md:flex-row pt-40 gap-10">
           <div className="-mt-40">
 
-            <Card title="Crashr" type="crashr" subtitle=" Streamlining the design process" tags="Visual design • Design System" />
+            <Card title={projectlist[0].projectName} type={projectlist[0].type as varianttype} subtitle={projectlist[0].subtitle} tags={projectlist[0].tags} />
           </div>
           <div className="mt-10">
 
-            <Card title="Hive" type="hive" subtitle=" Enabling a safe return to work" tags="Service design • Web design" />
+          <Card title={projectlist[2].projectName} type={projectlist[2].type as varianttype} subtitle={projectlist[2].subtitle} tags={projectlist[2].tags} />
           </div>
           <div className="mt-10">
 
-            <Card title="Chain Reactive" type="chainreactive" subtitle=" Simplyfing the ordering process" tags="UX design • Fullstack development" />
+          <Card title={projectlist[1].projectName} type={projectlist[1].type as varianttype} subtitle={projectlist[1].subtitle} tags={projectlist[1].tags} />
           </div>
           <div className="mt-10">
 
-            <Card title="Everest OS" type="everestos" subtitle=" Simplyfing the ordering process" tags="UX design • Fullstack development" />
+          <Card title={projectlist[3].projectName} type={projectlist[3].type as varianttype} subtitle={projectlist[3].subtitle} tags={projectlist[3].tags} />
           </div>
 
         </div>

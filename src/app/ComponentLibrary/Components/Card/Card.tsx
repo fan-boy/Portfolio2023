@@ -12,12 +12,16 @@ import React from 'react';
 import Link from 'next/link';
 
 
-interface CardProps {
+
+
+export interface CardProps {
     title: string,
     subtitle:string,
     tags:string,
     isLocked?:boolean
 }
+
+export type varianttype = "crashr" | "chainreactive" | "hive" | "everestos" | null | undefined;
 
 interface Props extends
     CardProps,
@@ -42,7 +46,7 @@ const cardStyles = cva(
 );
 
 
-const Card = ({ type, ...props }: Props) => {
+export const Card = ({ type, ...props }: Props) => {
     let image = Crashr;
     let link = "/";
 
@@ -121,4 +125,3 @@ const Card = ({ type, ...props }: Props) => {
 
 }
 
-export default Card;

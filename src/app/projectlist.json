@@ -1,0 +1,30 @@
+[
+    
+    {
+        "projectName":"Crashr",
+        "type":"crashr",
+        "subtitle":" Streamlining the design process",
+        "tags":"Visual design • Design System"
+    },
+    {
+        "projectName":"Chain Reactive",
+        "type":"chainreactive",
+        "subtitle":" Simplyfing the ordering process",
+        "tags":"UX design • Fullstack development"
+
+    },
+    {
+        "projectName":"Hive",
+        "type":"hive",
+        "subtitle":" Enabling a safe return to work",
+        "tags":"Service design • Web design"
+
+    },
+    {
+        "projectName":"Everest OS",
+        "type":"everestos",
+        "subtitle":" Reimagining operating systems",
+        "tags":"Visual design • Passion Project"
+
+    }
+]
