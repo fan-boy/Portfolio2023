@@ -1,9 +1,3 @@
-'use client';
-
-
-import Slider from "react-slick";
-import Image from 'next/image'
-
 
 import SlideOne from '../../../public/assets/crashr/Components/1.png'
 import SlideTwo from '../../../public/assets/crashr/Components/2.png'
@@ -22,13 +16,9 @@ import SlideTwelve from '../../../public/assets/crashr/Components/12.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useState } from "react";
-import CustomDot from "./CustomDots/CustomDots";
+import DisplaySlider from "../ComponentLibrary/Components/DisplaySlider";
 
 const ComponentsDisplaySlider = () => {
-
-    const [selectedIndex,setSelectedIndex] = useState(0);
-
-    const [hasUserClicked,setHasUserClicked] = useState(false);
 
     let imageArray =
         [
@@ -82,50 +72,11 @@ const ComponentsDisplaySlider = () => {
             }
         ]
 
-
-        const userClick = () =>{
-            setHasUserClicked(true);
-        }
-
-    var settings = {
-
-        dots: true,
-
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows:false,
-        accessibility:true,
-        autoplay:!hasUserClicked,
-        autoplaySpeed:3000,
-        dotsClass: "!grid grid-cols-6 flex justify-center",
-        customPaging: function (i: number) {
-            return (
-                <div >
-                    
-                    
-                    <Image className={` ${selectedIndex === i?"border border-2 border-slate-500 p-1":" opacity-50 p-2"} cursor-pointer`} onClick={userClick} src={imageArray[i].imageSrc} alt={`Dot ${i}`} />
-                    
-                    
-                </div>
-            );
-        },
-        beforeChange: (oldIndex:number, newIndex:number) => {
-            setSelectedIndex(newIndex);
-        }
-
-      
-      };
+    
 
 return (
 
-    <Slider {...settings}>
-        {imageArray && imageArray.map((image, index) => (
-            <div key={index} >
-                <Image src={image.imageSrc} alt={image.altText} />
-            </div>
-        ))}
-    </Slider>
+    <DisplaySlider imageArray={imageArray}/>
 
 )
 

@@ -45,7 +45,7 @@ export default function Home() {
                   My professional journey spans diverse experiences, including shaping the visual identity at Crashr and delving into production-scale product development at Accenture. My time at Ingram Micro emphasized the importance of User Experience design, sparking my passion for understanding user behavior. Wearing dual hats as a User Experience designer and a full-stack web developer, I&#x27;m dedicated to creating exceptional digital experiences.
                   </Type>
                   <Type variant="body">
-                  Beyond the screen, I find joy in running, experimenting in the kitchen, gaming, exploring new destinations, and staying updated on technological advancements. Currenly obsessed with film photography. The mountains, with their breathtaking sunrises and sunsets, hold a special place in my heart.
+                  Beyond the screen, I find joy in running, experimenting in the kitchen, gaming, exploring new destinations, and staying updated on technological advancements. Currently obsessed with film photography. The mountains, with their breathtaking sunrises and sunsets, hold a special place in my heart.
                   </Type>
                   <Type variant="body">
                   I believe in the power of design to address complex human challenges. Bridging the gap between design and development, I aspire to create visually appealing and functionally robust solutions. 

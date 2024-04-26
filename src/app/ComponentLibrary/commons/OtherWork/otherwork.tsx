@@ -23,7 +23,7 @@ const OtherWork = (props: OtherWorkProps) => {
 
         if (currentIndex <= projectlist.length - 1) {
             cards.push(
-                <div className="">
+                <div className="" key={currentIndex}>
 
                     <Card title={projectlist[currentIndex].projectName}
                         type={projectlist[currentIndex].type as varianttype}
@@ -34,7 +34,7 @@ const OtherWork = (props: OtherWorkProps) => {
             )
             if (currentIndex + 1 <= projectlist.length -1 ) {
                 cards.push(
-                    <div className="mt-10 md:mt-0">
+                    <div className="mt-10 md:mt-0" key={currentIndex}>
 
                         <Card title={projectlist[currentIndex + 1].projectName}
                             type={projectlist[currentIndex + 1].type as varianttype}
@@ -45,7 +45,7 @@ const OtherWork = (props: OtherWorkProps) => {
                 )
             } else {
                 cards.push(
-                    <div className="mt-10 md:mt-0">
+                    <div className="mt-10 md:mt-0" key={currentIndex}>
 
                         <Card title={projectlist[0].projectName}
                             type={projectlist[0].type as varianttype}

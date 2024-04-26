@@ -16,6 +16,7 @@ import Link from 'next/link';
 
 export interface CardProps {
     title: string,
+    jobtype?:string,
     subtitle:string,
     tags:string,
     isLocked?:boolean
@@ -55,7 +56,7 @@ export const Card = ({ type, ...props }: Props) => {
             image = Crashr;
             link = "/crashr"
             break;
-        case "Chain Reactive":
+        case "Chain Reactive LLC":
             image = ChainReactive;
             link = "/chainreactive"
             break;
@@ -94,9 +95,12 @@ export const Card = ({ type, ...props }: Props) => {
                     <div className="w-full flex flex-col gap-16 pl-10 py-10">
                         <div className="w-full flex flex-col justify-between ">
                             <div className="w-full flex flex-row justify-between">
-                            <div className="w-4/6">
-                            <Type variant="h3">
+                            <div className="">
+                            <Type variant="h2">
                                 {props.title}
+                            </Type>
+                            <Type variant="h5">
+                                {props.jobtype}
                             </Type>
                             </div>
                             {props.isLocked &&
@@ -106,9 +110,11 @@ export const Card = ({ type, ...props }: Props) => {
                             </div>
                             }
                             </div>
+                            <div className="w-5/6 mt-5">
                             <Type variant="h5">
                                {props.subtitle}
                             </Type>
+                            </div>
                         </div>
                         <Type variant="h5">
                             {props.tags}
