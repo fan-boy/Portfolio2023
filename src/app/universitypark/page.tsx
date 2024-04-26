@@ -368,7 +368,7 @@ export default function Crashr() {
                             </div>
                             <div className="flex relative flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
                                 <ListItem number="01" name="Gamification">
-                                    We wanted to use the "leveling up" dopamine trigger to motivate users to be more sustainable. Residents could earn cool badges and show them off on their Profile
+                                    We wanted to use the &quot;leveling up&quot; dopamine trigger to motivate users to be more sustainable. Residents could earn cool badges and show them off on their Profile
                                 </ListItem>
 
 
@@ -436,9 +436,7 @@ export default function Crashr() {
                                 </Type>
                             </div>
                             <div className="flex relative flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
-                                <ListItem number="01" name="Gamification">
-                                    We wanted to use the "leveling up" dopamine trigger to motivate users to be more sustainable. Residents could earn cool badges and show them off on their Profile
-                                </ListItem>
+                                
 
 
                                 <ListItem number="02" name="Physical Rewards">
@@ -481,12 +479,11 @@ export default function Crashr() {
                             
                             <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
                                 <ListItem number="01" name="Unclear motive of the application">
-                                    There was no clear explanation of the motive behind tha application and how user's could earn points and progress.
+                                    There was no clear explanation of the motive behind tha application and how user&apos;s could earn points and progress.
                                 </ListItem>
 
-
                                 <ListItem number="02" name="Practices IA was not clear">
-                                    There was a lot of confusion between "Habitat and Biodiversity" and "Garden Management"
+                                    There was a lot of confusion between &quot;Habitat and Biodiversity&quot; and &quot;Garden Management&quot;
                                 </ListItem>
 
                                 <ListItem number="03" name="Profile Page could be better organized">
@@ -527,15 +524,7 @@ export default function Crashr() {
                             </div>
                             
                             <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
-                                <ListItem number="01" name="Unclear motive of the application">
-                                    There was no clear explanation of the motive behind tha application and how user's could earn points and progress.
-                                </ListItem>
-
-
-                                <ListItem number="02" name="Practices IA was not clear">
-                                    There was a lot of confusion between "Habitat and Biodiversity" and "Garden Management"
-                                </ListItem>
-
+                                
                                 <ListItem number="03" name="Profile Page could be better organized">
                                     Profile page could be better organized to show the current progress of the user towards ongoing practices, and badges. 
                                 </ListItem>
@@ -594,7 +583,7 @@ export default function Crashr() {
                             Balancing gamification with education and community aspects was key. While gamification drove engagement, too much made it seem gimmicky. Finding the right balance celebrated achievements while emphasizing environmental impact.
                             </ListItem>
                             <ListItem number="02" name="Clarity in Communication and User Experiences">
-                            User testing revealed confusion about the app's purpose and how users could earn points and rewards. To address this, clear explanations through improved onboarding and in-app messaging are essential for better user understanding and engagement.
+                            User testing revealed confusion about the app&apos;s purpose and how users could earn points and rewards. To address this, clear explanations through improved onboarding and in-app messaging are essential for better user understanding and engagement.
                             </ListItem>
 
                         </div>
