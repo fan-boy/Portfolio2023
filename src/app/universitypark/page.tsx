@@ -26,7 +26,7 @@ import CardSort from '../../../public/assets/universitypark/CardSort.png';
 import OnlineCardSort from '../../../public/assets/universitypark/OnlineCardSort.png';
 import adminHomePage from '../../../public/assets/universitypark/adminHomePage.jpg'
 import adminEditPractice from '../../../public/assets/universitypark/adminEditPractice.png';
-import adminEditChallenge from '../../../public/assets/universitypark/adminEditCHallenge.png';
+import adminEditChallenge from '../../../public/assets/universitypark/adminEditChallenge.png';
 
 
 
