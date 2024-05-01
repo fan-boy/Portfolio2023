@@ -511,7 +511,7 @@ export default function Crashr() {
                             </div>
                             <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
                                 <ListItem number="01" name="">
-                                    Added an "Our Mission" section on the home page and an elaborate onboarding flow.
+                                    Added an &quot;Our Mission&quot; section on the home page and an elaborate onboarding flow.
                                 </ListItem>
 
                                 <ListItem number="02" name="">
