@@ -15,11 +15,18 @@ import ResultSection from '../ComponentLibrary/commons/sections/ResultSection'
 
 
 
-import HeroImage from '../../../public/assets/crashr/hero.png';
+import HeroImage from '../../../public/assets/universitypark/hero.png';
+import Resident from '../../../public/assets/universitypark/Resident.png';
+import GreenTeam from '../../../public/assets/universitypark/GreenTeam.png';
 import CrazyEights from '../../../public/assets/universitypark/CrazyEights.png';
+import Points from '../../../public/assets/universitypark/points.png';
+import Badges from '../../../public/assets/universitypark/Badges.png';
 import MidFi from '../../../public/assets/universitypark/MidFi.png';
 import CardSort from '../../../public/assets/universitypark/CardSort.png';
 import OnlineCardSort from '../../../public/assets/universitypark/OnlineCardSort.png';
+import adminHomePage from '../../../public/assets/universitypark/adminHomePage.jpg'
+import adminEditPractice from '../../../public/assets/universitypark/adminEditPractice.png';
+import adminEditChallenge from '../../../public/assets/universitypark/adminEditCHallenge.png';
 
 
 
@@ -127,6 +134,43 @@ export default function Crashr() {
 
                                 </OverviewSection.Outcome>
                             </div>
+                            <OverviewSection.Solution>
+                                <div className="flex flex-col gap-y-20">
+                                    <div className="flex flex-col md:flex-row md:gap-x-20"   >
+                                        <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                                            <source src="./assets/universitypark/OnboardingFlow.mp4" type="video/mp4" />
+                                        </video>
+
+                                        <div className="w-full md:w-1/3 flex justify-center items-center">
+                                            <Type variant="h5" fontType="font-serif"> Resident User Onboarding</Type>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="w-full flex flex-col md:flex-row md:gap-x-20">
+                                        <div className="w-full md:w-1/3 flex justify-center items-center">
+                                            <Type variant="h5" fontType="font-serif"> Completing a Practice and Gamification</Type>
+                                        </div>
+
+                                        <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                                            <source src="./assets/universitypark/Practice Gamification Flow.mp4" type="video/mp4" />
+                                        </video>
+
+                                    </div>
+
+
+                                    <div className="flex flex-col md:flex-row md:gap-x-20"   >
+                                        <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                                            <source src="./assets/universitypark/Create a post in the community.mp4" type="video/mp4" />
+                                        </video>
+
+                                        <div className="w-full md:w-1/3 flex justify-center items-center">
+                                            <Type variant="h5" fontType="font-serif"> Making a post on the community forum</Type>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </OverviewSection.Solution>
                         </OverviewSection>
 
                     </div>
@@ -194,7 +238,6 @@ export default function Crashr() {
 
                     <Section theme={"light"} name="Understanding Users" number="05">
 
-
                         <div className="w-full flex flex-col mt-12 gap-20">
                             <div className="flex flex-col md:flex-row">
                                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
@@ -206,44 +249,28 @@ export default function Crashr() {
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
-                                    <div className="w-5/6">
-                                        {/* <Image className="w-1/2" src={} alt="Hungry Customers" /> */}
+                                    <div className="w-2/3">
+                                        <Image className="w-1/2"  src={Resident} alt="Residents of University Park" />
                                     </div>
                                 </div>
 
                             </div>
                             <div className="flex flex-col md:flex-row">
-                                <div className="w-full md:w-1/2 flex flex-col items-end justify-start">
-                                    <div className="w-5/6 ">
-                                        {/* <Image className="w-1/2" src={BusinessOwnerMoney} alt="Business Owner" /> */}
+                                <div className="w-full md:w-1/2 flex flex-col items-end justify-center">
+                                    <div className="w-2/3 ">
+                                        <Image className="w-1/2" src={GreenTeam} alt="Green Team" />
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
                                     <div className="w-5/6">
 
                                         <ListItem number="02" name="Green Team">
-                                            The Green Team or the Sustainability team of University Park. They are responsible for overseeing the implementation of sustainable practices in University Park. They use the platform to collect data, analyze sustainability metrics, and make informed decisions
+                                            The Green Team or the Sustainability team of University Park. They are responsible for overseeing the implementation of sustainable practices in University Park. They use the platform to collect data, analyze sustainability metrics, and make informed decisions. They will also update and make changes to the portal
                                         </ListItem>
 
                                     </div>
                                 </div>
 
-
-                            </div>
-                            <div className="flex flex-col md:flex-row">
-                                <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
-                                    <div className="w-5/6">
-                                        <ListItem number="03" name="Admin">
-                                            They would interact with the system to edit the contents. Add new practices and events to the platform and ensuring that the content on the platform is accurate.
-                                        </ListItem>
-
-                                    </div>
-                                </div>
-                                <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
-                                    <div className="w-5/6">
-                                        {/* <Image className="w-1/2" src={} alt="Hungry Customers" /> */}
-                                    </div>
-                                </div>
 
                             </div>
 
@@ -301,7 +328,7 @@ export default function Crashr() {
                                 </Type>
                             </div>
                             <div className="flex ">
-                            <Image src={CrazyEights} className='' alt="Crashr Primary Logo" />
+                                <Image src={CrazyEights} className='' alt="Crashr Primary Logo" />
 
                             </div>
                         </div>
@@ -318,7 +345,7 @@ export default function Crashr() {
                                 </Type>
                             </div>
                             <div className="flex ">
-                            <Image src={MidFi} className='' alt="Crashr Primary Logo" />
+                                <Image src={MidFi} className='' alt="Crashr Primary Logo" />
 
                             </div>
                         </div>
@@ -329,15 +356,15 @@ export default function Crashr() {
                         <div className="w-full mt-12">
                             <div className="w-full mt-12 md:w-2/3 flex flex-col gap-4">
                                 <Type variant="body">
-                                In order to determine the information architecture of the practices page we conducted a simple card sorting exercise with the residents of university park and some proxy users.
+                                    In order to determine the information architecture of the practices page we conducted a simple card sorting exercise with the residents of university park and some proxy users.
                                 </Type>
                                 <Type variant="body">
-                                We conducted this online and in person
+                                    We conducted this online and in person
                                 </Type>
                             </div>
-                            <div className="grid grid-cols-2">
-                            <Image src={CardSort} className='' alt="Crashr Primary Logo" />
-                            <Image src={OnlineCardSort} className='' alt="Crashr Primary Logo" />
+                            <div className="grid grid-cols-2 gap-4 items-center mt-12">
+                                <Image src={CardSort} className='' alt="Crashr Primary Logo" />
+                                <Image src={OnlineCardSort} className='' alt="Crashr Primary Logo" />
                             </div>
                             <div className="w-full mt-12 ">
                                 <Type variant="body">
@@ -345,14 +372,14 @@ export default function Crashr() {
                                 </Type>
                             </div>
                             <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
-                                <ListItem number="01" name="Waste Minimization"/>
-                                <ListItem number="02" name="Water Management"/>
-                                <ListItem number="03" name="Habitat and biodiversity"/>
-                                <ListItem number="04" name="Garden Management"/>
-                                <ListItem number="05" name="Energy Renewables"/>       
+                                <ListItem number="01" name="Waste Minimization" />
+                                <ListItem number="02" name="Water Management" />
+                                <ListItem number="03" name="Habitat and biodiversity" />
+                                <ListItem number="04" name="Garden Management" />
+                                <ListItem number="05" name="Energy Renewables" />
                             </div>
                         </div>
-                        
+
                     </Section>
                     <Section theme={"light"} name="Adding motivators" number="08">
                         <div className="w-full mt-12">
@@ -386,19 +413,34 @@ export default function Crashr() {
                             </div>
                         </div>
                         <div>
-                        <div className="w-full mt-12 ">
+                            <div className="w-full mt-12 ">
                                 <Type variant="h5">
                                     Our game plan
                                 </Type>
                             </div>
                             <div className="w-full mt-6 md:w-2/3">
                                 <Type variant="body">
-                                We introduced a simple leveling system. Residents could earn points by completing practices and attending events. 
+                                    We introduced a simple leveling system. Residents could earn points by completing practices and attending events.
                                 </Type>
                                 <Type variant="body">
-                                They could also earn badges and participate in town challenges. 
+                                    They could also earn badges and participate in town challenges.
                                 </Type>
 
+                            </div>
+                            <div className="w-full flex justify-center gap-4">
+                                <div className="w-1/2 flex flex-col gap-4 justify-center items-center ">
+                                <Image className="w-2/3 mt-6 " src={Points} alt="University Park: Gamifying sustainability" />
+                                <Type variant="body">
+                                    Level up by earning points
+                                </Type>
+                                </div>
+                                <div className="w-1/2 flex flex-col gap-4 justify-center items-center ">
+                                <Image className="w-2/3 mt-6 " src={Badges} alt="University Park: Gamifying sustainability" />
+                                <Type variant="body">
+                                    Complete challenges and earn badges
+                                </Type>
+                                </div>
+                                
                             </div>
                         </div>
                     </Section>
@@ -412,71 +454,34 @@ export default function Crashr() {
                             </div>
                             <div className="w-full mt-6 md:w-2/3">
                                 <Type variant="body">
-                                Having 5 creative heads working on this project, this task was more challenging than we anticipated. We started out by creating a moodboard. Each of us then created our own version of a screen and we voted to pick a design theme. After lot of back and forth we were able to finalize our design system
+                                    Having 5 creative heads working on this project, this task was more challenging than we anticipated. We started out by creating a moodboard. Each of us then created our own version of a screen and we voted to pick a design theme. After lot of back and forth we were able to finalize our design system
                                 </Type>
                             </div>
                             <div className="py-10 md:p-20 flex w-full justify-center">
-                                            <div className="w-full md:w-5/6 ">
-                                                <ComponentsDisplaySlider />
-                                            </div>
+                                <div className="w-full md:w-5/6 ">
+                                    <ComponentsDisplaySlider />
+                                </div>
 
-                                        </div>
+                            </div>
                         </div>
                     </Section>
                     <Section theme={"light"} name="Final screens based on design system" number="10">
-                        <div className="w-full mt-12">
-                            <div className="w-full mt-12 md:w-2/3">
-                                <Type variant="body">
-                                    Now that we had a list of features and a basic idea of how the page would look we were left with a big challenge.
-                                </Type>
-                            </div>
-                            <div className="w-full mt-12 ">
-                                <Type variant="h5">
-                                    How might we motivate residents to be sustainable and use this platform?
-                                </Type>
-                            </div>
-                            <div className="flex relative flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
-                                
+                        <div className="w-full flex flex-row items-center justify-center mt-12 gap-4 ">
 
-
-                                <ListItem number="02" name="Physical Rewards">
-                                    We emphasized the need of physical rewards. Something like a plaque that residents could put on their front yard or town merch.
-                                </ListItem>
-
-                                <ListItem number="03" name="Continuous engagement">
-                                    The town had to constantly have activities planned for the residents to keep them engaged. Constant engagnement is a form of motivation.
-                                </ListItem>
-
-                                <ListItem number="04" name="Community aspect">
-                                    We added a community page for people to be able to share their progress and ask questions to their neighbours. Gamification along with the community aspect is a strong motivator.
-                                </ListItem>
-                            </div>
-                        </div>
-                        <div>
-                        <div className="w-full mt-12 ">
-                                <Type variant="h5">
-                                    Our game plan
-                                </Type>
-                            </div>
-                            <div className="w-full mt-6 md:w-2/3">
-                                <Type variant="body">
-                                We introduced a simple leveling system. Residents could earn points by completing practices and attending events. 
-                                </Type>
-                                <Type variant="body">
-                                They could also earn badges and participate in town challenges. 
-                                </Type>
-
-                            </div>
+                            <Type className="w-2/6" variant="h5">
+                                Figma Prototype of our screens for user testing:
+                            </Type>
+                            <iframe className="rounded-2xl border-gray-500 border" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXmPa2ddmTmsZwwG1Kibpg3%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-5102%26viewport%3D607%252C366%252C0.02%26t%3DHWFaX8ou532ucJk9-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D1%253A5102%26mode%3Ddesign" allowFullScreen></iframe>
                         </div>
                     </Section>
                     <Section theme={"light"} name="User Testing" number="11">
                         <div className="w-full mt-12">
                             <div className="w-full mt-12 md:w-2/3">
                                 <Type variant="body">
-                                We tested out the designs with 7 residents of University Park. Our key findings were as follows:
+                                    We tested out the designs with 7 residents of University Park. Our key findings were as follows:
                                 </Type>
                             </div>
-                            
+
                             <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
                                 <ListItem number="01" name="Unclear motive of the application">
                                     There was no clear explanation of the motive behind tha application and how user&apos;s could earn points and progress.
@@ -487,69 +492,93 @@ export default function Crashr() {
                                 </ListItem>
 
                                 <ListItem number="03" name="Profile Page could be better organized">
-                                    Profile page could be better organized to show the current progress of the user towards ongoing practices, and badges. 
+                                    Profile page could be better organized to show the current progress of the user towards ongoing practices, and badges.
                                 </ListItem>
 
                                 <ListItem number="04" name="Mixed emotions on gamification">
-                                    Some people felt that there was too much gamification. Almost felt like a childrens app. 
+                                    Some people felt that there was too much gamification. Almost felt like a childrens app.
                                 </ListItem>
                                 <ListItem number="05" name="Point split up for badges was not clear">
-                                    There was a lot of confusion on the points split up for badges and Town challenges. 
+                                    There was a lot of confusion on the points split up for badges and Town challenges.
                                 </ListItem>
                             </div>
                         </div>
                         <div>
-                        <div className="w-full mt-12 ">
+                            <div className="w-full mt-12 ">
                                 <Type variant="h5">
-                                    Our game plan
+                                    Iterations after testing
                                 </Type>
                             </div>
-                            <div className="w-full mt-6 md:w-2/3">
-                                <Type variant="body">
-                                We introduced a simple leveling system. Residents could earn points by completing practices and attending events. 
-                                </Type>
-                                <Type variant="body">
-                                They could also earn badges and participate in town challenges. 
-                                </Type>
+                            <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
+                                <ListItem number="01" name="">
+                                    Added an "Our Mission" section on the home page and an elaborate onboarding flow.
+                                </ListItem>
+
+                                <ListItem number="02" name="">
+                                    Updated the Practices IA and made it more understandable.
+                                </ListItem>
+
+                                <ListItem number="03" name="">
+                                    Overall simplified the visual design information breakdown to make the content more easier to consume
+                                </ListItem>
+
 
                             </div>
+                            <div className="w-full flex flex-row items-center justify-center mt-12 gap-4 ">
+
+                                <Type className="w-2/6" variant="h5">
+                                    Final Prototype of our screens:
+                                </Type>
+                                <div className="flex flex-col justify-center">
+                                    <iframe className="rounded-2xl border-gray-500 border" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRn4t2e50vXVVze0gCRJ0dq%2FPost-user-testing-screen-updated%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-1897%26viewport%3D73%252C1424%252C0.09%26t%3DvbIFI5h9KMBx0Sy9-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D1%253A1897%26mode%3Ddesign" allowFullScreen></iframe>
+
+                                    <div className="w-full flex justify-center">
+                                        <Type className=" w-2/3 p-4 text-center" variant="body">
+                                            This prototype just represents the screens. It does not show the gamification or other features in action.
+                                        </Type>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </Section>
                     <Section theme={"light"} name="Admin" number="12">
-                        <div className="w-full mt-12">
-                            <div className="w-full mt-12 md:w-2/3">
-                                <Type variant="body">
-                                 Our admin users were not technologically advanced, so we wanted to keep the screens as simple as possible. We decided to take the WYSIWYG approach for editing all the key pages on the website.
-                                </Type>
-                            </div>
-                            
-                            <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
-                                
-                                <ListItem number="03" name="Profile Page could be better organized">
-                                    Profile page could be better organized to show the current progress of the user towards ongoing practices, and badges. 
-                                </ListItem>
-
-                                <ListItem number="04" name="Mixed emotions on gamification">
-                                    Some people felt that there was too much gamification. Almost felt like a childrens app. 
-                                </ListItem>
-                                <ListItem number="05" name="Point split up for badges was not clear">
-                                    There was a lot of confusion on the points split up for badges and Town challenges. 
-                                </ListItem>
-                            </div>
-                        </div>
-                        <div>
                         <div className="w-full mt-12 ">
+                            <Type variant="h5">
+                                Providing Key Resident Insights
+                            </Type>
+                        </div>
+                        <div className="w-full mt-6 md:w-2/3">
+                            <Type variant="body">
+                                The admin side homepage showed some key usage insights. This page provides high level overview for all the residents of Upark and the admins could delve deep into the activity of a single household as well
+                            </Type>
+
+
+                        </div>
+                        <div className="w-full flex justify-center">
+                            <Image className="w-4/5 mt-6 rounded-xl" src={adminHomePage} alt="University Park: Gamifying sustainability" />
+                        </div>
+
+
+                        <div className="w-full mt-12 pt-12">
+                            <div className="w-full mt-12">
                                 <Type variant="h5">
-                                    Providing Key Resident Insights
+                                    Editing Resident portal pages
                                 </Type>
                             </div>
                             <div className="w-full mt-6 md:w-2/3">
                                 <Type variant="body">
-                                The admin side homepage showed some key usage insights. This page provides high level overview for all the residents of Upark and the admins could delve deep into the activity of a single household as well 
+                                    Our admin users were not technologically advanced, so we wanted to keep the screens as simple as possible. We decided to take the WYSIWYG approach for editing all the key pages on the website.
                                 </Type>
-                                
-
                             </div>
+                            <div className="w-full flex justify-center gap-4">
+                                <Image className="w-1/2 mt-6 rounded-lg" src={adminEditPractice} alt="University Park: Gamifying sustainability" />
+                                <Image className="w-1/2 mt-6 rounded-lg" src={adminEditChallenge} alt="University Park: Gamifying sustainability" />
+                            </div>
+
+                        </div>
+                        <div>
+
                         </div>
                     </Section>
 
@@ -563,11 +592,11 @@ export default function Crashr() {
                     </Type> */}
                     <div className="mt-10 md:w-2/3">
                         <Type variant="body">
-                        The project successfully delivered a multifaceted digital platform that serves as a hub for sustainable living in University Park. The platform includes educational resources, a comprehensive list of actionable sustainability practices, gamification elements to encourage engagement, and administrative tools for the Sustainability Committee.
+                            The project successfully delivered a multifaceted digital platform that serves as a hub for sustainable living in University Park. The platform includes educational resources, a comprehensive list of actionable sustainability practices, gamification elements to encourage engagement, and administrative tools for the Sustainability Committee.
 
                         </Type>
                         <Type className="mt-6" variant="body">
-                        Through iterative design sprints, user research, and testing, the platform was refined to meet the needs of the target users, including residents, the Green Team, and administrators. The platform aims to foster community engagement, education, and action towards sustainable living practices within the community.
+                            Through iterative design sprints, user research, and testing, the platform was refined to meet the needs of the target users, including residents, the Green Team, and administrators. The platform aims to foster community engagement, education, and action towards sustainable living practices within the community.
                         </Type>
                     </div>
                     <div className="mt-10">
@@ -580,10 +609,10 @@ export default function Crashr() {
 
                         <div className="flex flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
                             <ListItem number="01" name="Balancing Gamification and Seriousness">
-                            Balancing gamification with education and community aspects was key. While gamification drove engagement, too much made it seem gimmicky. Finding the right balance celebrated achievements while emphasizing environmental impact.
+                                Balancing gamification with education and community aspects was key. While gamification drove engagement, too much made it seem gimmicky. Finding the right balance celebrated achievements while emphasizing environmental impact.
                             </ListItem>
                             <ListItem number="02" name="Clarity in Communication and User Experiences">
-                            User testing revealed confusion about the app&apos;s purpose and how users could earn points and rewards. To address this, clear explanations through improved onboarding and in-app messaging are essential for better user understanding and engagement.
+                                User testing revealed confusion about the app&apos;s purpose and how users could earn points and rewards. To address this, clear explanations through improved onboarding and in-app messaging are essential for better user understanding and engagement.
                             </ListItem>
 
                         </div>
