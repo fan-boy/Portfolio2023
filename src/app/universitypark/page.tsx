@@ -39,21 +39,10 @@ import ComponentsDisplaySlider from './ComponentsDisplaySlider'
 
 
 
-export default function Crashr() {
-    let spacing = "my-20 md:my-32 p-5";
+export default function UniversityPark() {
+    
 
-
-
-    const [isPasswordProvided, setIsPasswordProvided] = useState(false);
-    useEffect(() => {
-        let isPasswordAlreadyProvided = localStorage.getItem("CrashrPasswordProvided");
-        if (isPasswordAlreadyProvided) setIsPasswordProvided(true);
-    }, [])
-
-    const isCorrectPassowrd = () => {
-        setIsPasswordProvided(true);
-        localStorage.setItem("CrashrPasswordProvided", "true");
-    }
+    
     return (
         <DefaultPage selected="work">
             <PageSection theme="dark" isFullWidth>
@@ -223,7 +212,7 @@ export default function Crashr() {
                                     A comprehensive list of practices that residents of Upark could perform around their house and rebates associated with them.
                                 </ListItem>
                                 <ListItem number="02" name="">
-                                    Similar previous efforts conducted () in and around Upark and why they were not sustianable in the long run,
+                                    Similar previous efforts conducted in and around Upark and why they were not sustianable in the long run,
                                 </ListItem>
                                 <ListItem number="03" name="">
                                     The draft idea for the system. A Landowner portal that provides all the information and an Admin portal that helps UP sustainability team keep track fo sustainable efforts
@@ -280,7 +269,7 @@ export default function Crashr() {
                         <div className="w-full mt-8 flex flex-col gap-8">
 
                             <Type variant="body" className="md:w-2/3">
-                                Building on a research insights, we decided to develop an initial mockup of our online platform for the residents of university park.
+                                Building on research insights, we decided to develop an initial mockup of our online platform for the residents of university park.
                             </Type>
 
 
