@@ -460,7 +460,10 @@ export default function UniversityPark() {
                             <Type className="w-2/6" variant="h5">
                                 Figma Prototype of our screens for user testing:
                             </Type>
-                            <iframe className="rounded-2xl border-gray-500 border" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXmPa2ddmTmsZwwG1Kibpg3%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-5102%26viewport%3D607%252C366%252C0.02%26t%3DHWFaX8ou532ucJk9-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D1%253A5102%26mode%3Ddesign" allowFullScreen></iframe>
+                            <Type className="md:hidden w-2/3 p-4 text-center" variant="body">
+                                            Open on desktop to view figma prototype
+                                        </Type>
+                            <iframe className="hidden md:block rounded-2xl border-gray-500 border" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXmPa2ddmTmsZwwG1Kibpg3%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-5102%26viewport%3D607%252C366%252C0.02%26t%3DHWFaX8ou532ucJk9-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D1%253A5102%26mode%3Ddesign" allowFullScreen></iframe>
                         </div>
                     </Section>
                     <Section theme={"light"} name="User Testing" number="11">
@@ -519,8 +522,13 @@ export default function UniversityPark() {
                                     Final Prototype of our screens:
                                 </Type>
                                 <div className="flex flex-col justify-center">
-                                    <iframe className="rounded-2xl border-gray-500 border" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRn4t2e50vXVVze0gCRJ0dq%2FPost-user-testing-screen-updated%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-1897%26viewport%3D73%252C1424%252C0.09%26t%3DvbIFI5h9KMBx0Sy9-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D1%253A1897%26mode%3Ddesign" allowFullScreen></iframe>
-
+                                <Type className="md:hidden w-2/3 p-4 text-center" variant="body">
+                                            Open on desktop to view figma prototype
+                                        </Type>
+                                    <iframe className="hidden md:block rounded-2xl border-gray-500 border" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRn4t2e50vXVVze0gCRJ0dq%2FPost-user-testing-screen-updated%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-1897%26viewport%3D73%252C1424%252C0.09%26t%3DvbIFI5h9KMBx0Sy9-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D1%253A1897%26mode%3Ddesign" allowFullScreen></iframe>
+                                    <Type className="md:hidden w-2/3 p-4 text-center" variant="body">
+                                            Open on desktop to view figma prototype
+                                        </Type>
                                     <div className="w-full flex justify-center">
                                         <Type className=" w-2/3 p-4 text-center" variant="body">
                                             This prototype just represents the screens. It does not show the gamification or other features in action.
