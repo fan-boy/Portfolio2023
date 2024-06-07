@@ -1,10 +1,10 @@
 [
-    
     {
-        "projectName":"Crashr",
-        "type":"crashr",
-        "subtitle":" Crafting Seamless Design Solutions for the Next-Gen NFT Marketplace!",
-        "tags":"UI design • Design System • Internship"
+        "projectName":"University Park",
+        "type":"upark",
+        "subtitle":" Promoting sustainability among residents",
+        "tags":"UI/UX design • 0 → 1 • Capstone"
+
     },
     {
         "projectName":"Chain Reactive LLC",
@@ -14,17 +14,24 @@
 
     },
     {
-        "projectName":"Hive",
-        "type":"hive",
-        "subtitle":" Ensuring safe return to work for 15k Ingram Micro employees post-COVID",
-        "tags":"Service design • Web design • Fulltime"
-
+        "projectName":"Crashr",
+        "type":"crashr",
+        "subtitle":" Crafting Seamless Design Solutions for the Next-Gen NFT Marketplace!",
+        "tags":"UI design • Design System • Internship"
     },
     {
         "projectName":"Everest OS",
         "type":"everestos",
         "subtitle":" Reimagining operating systems",
         "tags":"Visual design • Branding • Passion Project"
+
+    },
+    
+    {
+        "projectName":"Hive",
+        "type":"hive",
+        "subtitle":" Ensuring safe return to work for 15k Ingram Micro employees post-COVID",
+        "tags":"Service design • Web design • Fulltime"
 
     }
 ]

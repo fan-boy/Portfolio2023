@@ -8,6 +8,7 @@ import ChainReactive from 'public/assets/home/ChainReactive/ChainreactiveImage.p
 import Crashr from 'public/assets/home/crashr/CrashrImage.png'
 import Hive from 'public/assets/home/hive/hiveimage.png'
 import EverestOS from 'public/assets/home/everestos/everestosCard.png'
+import UPark from 'public/assets/home/universitypark/UParkCard.png'
 import React from 'react';
 import Link from 'next/link';
 
@@ -36,7 +37,8 @@ const cardStyles = cva(
                 chainreactive:
                     'bg-chainReactiveCard',
                 hive: 'bg-hiveCard text-white focus:ring-red-500',
-                everestos:'bg-everestosCard'
+                everestos:'bg-everestosCard',
+                upark:'bg-uParkCard'
             },
             
         },
@@ -52,6 +54,10 @@ export const Card = ({ type, ...props }: Props) => {
     let link = "/";
 
     switch(props.title){
+        case "University Park":
+            image = UPark;
+            link = "/universitypark"
+            break;
         case "Crashr":
             image = Crashr;
             link = "/crashr"

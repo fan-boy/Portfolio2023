@@ -30,6 +30,7 @@ const config: Config = {
         'crashrCard':"url('/assets/home/crashr/Crashrbackground.png')",
         'hiveCard':"url('/assets/home/hive/hivebackground.png')",
         'everestosCard':"url('/assets/home/everestos/everestosbackground.png')",
+        'uParkCard':"url('/assets/home/universitypark/uParkbackground.png')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

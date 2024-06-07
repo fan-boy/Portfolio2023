@@ -82,12 +82,17 @@ export default function Home() {
           </div>
           <div className="mt-10">
 
+          <Card title={projectlist[4].projectName} type={projectlist[3].type as varianttype} subtitle={projectlist[3].subtitle} tags={projectlist[3].tags} />
+          </div>
+          <div className="mt-10">
+
           <Card title={projectlist[1].projectName} type={projectlist[1].type as varianttype} subtitle={projectlist[1].subtitle} tags={projectlist[1].tags} />
           </div>
           <div className="mt-10">
 
           <Card title={projectlist[3].projectName} type={projectlist[3].type as varianttype} subtitle={projectlist[3].subtitle} tags={projectlist[3].tags} />
           </div>
+          
 
         </div>
       </PageSection>
