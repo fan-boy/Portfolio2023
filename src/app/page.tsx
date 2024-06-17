@@ -35,7 +35,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className=" md:flex md:flex-row md:gap-12">
+          <div className=" md:flex md:flex-row md:gap-12 md:items-center">
             <div className="hidden md:flex mt-20 md:flex-col text-center md:text-left gap-4 md:min-w-1/2">
               <span >
                 <Type variant={"body"}>
@@ -46,23 +46,23 @@ export default function Home() {
             </div>
             <div className="flex mt-20 flex-col text-center md:text-left gap-4 md:min-w-1/2">
               <span >
-                <Type variant={"body"}>
-                  HCIM grad student at <br /> University of Maryland, CP
+                <Type variant={"emphasized-body"}>
+                  Actively looking for full time roles
                 </Type>
               </span>
-              <span >
+              {/* <span >
                 <Type variant={"body"}>
                   Graduating May 2024
                 </Type>
-              </span>
+              </span> */}
             </div>
           </div>
           <div className="w-full text-center md:text-left mt-10 md:mt-28 md:flex md:flex-row-reverse">
             <div className="flex flex-row gap-5">
-              {/* <Type variant="emphasized-body">
+              <Type variant="emphasized-body">
                 Selected Work
               </Type>
-              <BouncingArrow /> */}
+              <BouncingArrow />
             </div>
           </div>
         </div>
