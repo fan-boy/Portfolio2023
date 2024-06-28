@@ -82,7 +82,7 @@ export default function Home() {
           </div>
           <div className="mt-10">
 
-          <Card title={projectlist[4].projectName} type={projectlist[3].type as varianttype} subtitle={projectlist[3].subtitle} tags={projectlist[3].tags} />
+          <Card title={projectlist[4].projectName} type={projectlist[4].type as varianttype} subtitle={projectlist[4].subtitle} tags={projectlist[4].tags} />
           </div>
           <div className="mt-10">
 
