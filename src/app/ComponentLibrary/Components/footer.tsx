@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="w-full flex flex-col gap-5">
             <div className="gap-5 flex flex-col md:flex-row  items-center justify-center">
                 <Type variant="body">
-                    © 2023
+                    © 2024
                 </Type>
                 <Type variant="body">
                     Designed and {'<>'} by me 
