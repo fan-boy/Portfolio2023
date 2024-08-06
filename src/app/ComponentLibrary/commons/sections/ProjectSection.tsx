@@ -19,29 +19,29 @@ const ProjectSection = (props: ProjectSectionProps) => {
     </Section>
   );
 }
-ProjectSection.IndentedLine = (props: ProjectSectionProps) => (
-    <div className="md:whitespace-nowrap md:-ml-5 lg:-ml-10">
+ProjectSection.ShortDescription = (props: ProjectSectionProps) => (
+    <div className="">
     <Type variant="emphasized-body">
        {props.children} 
     </Type>
   </div>
 )
 ProjectSection.FirstPara = (props: ProjectSectionProps) => (
-    <div className="mt-6 md:mt-8 md:pr-20">
+    <div className="mt-3 md:pr-20">
                   <Type variant="body">
                     {props.children}
                   </Type>
                 </div>
 )
 ProjectSection.SecondPara = (props: ProjectSectionProps) => (
-    <div className="mt-8 md:mt-10 md:pr-20">
+    <div className="mt-1 md:pr-20">
                   <Type variant="body">
                     {props.children}
                   </Type>
                 </div>
 )
 ProjectSection.ThirdPara = (props: ProjectSectionProps) => (
-  <div className="mt-8 md:mt-10 md:pr-20">
+  <div className="mt-1 md:pr-20">
   <Type variant="body">
      {props.children} 
   </Type>

@@ -10,7 +10,7 @@ interface OverviewSectionProps{
 
 const OverviewSection = (props:OverviewSectionProps) =>{
     return(
-        <Section theme="dark" name="Overview" number = "03" >
+        <Section theme="dark" name="Overview" number = "03" classname="md:w-2/3" >
           {props.children}
         </Section>
     );
@@ -20,11 +20,11 @@ OverviewSection.Problem = (props:OverviewSectionProps) => {
 
   return(
     <div className="w-full md:w-1/2 flex flex-col gap-y-6 md:gap-y-8">
-      <Type variant="h4">
-        The Problem
+      <Type variant="h5">
+        Problem
       </Type>
 
-      <Type variant="emphasized-body" className="max-w-prose">
+      <Type variant="body" className="max-w-prose">
       {props.children}
       </Type>
 
@@ -37,8 +37,8 @@ OverviewSection.Outcome = (props:OverviewSectionProps) => {
 
   return(
     <div className="w-full md:w-1/2 flex flex-col gap-y-6 md:gap-y-8">
-      <Type variant="h4">
-        The Outcome
+      <Type variant="h5">
+        Outcome
       </Type>
       
       {props.children}
@@ -51,9 +51,9 @@ OverviewSection.Outcome = (props:OverviewSectionProps) => {
 
 OverviewSection.Solution = (props:OverviewSectionProps) =>{
   return(
-    <div className="w-full flex flex-col mt-20 gap-y-10 md:gap-y-20">
+    <div className="flex flex-col mt-20 gap-y-10 md:gap-y-20">
       <Type variant="h4">
-        The Solution
+        Solution
       </Type>
       <div>
       {props.children}

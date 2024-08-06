@@ -27,6 +27,7 @@ import BothHappy from '../../../public/assets/chainreactive/BothHappy.png'
 import React from 'react'
 import {Card, varianttype} from '../ComponentLibrary/Components/Card/Card'
 import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork'
+import SolutionSection from '../ComponentLibrary/commons/sections/SolutionSection'
 
 
 
@@ -34,11 +35,11 @@ import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork'
 export default function ChainReactive() {
   return (
     <DefaultPage selected="work">
-      <PageSection theme="dark" isFullWidth>
+      <PageSection theme="dark" >
         {/* Hero Section */}
         <>
           <div className="max-h-[75vh]">
-            <Image src={HeroImage} alt="Chain Reactive LLC - Order Scheduling Case study" />
+            <Image src={HeroImage} alt="Chain Reactive LLC - Order Scheduling Case study"  className="rounded-b-lg md:rounded-b-2xl"/>
           </div>
         </>
       </PageSection>
@@ -51,9 +52,9 @@ export default function ChainReactive() {
               <div className="flex justify-center w-full md:w-2/3 p-5">
 
                 <ProjectSection>
-                  <ProjectSection.IndentedLine>
+                  <ProjectSection.ShortDescription>
                     Building a <span className="italic font-serif font-normal">scalable solution</span> for small businesses.
-                  </ProjectSection.IndentedLine>
+                  </ProjectSection.ShortDescription>
                   <ProjectSection.FirstPara>
                     We wanted to focus on empowering local businesses and small
                     mom-pop restaurants in rural areas, starting with the town of
@@ -85,8 +86,8 @@ export default function ChainReactive() {
                   </InfoSection.Column>
                   <InfoSection.Column>
                     <InfoSection.Tools>
-                      Adobe XD, Figma <br />
-                      React JS <br />
+                      Adobe XD, Figma 
+                      React JS
                       NodeJS
                     </InfoSection.Tools>
                     <InfoSection.Team>
@@ -101,7 +102,7 @@ export default function ChainReactive() {
 
 
           {/* Overview and Solution */}
-          <div className="my-20 md:mt-32 p-5">
+          <div className="mt-20 md:mt-32 p-5">
             <OverviewSection>
               <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
                 <OverviewSection.Problem>
@@ -130,7 +131,16 @@ export default function ChainReactive() {
                 </OverviewSection.Outcome>
               </div>
               <OverviewSection.Solution>
-                <div className="flex flex-col gap-y-20">
+                
+              </OverviewSection.Solution>
+            </OverviewSection>
+
+          </div>
+        </div>
+      </PageSection>
+      <PageSection theme="dark" isFullWidth>
+        <SolutionSection>
+        <div className="flex flex-col gap-y-20 px-20 pb-20">
                   <div className="flex flex-col md:flex-row">
                     <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
                       <source src="./assets/chainreactive/desktop.mp4" type="video/mp4" />
@@ -150,11 +160,7 @@ export default function ChainReactive() {
                     </div>
                   </div>
                 </div>
-              </OverviewSection.Solution>
-            </OverviewSection>
-
-          </div>
-        </div>
+        </SolutionSection>
       </PageSection>
       <PageSection theme="light">
         {/* Process */}

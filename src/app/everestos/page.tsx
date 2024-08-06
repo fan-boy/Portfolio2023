@@ -21,6 +21,7 @@ import Rituals from '/public/assets/everestos/Rituals.png'
 import React from 'react'
 import { Button } from '../ComponentLibrary/Components/Button/Button'
 import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork'
+import SolutionSection from '../ComponentLibrary/commons/sections/SolutionSection'
 
 
 
@@ -28,11 +29,11 @@ import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork'
 export default function EverestOS() {
   return (
     <DefaultPage selected="work">
-      <PageSection theme="dark" isFullWidth>
+      <PageSection theme="dark" >
         {/* Hero Section */}
         <>
           <div className="max-h-[75vh]">
-            <Image src={HeroImage} alt="Everest OS - Reimagining operating systems" />
+            <Image src={HeroImage} alt="Everest OS - Reimagining operating systems" className="rounded-b-2xl" />
           </div>
         </>
       </PageSection>
@@ -45,9 +46,9 @@ export default function EverestOS() {
               <div className="flex justify-center w-full md:w-2/3 p-5">
 
                 <ProjectSection>
-                  <ProjectSection.IndentedLine>
+                  <ProjectSection.ShortDescription>
                     <span className="italic font-serif font-normal">Reimagining</span> operating systems and <span className="italic font-serif font-normal">elevating</span> the Digital Experience.
-                  </ProjectSection.IndentedLine>
+                  </ProjectSection.ShortDescription>
                   <ProjectSection.FirstPara>
                     I always wondered about how people would go about designing an OS. I felt it was an interesting challenge and decided to take up on it in my Advanced visual design class.
                   </ProjectSection.FirstPara>
@@ -75,8 +76,8 @@ export default function EverestOS() {
                   </InfoSection.Column>
                   <InfoSection.Column>
                     <InfoSection.Tools>
-                      Figma <br />
-                      Protopie <br />
+                      Figma,
+                      Protopie,
                       Illustrator
                     </InfoSection.Tools>
                     <InfoSection.Team>
@@ -92,7 +93,7 @@ export default function EverestOS() {
 
 
           {/* Overview and Solution */}
-          <div className="my-20 md:mt-32 p-5">
+          <div className="mt-20 md:mt-32 p-5">
             <OverviewSection>
               <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
                 <OverviewSection.Problem>
@@ -114,7 +115,16 @@ export default function EverestOS() {
                 </OverviewSection.Outcome>
               </div>
               <OverviewSection.Solution>
-                <div className="flex flex-col gap-y-20">
+                
+              </OverviewSection.Solution>
+            </OverviewSection>
+
+          </div>
+        </div>
+      </PageSection>
+      <PageSection theme="dark" isFullWidth>
+       <SolutionSection>
+       <div className="flex flex-col gap-y-20 px-20 pb-20">
                   <div className="flex flex-col md:flex-row md:gap-x-20"   >
                     <Image src={SuggestionsOnLockScreen} alt="Everest OS - Reimagining operating systems" className="w-full"  />
 
@@ -169,11 +179,7 @@ export default function EverestOS() {
 
                   </div>
                 </div>
-              </OverviewSection.Solution>
-            </OverviewSection>
-
-          </div>
-        </div>
+       </SolutionSection>
       </PageSection>
       <PageSection theme="light">
         {/* Process */}

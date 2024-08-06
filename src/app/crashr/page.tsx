@@ -57,11 +57,11 @@ export default function Crashr() {
     }
     return (
         <DefaultPage selected="work">
-            <PageSection theme="dark" isFullWidth>
+            <PageSection theme="dark">
                 {/* Hero Section */}
                 <>
                     <div className="max-h-[75vh]">
-                        <Image src={HeroImage} alt="Crashr x Bombers - Streamlining the design process" />
+                        <Image src={HeroImage} alt="Crashr x Bombers - Streamlining the design process" className="rounded-b-lg md:rounded-b-2xl"/>
                     </div>
                 </>
             </PageSection>
@@ -74,10 +74,10 @@ export default function Crashr() {
                             <div className="flex justify-center w-full md:w-2/3 p-5">
 
                                 <ProjectSection>
-                                    <ProjectSection.IndentedLine>
+                                    <ProjectSection.ShortDescription>
                                         <span className="italic font-serif font-normal">Unifying</span> Design and <span className="italic font-serif font-normal">Elevating</span> User Experience
 
-                                    </ProjectSection.IndentedLine>
+                                    </ProjectSection.ShortDescription>
                                     <ProjectSection.FirstPara>
                                         Crashr is a rising star in the NFT marketplace scene, revolutionizing how people buy, sell, and collect NFTs. Committed to offering a user-friendly platform for digital artists, collectors, and enthusiasts, Crashr aspires to leave a significant mark in the ever-evolving NFT landscape.
                                     </ProjectSection.FirstPara>

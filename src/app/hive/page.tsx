@@ -27,6 +27,7 @@ import HeroImage from '../../../public/assets/hive/hero.png';
 import TaskFlow from '../ComponentLibrary/Components/TaskFlow/taskFlow'
 import React from 'react'
 import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork'
+import SolutionSection from '../ComponentLibrary/commons/sections/SolutionSection'
 
 
 
@@ -38,11 +39,11 @@ export default function Hive() {
 
   return (
     <DefaultPage selected="work">
-      <PageSection theme="dark" isFullWidth>
+      <PageSection theme="dark">
         {/* Hero Section */}
         <>
           <div className="max-h-[75vh]">
-            <Image src={HeroImage} alt="Hive - Enabling a safe return to work environment" />
+            <Image src={HeroImage} alt="Hive - Enabling a safe return to work environment" className="rounded-b-lg md:rounded-b-2xl" />
           </div>
         </>
       </PageSection>
@@ -55,9 +56,9 @@ export default function Hive() {
               <div className="flex justify-center w-full md:w-2/3 p-5">
 
                 <ProjectSection>
-                  <ProjectSection.IndentedLine>
+                  <ProjectSection.ShortDescription>
                     Enabling a safe <span className="italic font-serif font-normal">return to work</span> environment.
-                  </ProjectSection.IndentedLine>
+                  </ProjectSection.ShortDescription>
                   <ProjectSection.FirstPara>
                     After the COVID - 19 pandemic when offices started reopening,
                     the business continuity planning (BCP) team at Ingram Micro India gathered a team of
@@ -130,22 +131,29 @@ export default function Hive() {
                 </OverviewSection.Outcome>
               </div>
               <OverviewSection.Solution>
-              <div className="flex flex-col md:flex-row">
-                    <div className="w-full md:w-2/3 flex flex-col gap-4 justify-center ">
-                      <Type variant="h5" fontType="font-serif"> Mobile Solution</Type>
-                      <Type variant="body" fontType="font-serif"> Screenshots from the mobile app for employees</Type>
-                    </div>
-                    <div className="w-full md:w-1/2">
-                      <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
-                        <source src="./assets/hive/mobile.mp4" type="video/mp4" />
-                      </video>
-                    </div>
-              </div>
+                <div className="flex flex-col md:flex-row">
+
+                </div>
               </OverviewSection.Solution>
             </OverviewSection>
 
           </div>
         </div>
+      </PageSection>
+      <PageSection theme="dark" isFullWidth>
+        <SolutionSection>
+          <div className="flex flex-col md:flex-row gap-y-20 px-20 pb-20">
+            <div className="w-full md:w-2/3 flex flex-col gap-4 justify-center ">
+              <Type variant="h5" fontType="font-serif"> Mobile Solution</Type>
+              <Type variant="body" fontType="font-serif"> Screenshots from the mobile app for employees</Type>
+            </div>
+            <div className="w-full md:w-1/2">
+              <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                <source src="./assets/hive/mobile.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </SolutionSection>
       </PageSection>
       <PageSection theme="light">
         {/* Process */}
@@ -329,7 +337,7 @@ export default function Hive() {
                           Effective communication is critical for HR staff, both within the Hive app (reporting and responding to issues) and external communication with relevant departments or employees for issue resolution.
                         </ListItem>
 
-                    
+
 
                       </div>
                     </div>
@@ -413,7 +421,7 @@ export default function Hive() {
                           Throughout the workday, the app provides convenience and control. Employees are confident and appreciate the app&#x27;s features for schedule management, communication, and requesting ad-hoc visits.
                         </ListItem>
 
-                       
+
 
                       </div>
                     </div>
@@ -471,7 +479,7 @@ export default function Hive() {
                           Admin staff must be vigilant in ensuring the safety and compliance of employees by verifying QR codes and self-declarations.
                         </ListItem>
 
-                        
+
                       </div>
                     </div>
                   </div>
@@ -508,14 +516,14 @@ export default function Hive() {
                 </ListItem>
               </div>
               <div className="flex md:col-span-2 justify-center">
-                          <Image className="w-1/4" src={AllHappy} alt="All stakeholders happy!" />
-                        </div>
+                <Image className="w-1/4" src={AllHappy} alt="All stakeholders happy!" />
+              </div>
             </div>
           </Section>
           <Section theme={"light"} name="Sketching Solutions" number="08">
             <div className="w-full flex flex-col md:grid md:grid-cols-2 md:gap-20">
               <Type variant="body">
-                We conducted participatory design sessions with all the stakeholders involved to speed up the design process. We needed to get from design to development asap. I was mainly involved with the HR/Admin portal that was a web app. 
+                We conducted participatory design sessions with all the stakeholders involved to speed up the design process. We needed to get from design to development asap. I was mainly involved with the HR/Admin portal that was a web app.
               </Type>
               <Type variant="body">
                 Once the designs were approved, we built out the app and then conducted testing. Here are some of our sketches
@@ -526,41 +534,41 @@ export default function Hive() {
                 HR app sketches
               </Type>
               <div className=" mt-10 flex flex-col md:grid md:grid-cols-5  justify-items-center items-center gap-x-2 gap-y-2">
-              <Image className=" col-span-2 " src={HR1} alt="A page for adding emp schedule" />
-              <Image className="col-span-2 " src={HR2} alt="A page for adding employee schedule" />
-              <Image className="hidden md:block col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy HR" />
-              <Image className=" col-span-2 " src={HR3} alt="A page for sending out announcements" />
-              <Image className="col-span-2 " src={HR4} alt="A page for generating reports" />
-              <Image className="md:hidden col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy HR" />
+                <Image className=" col-span-2 " src={HR1} alt="A page for adding emp schedule" />
+                <Image className="col-span-2 " src={HR2} alt="A page for adding employee schedule" />
+                <Image className="hidden md:block col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy HR" />
+                <Image className=" col-span-2 " src={HR3} alt="A page for sending out announcements" />
+                <Image className="col-span-2 " src={HR4} alt="A page for generating reports" />
+                <Image className="md:hidden col-span-1 row-span-2 md:col-auto" src={HR100} alt="Happy HR" />
 
+              </div>
             </div>
-            </div>
-            
-            
+
+
           </Section>
 
         </ProcessSection>
       </PageSection>
       <PageSection theme="dark">
         <ResultSection number="09">
-        <Type variant="emphasized-body">
-              Building <span className="italic font-serif font-normal">trust</span> and ensuring a <span className="italic font-serif font-normal">safe return to work</span> environment
-            </Type>
+          <Type variant="emphasized-body">
+            Building <span className="italic font-serif font-normal">trust</span> and ensuring a <span className="italic font-serif font-normal">safe return to work</span> environment
+          </Type>
           <div className="mt-10 md:w-2/3">
             <Type variant="body">
-              We designed and implemented a highly succesful system in a very short span of 4 months. This system got adopted by Ingram Micro offices worldwide. 
+              We designed and implemented a highly succesful system in a very short span of 4 months. This system got adopted by Ingram Micro offices worldwide.
             </Type>
           </div>
           <div className="mt-10">
-            
+
             <Type variant="h5" >
-                           My key learnings - 
-                        </Type>
+              My key learnings -
+            </Type>
 
 
             <div className="flex flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
               <ListItem number="01" name="Balancing Speed and Quality">
-              While speed is essential, it should not come at the expense of quality. The team successfully managed to develop an enterprise-scale application under time constraints, demonstrating the value of finding the right balance between speed and the quality of the final product.
+                While speed is essential, it should not come at the expense of quality. The team successfully managed to develop an enterprise-scale application under time constraints, demonstrating the value of finding the right balance between speed and the quality of the final product.
               </ListItem>
               <ListItem number="02" name="Project Management">
                 Managing such a project with tight deadlines taught me the importance of effective project management, including setting priorities, allocating resources, and meeting milestones.
@@ -568,7 +576,7 @@ export default function Hive() {
 
             </div>
 
-          
+
 
           </div>
         </ResultSection>
@@ -576,8 +584,8 @@ export default function Hive() {
 
       </PageSection>
       <PageSection theme="dark"  >
-      <OtherWork currentProject="hive" />
-            
+        <OtherWork currentProject="hive" />
+
       </PageSection>
 
     </DefaultPage>

@@ -33,6 +33,7 @@ import adminEditChallenge from '../../../public/assets/universitypark/adminEditC
 import React, { useEffect, useState } from 'react'
 import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork'
 import ComponentsDisplaySlider from './ComponentsDisplaySlider'
+import SolutionSection from '../ComponentLibrary/commons/sections/SolutionSection'
 
 
 
@@ -45,11 +46,11 @@ export default function UniversityPark() {
     
     return (
         <DefaultPage selected="work">
-            <PageSection theme="dark" isFullWidth>
+            <PageSection theme="dark">
                 {/* Hero Section */}
                 <>
                     <div className="max-h-[75vh]">
-                        <Image src={HeroImage} alt="University Park: Gamifying sustainability" />
+                        <Image src={HeroImage} alt="University Park: Gamifying sustainability" className="rounded-b-lg md:rounded-b-2xl" />
                     </div>
                 </>
             </PageSection>
@@ -62,10 +63,10 @@ export default function UniversityPark() {
                             <div className="flex justify-center w-full md:w-2/3 p-5">
 
                                 <ProjectSection>
-                                    <ProjectSection.IndentedLine>
+                                    <ProjectSection.ShortDescription>
                                         Empowering <span className="italic font-serif font-normal">sustainable</span> communities
 
-                                    </ProjectSection.IndentedLine>
+                                    </ProjectSection.ShortDescription>
                                     <ProjectSection.FirstPara>
                                         We had the opportunity to collaborate with the Sustainability Committee of University Park on a project aimed at promoting sustainable living practices among residents. The goal was to create a digital platform that fosters engagement, education, and action towards sustainability within the community.
                                     </ProjectSection.FirstPara>
@@ -107,7 +108,7 @@ export default function UniversityPark() {
 
 
                     {/* Overview and Solution */}
-                    <div className="my-20 md:my-32 p-5">
+                    <div className="mt-20 md:mt-32 p-5">
                         <OverviewSection>
                             <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
                                 <OverviewSection.Problem>
@@ -124,7 +125,17 @@ export default function UniversityPark() {
                                 </OverviewSection.Outcome>
                             </div>
                             <OverviewSection.Solution>
-                                <div className="flex flex-col gap-y-20">
+                               
+                            </OverviewSection.Solution>
+                        </OverviewSection>
+
+                    </div>
+                </div>
+
+            </PageSection>
+            <PageSection theme="dark" isFullWidth>
+                <SolutionSection>
+                <div className="flex flex-col gap-y-20 px-20 pb-20">
                                     <div className="flex flex-col md:flex-row md:gap-x-20"   >
                                         <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
                                             <source src="./assets/universitypark/OnboardingFlow.mp4" type="video/mp4" />
@@ -159,14 +170,8 @@ export default function UniversityPark() {
                                     </div>
 
                                 </div>
-                            </OverviewSection.Solution>
-                        </OverviewSection>
-
-                    </div>
-                </div>
-
+                </SolutionSection>
             </PageSection>
-
 
 
 

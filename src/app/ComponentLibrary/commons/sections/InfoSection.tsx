@@ -20,40 +20,40 @@ const InfoSection = (props: InfoSectionProps) => {
 }
 InfoSection.Role = (props: InfoSectionProps) => (
   <div className="flex flex-col w-1/2 md:w-full">
-    <span className="font-serif text-md md:text-2xl">
+    <span className="font-sans font-semibold text-md md:text-lg">
       Role
     </span>
-    <span className="font-sans text-md md:text-xl">
+    <span className="font-sans text-md md:text-lg">
       {props.children}
     </span>
   </div>
 )
 InfoSection.Timeline = (props: InfoSectionProps) => (
   <div className="flex flex-col w-1/2 md:2-full" >
-    <span className="font-serif text-md md:text-2xl">
+    <span className="font-sans font-semibold text-md md:text-lg">
       Timeline
     </span>
-    <span className="font-sans text-md md:text-xl">
+    <span className="font-sans text-md md:text-lg">
       {props.children}
     </span>
   </div>
 )
 InfoSection.Tools = (props: InfoSectionProps) => (
   <div className="flex flex-col w-1/2 md:w-full">
-    <span className="font-serif text-md md:text-2xl">
+    <span className="font-sans font-semibold text-md md:text-lg">
       Tools
     </span>
-    <span className="font-sans text-md md:text-xl">
+    <span className="font-sans text-md md:text-lg">
       {props.children}
     </span>
   </div>
 )
 InfoSection.Team = (props: InfoSectionProps) => (
   <div className="flex flex-col w-1/2 md:w-full" >
-    <span className="font-serif text-md md:text-2xl">
+    <span className="font-sans font-semibold text-md md:text-lg">
       Team
     </span>
-    <span className="font-sans text-md md:text-xl">
+    <span className="font-sans text-md md:text-lg">
       {props.children}
     </span>
   </div>
