@@ -49,7 +49,7 @@ export default function ChainReactive() {
           {/* Project and Info Section */}
           <>
             <div className="flex mt-10 flex-col md:flex-row gap-2">
-              <div className="flex justify-center w-full md:w-2/3 p-5">
+              <div className="flex flex-col justify-center w-full md:w-2/3 p-5">
 
                 <ProjectSection>
                   <ProjectSection.ShortDescription>
@@ -71,6 +71,39 @@ export default function ChainReactive() {
                     businesses and customers, ensuring a seamless process.
                   </ProjectSection.SecondPara>
                 </ProjectSection>
+
+                {/* Overview and Solution */}
+          <div className="mt-20  ">
+            <OverviewSection>
+              <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
+                <OverviewSection.Problem>
+                  How might we empower customers
+                  to conveniently select a pickup or
+                  delivery time before browsing the
+                  menu, ensuring that their choice
+                  influences menu items and prices?
+                </OverviewSection.Problem>
+                <OverviewSection.Outcome>
+                  <OverviewSection.OutcomeParagraph>
+                    We designed and implemented a highly
+                    dynamic component for supporting the
+                    order scheduling needs of both the
+                    customers and business owners.
+                    <br />
+                    <br />
+
+
+                    Check out the solution and order tasty
+                    food at https://www.siamlewisburg.com/
+                    (for Lewisburg, PA)
+                  </OverviewSection.OutcomeParagraph>
+
+
+                </OverviewSection.Outcome>
+              </div>
+            </OverviewSection>
+
+          </div>
 
               </div>
 
@@ -101,68 +134,35 @@ export default function ChainReactive() {
           </>
 
 
-          {/* Overview and Solution */}
-          <div className="mt-20  ">
-            <OverviewSection>
-              <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
-                <OverviewSection.Problem>
-                  How might we empower customers
-                  to conveniently select a pickup or
-                  delivery time before browsing the
-                  menu, ensuring that their choice
-                  influences menu items and prices?
-                </OverviewSection.Problem>
-                <OverviewSection.Outcome>
-                  <OverviewSection.OutcomeParagraph>
-                    We designed and implemented a highly
-                    dynamic component for supporting the
-                    order scheduling needs of both the
-                    customers and business owners.
-                    <br />
-                    <br />
-
-
-                    Check out the solution and order tasty
-                    food at https://www.siamlewisburg.com/
-                    (for Lewisburg, PA)
-                  </OverviewSection.OutcomeParagraph>
-
-
-                </OverviewSection.Outcome>
-              </div>
-              <OverviewSection.Solution>
-                
-              </OverviewSection.Solution>
-            </OverviewSection>
-
-          </div>
+          
         </div>
         </PageSection.ConstrainedWidth>
       
-      </PageSection>
-      <PageSection theme="dark" >
+      
+      <PageSection.FullWidth theme="dark" >
         <SolutionSection>
-        <div className="flex flex-col gap-y-20 px-20 pb-20">
-                  <div className="flex flex-col md:flex-row">
-                    <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+        <div className="grid grid-cols-4 gap-y-40 gap-x-10 py-20 ">
+                  
+                    <video loop autoPlay muted className="col-span-3 rounded-2xl">
                       <source src="./assets/chainreactive/desktop.mp4" type="video/mp4" />
                     </video>
-                    <div className="w-full md:w-1/3 flex justify-center items-center">
+                    <div className="w-full flex justify-center items-center">
                       <Type variant="h5" fontType="font-serif"> Desktop Solution</Type>
                     </div>
-                  </div>
-                  <div className="flex flex-col md:flex-row">
-                    <div className="w-full md:w-2/3 flex justify-center items-center">
+                  
+                    <div></div>
+                    <div className=" flex justify-center items-center">
                       <Type variant="h5" fontType="font-serif"> Mobile Solution</Type>
                     </div>
-                    <div className="w-full md:w-1/2">
-                      <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                    
+                      <video loop autoPlay muted className=" rounded-2xl">
                         <source src="./assets/chainreactive/mobile.mp4" type="video/mp4" />
                       </video>
-                    </div>
-                  </div>
+                    
+                  
                 </div>
         </SolutionSection>
+      </PageSection.FullWidth>
       </PageSection>
       <PageSection theme="light">
         {/* Process */}

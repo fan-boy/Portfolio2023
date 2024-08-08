@@ -11,7 +11,11 @@ const config: Config = {
       '1/2': '50%',
       '2/5':'40%',
     },
+    
     extend: {
+      maxWidth:{
+        '8xl':'90rem',
+      },
       fontFamily: {
         serif: ['var(--font-esperanto)'],
         sans: ['var(--font-quicksand)']

@@ -24,11 +24,11 @@ const Section = (props:SectionProps) =>{
     }
 
     return(
-        <div className={`w-full flex flex-col items-center ${classname}`}>
+        <div className={`w-full  flex flex-col items-center ${classname}`}>
             
              <SectionDivider theme = {props.theme} name={props.name} number={props.number}/>
             
-            <div className="mt-5 md:mt-8 flex flex-col items-center justify-center">
+            <div className="mt-5 lg:max-w-8xl md:mt-8 flex flex-col items-center justify-center">
                 {props.children}
 
             </div>

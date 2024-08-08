@@ -43,7 +43,7 @@ export default function EverestOS() {
           {/* Project and Info Section */}
           <>
             <div className="flex mt-10 flex-col md:flex-row gap-2">
-              <div className="flex justify-center w-full md:w-2/3 p-5">
+              <div className="flex flex-col justify-center w-full md:w-2/3 p-5">
 
                 <ProjectSection>
                   <ProjectSection.ShortDescription>
@@ -61,6 +61,32 @@ export default function EverestOS() {
                     </span>
                   </ProjectSection.ThirdPara>
                 </ProjectSection>
+                {/* Overview and Solution */}
+          <div className="mt-20 md:mt-32">
+            <OverviewSection>
+              <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
+                <OverviewSection.Problem>
+                  How might we develop an operating
+                  system that seamlessly blends
+                  innovation with tranquility, providing
+                  users with a unique and enriching
+                  digital experience.
+                </OverviewSection.Problem>
+                <OverviewSection.Outcome>
+                  <OverviewSection.OutcomeParagraph>
+                    I designed a contextually aware OS whose primary component was the users calendar.
+                    I focused on enhancing efficiency, personalizing user interactions,
+                    and creating a cohesive and recognizable brand.
+
+                  </OverviewSection.OutcomeParagraph>
+
+
+                </OverviewSection.Outcome>
+              </div>
+              
+            </OverviewSection>
+
+          </div>
 
               </div>
 
@@ -92,95 +118,67 @@ export default function EverestOS() {
           </>
 
 
-          {/* Overview and Solution */}
-          <div className="mt-20 md:mt-32 p-5">
-            <OverviewSection>
-              <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
-                <OverviewSection.Problem>
-                  How might we develop an operating
-                  system that seamlessly blends
-                  innovation with tranquility, providing
-                  users with a unique and enriching
-                  digital experience.
-                </OverviewSection.Problem>
-                <OverviewSection.Outcome>
-                  <OverviewSection.OutcomeParagraph>
-                    I designed a contextually aware OS whose primary component was the users calendar.
-                    I focused on enhancing efficiency, personalizing user interactions,
-                    and creating a cohesive and recognizable brand.
-
-                  </OverviewSection.OutcomeParagraph>
-
-
-                </OverviewSection.Outcome>
-              </div>
-              <OverviewSection.Solution>
-                
-              </OverviewSection.Solution>
-            </OverviewSection>
-
-          </div>
+          
         </div>
         </PageSection.ConstrainedWidth>
-      </PageSection>
-      <PageSection theme="dark">
+      
+      <PageSection.FullWidth theme="dark">
        <SolutionSection>
-       <div className="flex flex-col gap-y-20 px-20 pb-20">
-                  <div className="flex flex-col md:flex-row md:gap-x-20"   >
-                    <Image src={SuggestionsOnLockScreen} alt="Everest OS - Reimagining operating systems" className="w-full"  />
+       <div className="grid grid-cols-4 gap-y-40 gap-x-10 py-20 ">
+                  
+                    <Image src={SuggestionsOnLockScreen} alt="Everest OS - Reimagining operating systems" className="col-span-3"  />
 
-                    <div className="w-full md:w-1/3 flex justify-center items-center">
+                    <div className="w-full flex justify-center items-center">
                       <Type variant="h5" fontType="font-serif"> Contextually aware suggestions on lock screen</Type>
                     </div>
-                  </div>
+                  
 
-                  <div className="w-full flex flex-col md:flex-row md:gap-x-20">
-                    <div className="w-full md:w-1/3 flex justify-center items-center">
+                 
+                    <div className="w-full flex justify-center items-center">
                       <Type variant="h5" fontType="font-serif"> Daily planning with Rituals</Type>
                     </div>
 
-                    <Image src={Rituals} alt="Everest OS - Reimagining operating systems" className="w-full md:w-2/3 rounded-2xl" />
+                    <Image src={Rituals} alt="Everest OS - Reimagining operating systems" className="w-full col-span-3 rounded-2xl" />
 
-                  </div>
+                  
 
-                  <div className="flex flex-col md:flex-row md:gap-x-20"  >
-                    <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                
+                    <video loop autoPlay muted className="w-full col-span-3 rounded-2xl">
                       <source src="./assets/everestos/CalendarIntegration.mp4" type="video/mp4" />
                     </video>
-                    <div className="w-full md:w-1/3 flex justify-center items-center">
+                    <div className="w-full flex justify-center items-center">
                       <Type variant="h5" fontType="font-serif"> Seamless calendar integration</Type>
                     </div>
-                  </div>
-                  <div className="flex flex-col md:flex-row">
-                    <div className="w-full md:w-2/3 flex justify-center items-center">
+                  
+                  
+                    <div className="w-full flex justify-center items-center">
                       <Type variant="h5" fontType="font-serif"> Simplify your process with smart workflows</Type>
                     </div>
 
-                    <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                    <video loop autoPlay muted className="w-full col-span-3 rounded-2xl">
                       <source src="./assets/everestos/Workflows.mp4" type="video/mp4" />
                     </video>
 
-                  </div>
-                  <div className="flex flex-col md:flex-row md:gap-x-20"  >
-                    <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                  
+                  
+                    <video loop autoPlay muted className="w-full col-span-3 rounded-2xl">
                       <source src="./assets/everestos/multitasking.mp4" type="video/mp4" />
                     </video>
-                    <div className="w-full md:w-1/3 flex justify-center items-center">
+                    <div className="w-full flex justify-center items-center">
                       <Type variant="h5" fontType="font-serif"> Easy clutter less multitasking</Type>
                     </div>
-                  </div>
-                  <div className="flex flex-col md:flex-row">
-                    <div className="w-full md:w-2/3 flex justify-center items-center">
+                  
+                  
+                    <div className="w-full flex justify-center items-center">
                       <Type variant="h5" fontType="font-serif"> Fast access to most used apps</Type>
                     </div>
 
-                    <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
+                    <video loop autoPlay muted className="w-full col-span-3 rounded-2xl">
                       <source src="./assets/everestos/EasyAccess.mp4" type="video/mp4" />
                     </video>
-
-                  </div>
                 </div>
        </SolutionSection>
+       </PageSection.FullWidth>
       </PageSection>
       <PageSection theme="light">
         {/* Process */}
