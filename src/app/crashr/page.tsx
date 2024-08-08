@@ -64,7 +64,7 @@ export default function Crashr() {
                         {/* Project and Info Section */}
                         <>
                             <div className="flex mt-10 flex-col md:flex-row gap-2">
-                                <div className="flex justify-center w-full md:w-2/3 p-5">
+                                <div className="flex flex-col justify-center w-full md:w-2/3 p-5">
 
                                     <ProjectSection>
                                         <ProjectSection.ShortDescription>
@@ -78,6 +78,26 @@ export default function Crashr() {
                                             Their initial website launch, lacking user input, led to usability challenges and brand inconsistencies. They also had Bombers, an alternative community page with a contrasting aesthetic style.  My main goal was with harmonizing their design system and revamping both mobile and desktop sites for Crashr and Bombers while keeping their separate identities.
                                         </ProjectSection.SecondPara>
                                     </ProjectSection>
+                                    {/* Overview and Solution */}
+                        <div className="my-20 md:my-32">
+                            <OverviewSection>
+                                <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
+                                    <OverviewSection.Problem>
+                                        How might we harmonize the design systems of Crashr and Bombers, enhancing the usability and visual cohesiveness of both the mobile and desktop websites, while preserving their distinct brand identities?
+                                    </OverviewSection.Problem>
+                                    <OverviewSection.Outcome>
+                                        <OverviewSection.OutcomeParagraph>
+                                            We conceptualized and designed a design system and created a strong foundation for the Crashr/Bombers brand.
+
+
+                                        </OverviewSection.OutcomeParagraph>
+
+
+                                    </OverviewSection.Outcome>
+                                </div>
+                            </OverviewSection>
+
+                        </div>
 
                                 </div>
 
@@ -107,26 +127,7 @@ export default function Crashr() {
                         </>
 
 
-                        {/* Overview and Solution */}
-                        <div className="my-20 md:my-32 p-5">
-                            <OverviewSection>
-                                <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
-                                    <OverviewSection.Problem>
-                                        How might we harmonize the design systems of Crashr and Bombers, enhancing the usability and visual cohesiveness of both the mobile and desktop websites, while preserving their distinct brand identities?
-                                    </OverviewSection.Problem>
-                                    <OverviewSection.Outcome>
-                                        <OverviewSection.OutcomeParagraph>
-                                            We conceptualized and designed a design system and created a strong foundation for the Crashr/Bombers brand.
-
-
-                                        </OverviewSection.OutcomeParagraph>
-
-
-                                    </OverviewSection.Outcome>
-                                </div>
-                            </OverviewSection>
-
-                        </div>
+                        
                     </div>
                 </PageSection.ConstrainedWidth>
             </PageSection>
