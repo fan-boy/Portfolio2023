@@ -68,10 +68,12 @@ const OtherWork = (props: OtherWorkProps) => {
 
     return (
         <Section theme="dark" name="Other work" number="" classname="w-full my-20 md:mt-32 p-5 p-5 flex flex-col gap-20" >
+            <Section.ConstrainedWidth>
             <div className=" sm:px-20 md:px-0 md:columns-2 md:flex-row gap-10">
                 {cards}
 
             </div>
+            </Section.ConstrainedWidth>
         </Section>
     );
 }

@@ -40,14 +40,14 @@ export default function Hive() {
   return (
     <DefaultPage selected="work">
       <PageSection theme="dark">
+        
         {/* Hero Section */}
         <>
-          <div className="max-h-[75vh]">
+        <div className="max-w-screen-xl max-h-[65vh] rounded-b-lg md:rounded-b-2xl overflow-hidden">
             <Image src={HeroImage} alt="Hive - Enabling a safe return to work environment" className="rounded-b-lg md:rounded-b-2xl" />
           </div>
         </>
-      </PageSection>
-      <PageSection theme="dark">
+        <PageSection.ConstrainedWidth>
         <div className="flex flex-col">
 
           {/* Project and Info Section */}
@@ -139,8 +139,9 @@ export default function Hive() {
 
           </div>
         </div>
+        </PageSection.ConstrainedWidth>
       </PageSection>
-      <PageSection theme="dark" isFullWidth>
+      <PageSection theme="dark">
         <SolutionSection>
           <div className="flex flex-col md:flex-row gap-y-20 px-20 pb-20">
             <div className="w-full md:w-2/3 flex flex-col gap-4 justify-center ">
@@ -160,6 +161,7 @@ export default function Hive() {
         <ProcessSection>
 
           <Section theme={"light"} name="Understanding People Involved" number="04">
+            <Section.ConstrainedWidth>
             <Type variant="body">
               Based on the initial breif provided to us, we tried to understand who the users would mainly be. We were able to think of mainly 3  categories of users.
             </Type>
@@ -217,12 +219,13 @@ export default function Hive() {
               </div>
 
             </div>
+            </Section.ConstrainedWidth>
           </Section>
 
 
 
           <Section theme={"light"} name="Research - Understanding the need" number="05" classname="my-20 ">
-
+            <Section.ConstrainedWidth>
             <div className="w-full md:w-2/3">
               <Type variant="body">
                 To get a better understanding of the problem, we interviewed the HR and some employees.
@@ -252,8 +255,10 @@ export default function Hive() {
               </div>
 
             </div>
+            </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Research - Creating User Task Flows" number="06" >
+          <Section.ConstrainedWidth>
             <div className="w-full min-w-full flex flex-col gap-10">
               <div className="w-full md:w-2/3">
 
@@ -488,9 +493,11 @@ export default function Hive() {
               </div>
 
             </div>
+            </Section.ConstrainedWidth>
           </Section>
 
           <Section theme={"light"} name="Defining the structure of the app" number="07">
+          <Section.ConstrainedWidth>
             <div className="w-full md:w-2/3">
 
               <Type variant="body">
@@ -519,8 +526,10 @@ export default function Hive() {
                 <Image className="w-1/4" src={AllHappy} alt="All stakeholders happy!" />
               </div>
             </div>
+            </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Sketching Solutions" number="08">
+          <Section.ConstrainedWidth>
             <div className="w-full flex flex-col md:grid md:grid-cols-2 md:gap-20">
               <Type variant="body">
                 We conducted participatory design sessions with all the stakeholders involved to speed up the design process. We needed to get from design to development asap. I was mainly involved with the HR/Admin portal that was a web app.
@@ -544,7 +553,7 @@ export default function Hive() {
               </div>
             </div>
 
-
+            </Section.ConstrainedWidth>
           </Section>
 
         </ProcessSection>

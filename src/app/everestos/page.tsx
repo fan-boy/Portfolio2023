@@ -30,14 +30,14 @@ export default function EverestOS() {
   return (
     <DefaultPage selected="work">
       <PageSection theme="dark" >
+        
         {/* Hero Section */}
         <>
-          <div className="max-h-[75vh]">
-            <Image src={HeroImage} alt="Everest OS - Reimagining operating systems" className="rounded-b-2xl" />
+        <div className="max-w-screen-xl max-h-[65vh] rounded-b-lg md:rounded-b-2xl overflow-hidden">
+            <Image src={HeroImage} alt="Everest OS - Reimagining operating systems" />
           </div>
         </>
-      </PageSection>
-      <PageSection theme="dark">
+        <PageSection.ConstrainedWidth>
         <div className="flex flex-col">
 
           {/* Project and Info Section */}
@@ -121,8 +121,9 @@ export default function EverestOS() {
 
           </div>
         </div>
+        </PageSection.ConstrainedWidth>
       </PageSection>
-      <PageSection theme="dark" isFullWidth>
+      <PageSection theme="dark">
        <SolutionSection>
        <div className="flex flex-col gap-y-20 px-20 pb-20">
                   <div className="flex flex-col md:flex-row md:gap-x-20"   >
@@ -186,7 +187,7 @@ export default function EverestOS() {
         <ProcessSection>
 
           <Section theme={"light"} name="Defining expectations" number="04">
-
+            <Section.ConstrainedWidth>
             <div className="w-full md:w-2/3 flex flex-col gap-4">
               <Type variant="h5">
                 What this project is and what to expect?
@@ -207,9 +208,10 @@ export default function EverestOS() {
               </ListItem>
 
             </div>
+            </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Reserarch" number="05">
-
+          <Section.ConstrainedWidth>
             <div className="w-full md:w-2/3">
 
               <Type variant="body">
@@ -297,9 +299,10 @@ export default function EverestOS() {
 
             </div>
 
-
+            </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Inspiration" number="05">
+          <Section.ConstrainedWidth>
             <div className="w-full md:w-2/3 flex flex-col gap-4 ">
               <Type variant="body">
                 I have always loved hiking in the Himalayas. I feel that hiking is very similar to everyday life with some extreme challenges. I got inspired by my own experience for this.
@@ -308,11 +311,13 @@ export default function EverestOS() {
                 EverestOS is inspired by a hikers experience on one of the most beautiful places on this world - The Himalayas
               </Type>
             </div>
-            <Image src={Inspo} alt="Himalayas" className="w-full mt-20" />
+            </Section.ConstrainedWidth>
+            <Image src={Inspo} alt="Himalayas" className="w-full mt-20 px-20" />
 
             
           </Section>
           <Section theme={"light"} name="Branding" number="06">
+          <Section.ConstrainedWidth>
             <div className="w-full md:w-2/3">
               <Type variant="body">
               I started out by defining the color scheme. I picked up colors from what you would see in the Himalayas. I loved how in a sea of flowers or a bed of trees, a single more contrasty flower or tree popped out and I used that as my inspiration.
@@ -346,9 +351,10 @@ export default function EverestOS() {
               
             </div>
 
-            
+            </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Creating OS screens" number="07">
+          <Section.ConstrainedWidth>
             <div className="w-full md:w-2/3 ">
               <Type variant="body">
               The OS screens needed to be unique and something never seen before. I started out with simple paper sketches and low fidelity prototypes.
@@ -360,14 +366,16 @@ export default function EverestOS() {
                     </video>
                     </div>
 
-            
+                    </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Creating a marketing website" number="08">
+          <Section.ConstrainedWidth>
             <div className="w-full md:w-2/3 ">
               <Type variant="body">
               I realized that the most important aspect of an OS is how it is marketed. I wanted to create a website that is true to the inspiration of the OS. Something that would take the customer on a journey across the features of the OS.
               </Type>
             </div>
+            </Section.ConstrainedWidth>
             <div className="w-full flex flex-col items-center mt-20 gap-10" >
             <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl object-fill ">
                       <source src="./assets/everestos/Website.mp4" type="video/mp4" />

@@ -47,14 +47,15 @@ export default function UniversityPark() {
     return (
         <DefaultPage selected="work">
             <PageSection theme="dark">
+                
                 {/* Hero Section */}
                 <>
-                    <div className="max-h-[75vh]">
+                <div className="max-w-screen-xl max-h-[65vh] rounded-b-lg md:rounded-b-2xl overflow-hidden">
                         <Image src={HeroImage} alt="University Park: Gamifying sustainability" className="rounded-b-lg md:rounded-b-2xl" />
                     </div>
                 </>
-            </PageSection>
-            <PageSection theme="dark">
+                
+                <PageSection.ConstrainedWidth>
                 <div className="flex flex-col">
 
                     {/* Project and Info Section */}
@@ -131,11 +132,11 @@ export default function UniversityPark() {
 
                     </div>
                 </div>
-
-            </PageSection>
-            <PageSection theme="dark" isFullWidth>
+                </PageSection.ConstrainedWidth>
+            
+                <PageSection.FullWidth theme="dark">
                 <SolutionSection>
-                <div className="flex flex-col gap-y-20 px-20 pb-20">
+                <div className="flex flex-col gap-y-20  pb-20">
                                     <div className="flex flex-col md:flex-row md:gap-x-20"   >
                                         <video loop autoPlay muted className="w-full md:w-2/3 rounded-2xl">
                                             <source src="./assets/universitypark/OnboardingFlow.mp4" type="video/mp4" />
@@ -171,19 +172,20 @@ export default function UniversityPark() {
 
                                 </div>
                 </SolutionSection>
+                </PageSection.FullWidth>
+            
             </PageSection>
-
 
 
 
             <PageSection theme="light">
 
-
+                
                 {/* Process */}
                 <ProcessSection>
-
+                    
                     <Section theme={"light"} name="Research and Analysis" number="04">
-
+                        <Section.ConstrainedWidth>
                         <div className="w-full mt-12">
                             <div className="w-full mt-12 md:w-2/3">
                                 <Type variant="h5">
@@ -226,12 +228,12 @@ export default function UniversityPark() {
 
                             </div>
                         </div>
-
+                        </Section.ConstrainedWidth>
 
                     </Section>
 
                     <Section theme={"light"} name="Understanding Users" number="05">
-
+                        <Section.ConstrainedWidth>
                         <div className="w-full flex flex-col mt-12 gap-20">
                             <div className="flex flex-col md:flex-row">
                                 <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
@@ -269,8 +271,10 @@ export default function UniversityPark() {
                             </div>
 
                         </div>
+                        </Section.ConstrainedWidth>    
                     </Section>
                     <Section theme={"light"} name="Conceptual designs" number="06">
+                        <Section.ConstrainedWidth>
                         <div className="w-full mt-8 flex flex-col gap-8">
 
                             <Type variant="body" className="md:w-2/3">
@@ -310,7 +314,9 @@ export default function UniversityPark() {
 
                             </div>
                         </div>
-                        <div className="w-full mt-12">
+                        
+                        
+                            
                             <div className="w-full mt-12 md:w-2/3">
                                 <Type variant="h5">
                                     Crazy Eights
@@ -321,13 +327,16 @@ export default function UniversityPark() {
                                     We then spent some time sketching out how we thought the pages should look independently and what features they should have and then voted on the best ones.
                                 </Type>
                             </div>
+                            </Section.ConstrainedWidth>
                             <div className="flex ">
                                 <Image src={CrazyEights} className='' alt="Crashr Primary Logo" />
 
                             </div>
-                        </div>
+                            
+                        
 
-                        <div className="w-full mt-12">
+                        
+                        <Section.ConstrainedWidth>
                             <div className="w-full mt-12 md:w-2/3">
                                 <Type variant="h5">
                                     First look at our screens!
@@ -338,16 +347,18 @@ export default function UniversityPark() {
                                     After voting we  made the first version of the product to show our client and get some precious feedback
                                 </Type>
                             </div>
+                            </Section.ConstrainedWidth>
                             <div className="flex ">
                                 <Image src={MidFi} className='' alt="Crashr Primary Logo" />
 
                             </div>
-                        </div>
+                        
 
 
                     </Section>
                     <Section theme={"light"} name="Information Architecture" number="07">
-                        <div className="w-full mt-12">
+                        
+                            <Section.ConstrainedWidth>
                             <div className="w-full mt-12 md:w-2/3 flex flex-col gap-4">
                                 <Type variant="body">
                                     In order to determine the information architecture of the practices page we conducted a simple card sorting exercise with the residents of university park and some proxy users.
@@ -356,10 +367,12 @@ export default function UniversityPark() {
                                     We conducted this online and in person
                                 </Type>
                             </div>
+                           
                             <div className="grid grid-cols-2 gap-4 items-center mt-12">
                                 <Image src={CardSort} className='' alt="Crashr Primary Logo" />
                                 <Image src={OnlineCardSort} className='' alt="Crashr Primary Logo" />
                             </div>
+                          
                             <div className="w-full mt-12 ">
                                 <Type variant="body">
                                     We got the following categories from the card sort
@@ -372,10 +385,12 @@ export default function UniversityPark() {
                                 <ListItem number="04" name="Garden Management" />
                                 <ListItem number="05" name="Energy Renewables" />
                             </div>
-                        </div>
+                            </Section.ConstrainedWidth>
+                        
 
                     </Section>
                     <Section theme={"light"} name="Adding motivators" number="08">
+                        <Section.ConstrainedWidth>
                         <div className="w-full mt-12">
                             <div className="w-full mt-12 md:w-2/3">
                                 <Type variant="body">
@@ -406,7 +421,9 @@ export default function UniversityPark() {
                                 </ListItem>
                             </div>
                         </div>
-                        <div>
+                        </Section.ConstrainedWidth>
+                        <div className="w-full">
+                        <Section.ConstrainedWidth>
                             <div className="w-full mt-12 ">
                                 <Type variant="h5">
                                     Our game plan
@@ -421,7 +438,8 @@ export default function UniversityPark() {
                                 </Type>
 
                             </div>
-                            <div className="w-full flex justify-center gap-4">
+                            </Section.ConstrainedWidth>
+                            <div className="w-full flex gap-4">
                                 <div className="w-1/2 flex flex-col gap-4 justify-center items-center ">
                                 <Image className="w-2/3 mt-6 " src={Points} alt="University Park: Gamifying sustainability" />
                                 <Type variant="body">
@@ -440,6 +458,7 @@ export default function UniversityPark() {
                     </Section>
 
                     <Section theme={"light"} name="Design System" number="09">
+                        <Section.ConstrainedWidth>
                         <div className="w-full mt-12">
                             <div className="w-full mt-12 ">
                                 <Type variant="h5">
@@ -451,27 +470,31 @@ export default function UniversityPark() {
                                     Having 5 creative heads working on this project, this task was more challenging than we anticipated. We started out by creating a moodboard. Each of us then created our own version of a screen and we voted to pick a design theme. After lot of back and forth we were able to finalize our design system
                                 </Type>
                             </div>
-                            <div className="py-10 md:p-20 flex w-full justify-center">
-                                <div className="w-full md:w-5/6 ">
+                            <div className="mt-10 md:mt-20 flex w-full justify-center">
+                                <div className="w-full  ">
                                     <ComponentsDisplaySlider />
                                 </div>
 
                             </div>
                         </div>
+                        </Section.ConstrainedWidth>
                     </Section>
                     <Section theme={"light"} name="Final screens based on design system" number="10">
+                        
                         <div className="w-full flex flex-row items-center justify-center mt-12 gap-4 ">
 
-                            <Type className="w-2/6" variant="h5">
+                            <Type className="w-1/6" variant="h5">
                                 Figma Prototype of our screens for user testing:
                             </Type>
-                            <Type className="md:hidden w-2/3 p-4 text-center" variant="body">
+                            <Type className="md:hidden w-5/6 p-4 text-center" variant="body">
                                             Open on desktop to view figma prototype
                                         </Type>
                             <iframe className="hidden md:block rounded-2xl border-gray-500 border" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXmPa2ddmTmsZwwG1Kibpg3%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-5102%26viewport%3D607%252C366%252C0.02%26t%3DHWFaX8ou532ucJk9-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D1%253A5102%26mode%3Ddesign" allowFullScreen></iframe>
                         </div>
+                        
                     </Section>
                     <Section theme={"light"} name="User Testing" number="11">
+                    <Section.ConstrainedWidth>
                         <div className="w-full mt-12">
                             <div className="w-full mt-12 md:w-2/3">
                                 <Type variant="body">
@@ -543,8 +566,10 @@ export default function UniversityPark() {
                             </div>
 
                         </div>
+                        </Section.ConstrainedWidth>
                     </Section>
                     <Section theme={"light"} name="Admin" number="12">
+                    <Section.ConstrainedWidth>
                         <div className="w-full mt-12 ">
                             <Type variant="h5">
                                 Providing Key Resident Insights
@@ -557,12 +582,14 @@ export default function UniversityPark() {
 
 
                         </div>
+                        </Section.ConstrainedWidth>
                         <div className="w-full flex justify-center">
                             <Image className="w-4/5 mt-6 rounded-xl" src={adminHomePage} alt="University Park: Gamifying sustainability" />
                         </div>
 
-
-                        <div className="w-full mt-12 pt-12">
+                        
+                        
+                        <Section.ConstrainedWidth>
                             <div className="w-full mt-12">
                                 <Type variant="h5">
                                     Editing Resident portal pages
@@ -573,12 +600,13 @@ export default function UniversityPark() {
                                     Our admin users were not technologically advanced, so we wanted to keep the screens as simple as possible. We decided to take the WYSIWYG approach for editing all the key pages on the website.
                                 </Type>
                             </div>
+                            </Section.ConstrainedWidth>
                             <div className="w-full flex justify-center gap-4">
                                 <Image className="w-1/2 mt-6 rounded-lg" src={adminEditPractice} alt="University Park: Gamifying sustainability" />
                                 <Image className="w-1/2 mt-6 rounded-lg" src={adminEditChallenge} alt="University Park: Gamifying sustainability" />
                             </div>
 
-                        </div>
+                        
                         <div>
 
                         </div>

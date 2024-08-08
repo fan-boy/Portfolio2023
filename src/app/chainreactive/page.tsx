@@ -36,14 +36,14 @@ export default function ChainReactive() {
   return (
     <DefaultPage selected="work">
       <PageSection theme="dark" >
+        
         {/* Hero Section */}
         <>
-          <div className="max-h-[75vh]">
-            <Image src={HeroImage} alt="Chain Reactive LLC - Order Scheduling Case study"  className="rounded-b-lg md:rounded-b-2xl"/>
+          <div className="max-w-screen-xl max-h-[65vh] rounded-b-lg md:rounded-b-2xl overflow-hidden">
+            <Image src={HeroImage} alt="Chain Reactive LLC - Order Scheduling Case study"/>
           </div>
         </>
-      </PageSection>
-      <PageSection theme="dark">
+        <PageSection.ConstrainedWidth>
         <div className="flex flex-col">
 
           {/* Project and Info Section */}
@@ -102,7 +102,7 @@ export default function ChainReactive() {
 
 
           {/* Overview and Solution */}
-          <div className="mt-20 md:mt-32 p-5">
+          <div className="mt-20  ">
             <OverviewSection>
               <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
                 <OverviewSection.Problem>
@@ -137,8 +137,10 @@ export default function ChainReactive() {
 
           </div>
         </div>
+        </PageSection.ConstrainedWidth>
+      
       </PageSection>
-      <PageSection theme="dark" isFullWidth>
+      <PageSection theme="dark" >
         <SolutionSection>
         <div className="flex flex-col gap-y-20 px-20 pb-20">
                   <div className="flex flex-col md:flex-row">
@@ -167,9 +169,7 @@ export default function ChainReactive() {
         <ProcessSection>
 
           <Section theme={"light"} name="Understanding Users" number="04">
-            <Type variant="body">
-              First step was to get an understanding of who the users were.
-            </Type>
+            <Section.ConstrainedWidth>
 
             <div className="w-full flex flex-col mt-12 gap-20">
               <div className="flex flex-col md:flex-row">
@@ -208,10 +208,11 @@ export default function ChainReactive() {
               </div>
 
             </div>
+            </Section.ConstrainedWidth>
           </Section>
 
           <Section theme={"light"} name="User Research - Uncovering Issues" number="05" classname="my-20 ">
-
+          <Section.ConstrainedWidth>
             <div className="w-full md:w-2/3">
               <Type variant="body">
                 To get a baseline understanding of the public space, I conducted semi-structured interviews with businesses and customers. Here are the findings.
@@ -246,9 +247,10 @@ export default function ChainReactive() {
                 From the standpoint of business owners, the order scheduling feature held significant importance, whereas for consumers, it was considered more of an optional feature. This is because consumers primarily placed orders for immediate delivery or pickup.
               </Type>
             </div>
+            </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Competitor Analysis" number="06">
-
+          <Section.ConstrainedWidth>
             <div className="w-full flex flex-col md:grid md:grid-cols-3 md:gap-3">
               <Image src={DoordashImage} alt="Doordash competitve analysis" />
               <Image src={PostmatesImage} alt="Postmates competitve analysis" />
@@ -272,8 +274,10 @@ export default function ChainReactive() {
                 </ListItem>
               </div>
             </div>
+            </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Sketching Solutions" number="07">
+          <Section.ConstrainedWidth>
             <div className="w-full flex flex-col md:grid md:grid-cols-2 md:gap-20">
               <Type variant="body">
                 After gathering research insights, I engaged in ideation to explore potential solutions and user flows. To solidify ideas and visualize the interactions, I initiated the process by creating sketches.
@@ -282,6 +286,7 @@ export default function ChainReactive() {
                 Since we were in the early stages of the product we did User testing on the paper prototypes itself
               </Type>
             </div>
+            
             <div className="mt-10 md:mt-20 grid grid-cols-3 md:grid-cols-2  justify-items-center items-center gap-x-2 gap-y-10 md:gap-10">
               <Image className="w-full col-span-2 md:col-span-1" src={Sketch1} alt="A 3 step time picker" />
               <Image className="w-1/2 col-span-1 " src={BusinessOwnerHappy} alt="Happy Business Owners" />
@@ -298,6 +303,7 @@ export default function ChainReactive() {
                 <Image className="w-3/5 col-span-1" src={BothHappy} alt="Happy Customers and Business Owners" />
               </div>
             </div>
+            </Section.ConstrainedWidth>
           </Section>
 
         </ProcessSection>
@@ -336,6 +342,7 @@ export default function ChainReactive() {
 
       </PageSection>
       <PageSection theme="dark"  >
+        
         <OtherWork currentProject={"chainreactive"}/>
       </PageSection>
 

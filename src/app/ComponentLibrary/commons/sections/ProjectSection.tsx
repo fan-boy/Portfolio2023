@@ -20,7 +20,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
   );
 }
 ProjectSection.ShortDescription = (props: ProjectSectionProps) => (
-    <div className="">
+    <div className="w-full  justify-self-start">
     <Type variant="emphasized-body">
        {props.children} 
     </Type>

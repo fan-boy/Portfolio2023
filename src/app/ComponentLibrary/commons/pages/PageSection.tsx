@@ -7,29 +7,47 @@ export type theme =
 |"light"
 |"dark"
 
-export default function PageSection({
-    children,
-    theme,
-    isFullWidth
-  }: {
-    children: React.ReactNode,
-    theme:theme,
-    isFullWidth?:boolean
-  }) {
+
+interface PageSectionProps {
+  children: React.ReactNode,
+  theme?:theme
+}
+
+const PageSection = (props:PageSectionProps) =>{
+
   return (
-    isFullWidth?(
-    <div className={`w-full ${theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
-      {children}
-    </div> ):(
+    
+    
     <main className={`flex flex-col `}>
        
-        <div className={`flex  justify-center ${theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
-        <div className="flex  max-w-xs sm:max-w-3xl md:max-w-5xl justify-center ">
-        <div className="flex  flex-col w-full">
-        {children}
+        <div className={`flex flex-col items-center  ${props.theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
+        
+        {props.children}
+        
         </div>
-        </div>
-        </div>
-    </main>)
+    </main>
   )
+
 }
+
+PageSection.FullWidth = (props:PageSectionProps) =>(
+  <div className="w-screen flex flex-col px-10">
+    <div className={`flex   ${props.theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
+    <span className="font-sans text-md md:text-lg">
+      {props.children}
+    </span>
+    </div>
+  </div>
+)
+
+PageSection.ConstrainedWidth = (props:PageSectionProps) =>(
+  <div className="flex  max-w-xs sm:max-w-3xl md:max-w-5xl ">
+        <div className="flex  flex-col w-full">
+        {props.children}
+        </div>
+        </div>
+)
+
+PageSection.displayName = 'PageSection';
+
+export default PageSection;

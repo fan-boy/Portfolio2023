@@ -10,6 +10,10 @@ interface SectionProps{
     classname?:string
 }
 
+interface SubSectionProps{
+    children:React.ReactNode;
+}
+
 const Section = (props:SectionProps) =>{
 
     let classname= "";
@@ -20,10 +24,11 @@ const Section = (props:SectionProps) =>{
     }
 
     return(
-        <div className={`w-full ${classname}`}>
-            <SectionDivider theme = {props.theme} name={props.name} number={props.number}/>
-
-            <div className="mt-5 md:mt-8">
+        <div className={`w-full flex flex-col items-center ${classname}`}>
+            
+             <SectionDivider theme = {props.theme} name={props.name} number={props.number}/>
+            
+            <div className="mt-5 md:mt-8 flex flex-col items-center justify-center">
                 {props.children}
 
             </div>
@@ -31,6 +36,15 @@ const Section = (props:SectionProps) =>{
         </div>
     );
 }
+
+Section.ConstrainedWidth = (props:SubSectionProps)=>(
+    <div className="flex  max-w-xs sm:max-w-3xl md:max-w-5xl justify-center ">
+        <div className="flex flex-col w-full">
+        {props.children}
+        </div>
+        </div>
+);
+
 
 Section.displayName = "Section";
 

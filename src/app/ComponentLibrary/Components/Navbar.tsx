@@ -10,20 +10,17 @@ interface NavbarProps{
 const Navbar = (props:NavbarProps) =>{
 
     return(
-        <div className="w-full bg-[#E7E7E7] p-2   items-center sm:grid sm:grid-cols-3 ">
+        <div className="w-full bg-backgroundDark text-fontDark p-2   items-center flex justify-between ">
 
-            <ButtonOrLink className="hidden sm:block font-sans text-fontLight ml-4" href="/">
+            <ButtonOrLink className="hidden sm:block font-sans font-regular ml-4" href="/">
             <span>
                 Aaditya Shete
             </span>
-            <span className="font-thin ml-2">
-                Portfolio
-            </span>
             </ButtonOrLink>
 
-            <div className=" flex items-center justify-center">
+            <div className=" flex items-right justify-right">
 
-            <span className="flex  flex-row gap-2 justify-self-center">
+            <span className="flex  flex-row gap-2 ">
            <NavbarButton intent={props.selected === "work"?"selected":"default"} href="/">Work</NavbarButton>
            <NavbarButton intent={props.selected === "about"?"selected":"default"} href="/about">About</NavbarButton>
            <NavbarButton intent={props.selected === "resume"?"selected":"default"} href="/resume">Resume</NavbarButton>
