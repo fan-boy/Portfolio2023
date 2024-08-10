@@ -11,7 +11,7 @@ interface SectionDividerProps {
 const SectionDivider = (props: SectionDividerProps) => {
 
     return (
-        <div className="w-full max-w-xs sm:max-w-3xl md:max-w-5xl md:max-w-5xl">
+        <div className="w-full max-w-xs sm:max-w-3xl md:max-w-4xl ">
             <div className="flex flex-row w-full justify-between">
                 <Type variant="small">{props.name}</Type>
                 <Type variant="small">{props.number}</Type>

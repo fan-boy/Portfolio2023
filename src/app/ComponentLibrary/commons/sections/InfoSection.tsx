@@ -11,7 +11,7 @@ interface InfoSectionProps {
 const InfoSection = (props: InfoSectionProps) => {
 
   return (
-    <Section theme="dark" name="Info" number="02" >
+    <Section theme="dark" name="Info" number="02" dontCenter >
       <div className="flex gap-x-8 md:gap-x-0 flex-col gap-y-8">
         {props.children}
       </div>
@@ -29,7 +29,7 @@ InfoSection.Role = (props: InfoSectionProps) => (
   </div>
 )
 InfoSection.Timeline = (props: InfoSectionProps) => (
-  <div className="flex flex-col w-1/2 md:2-full" >
+  <div className="flex flex-col w-1/2 md:w-full" >
     <span className="font-sans font-semibold text-md md:text-lg">
       Timeline
     </span>

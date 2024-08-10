@@ -28,6 +28,7 @@ import React from 'react'
 import {Card, varianttype} from '../ComponentLibrary/Components/Card/Card'
 import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork'
 import SolutionSection from '../ComponentLibrary/commons/sections/SolutionSection'
+import GridContentSection from '../ComponentLibrary/Components/GridContentSection'
 
 
 
@@ -171,99 +172,74 @@ export default function ChainReactive() {
           <Section theme={"light"} name="Understanding Users" number="04">
             <Section.ConstrainedWidth>
 
-            <div className="w-full flex flex-col mt-12 gap-20">
-              <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
-                  <div className="w-2/3">
-                    <ListItem number="01" name="Restaurant Customers">
+            <div className="w-full flex flex-col mt-10 gap-20">
+        
+
+              <GridContentSection>
+              <ListItem number="01" name="Restaurant Customers">
                       The customers who would come to the restaurant to grab food. These were mostly college students with a small population of families and empty nesters.
                     </ListItem>
-
+                    <div className="w-full flex items-center justify-center">
+                    <Image className="w-1/3" src={CustomerHungry} alt="Hungry Customers" />
                   </div>
-                </div>
-                <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
-                  <div className="w-2/3">
-                    <Image className="w-1/2" src={CustomerHungry} alt="Hungry Customers" />
+                  <div className="w-full flex items-center justify-center">
+                    <Image className="w-1/3" src={BusinessOwnerMoney} alt="Hungry Customers" />
                   </div>
-                </div>
-
-              </div>
-              <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-1/2 flex flex-col items-end justify-start">
-                  <div className="w-2/3 ">
-                    <Image className="w-1/2" src={BusinessOwnerMoney} alt="Business Owner" />
-                  </div>
-                </div>
-                <div className="w-full md:w-1/2 flex flex-col items-center justify-end">
-                  <div className="w-2/3">
-
-                    <ListItem number="02" name="Business Owners">
+                  <ListItem number="02" name="Business Owners">
                       Business owners were mostly people in the age group of 30-50. They were mostly focused on keeping their business running while also thinking about expanding their income sources.
                     </ListItem>
-
-                  </div>
-                </div>
-
-
-              </div>
-
+              </GridContentSection>
             </div>
             </Section.ConstrainedWidth>
           </Section>
 
           <Section theme={"light"} name="User Research - Uncovering Issues" number="05" classname="my-20 ">
           <Section.ConstrainedWidth>
-            <div className="w-full md:w-2/3">
-              <Type variant="body">
-                To get a baseline understanding of the public space, I conducted semi-structured interviews with businesses and customers. Here are the findings.
-              </Type>
-            </div>
-            <div className="flex relative flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
-              <ListItem number="01">
-                The business owners wanted the customers to schedule the order at a specific time so that they could plan their resources accordingly.
-              </ListItem>
-              <ListItem number="02">
-                The menu items or the pricing of items could differ depending upon the requested delivery time.
-              </ListItem>
-              <ListItem number="03">
-                Traditionally, they took orders over the phone so they didn’t face this issue as they could inform the consumer about any changes immediately.
-              </ListItem>
-              <ListItem number="04">
-                Customers wanted the ability to order in advance for special occasions like parties.
-              </ListItem>
-              <ListItem number="05">
-                Customers wanted the ability to plan their meals for the week and hence needed this feature of being able to schedule the order.
-              </ListItem>
-              <div className="">
-                <Image className="" src={CustomerOwnerIssues} alt="Business Owner" />
-              </div>
+          <div className="flex flex-col mt-10 gap-20">
+          <GridContentSection>
+                                    <div className="w-full">
+                                        <Type variant="h5Subheading">
+                                            Understanding the <span className="italic font-serif font-normal">userbase</span>
+                                        </Type>
 
-            </div>
-            <div className="mt-8 w-full md:w-3/4 flex flex-col gap-6">
-              <Type variant="h4">
-                Key finding -
-              </Type>
-              <Type variant="body">
-                From the standpoint of business owners, the order scheduling feature held significant importance, whereas for consumers, it was considered more of an optional feature. This is because consumers primarily placed orders for immediate delivery or pickup.
-              </Type>
+                                    </div>
+                                    <div className="w-full">
+                                        <Type variant="body">
+                                        To get a baseline understanding of the public space, I conducted semi-structured interviews with 3 businesse owners and 8 customers. 
+                                        </Type>
+                                    </div>
+
+                                </GridContentSection>
+           
+            <GridContentSection >
+            <ListItem number="100%">
+                Business owners wanted the customers to schedule the order at a specific time so that they could plan their resources accordingly. Also the pricing of items changed depending upon the requested delivery time.
+              </ListItem>
+             
+    
+              <ListItem number="72%">
+                Customers wanted the ability to order in advance for special occasions like parties. and meal planning.
+              </ListItem>
+           
+            
+            </GridContentSection>
+
             </div>
             </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Competitor Analysis" number="06">
+
           <Section.ConstrainedWidth>
-            <div className="w-full flex flex-col md:grid md:grid-cols-3 md:gap-3">
-              <Image src={DoordashImage} alt="Doordash competitve analysis" />
+            <div className="flex flex-col mt-10 gap-20">
+            <GridContentSection>
+            <Image src={DoordashImage} alt="Doordash competitve analysis" />
               <Image src={PostmatesImage} alt="Postmates competitve analysis" />
-              <Image src={UberEatsImage} alt="Uber Eats competitve analysis" />
-            </div>
-
-            <div className="mt-20">
-              <Type variant="h4">
-                Findings -
-              </Type>
-
-              <div className="flex flex-col md:grid md:grid-cols-3 gap-10 p-10 md:gap-20 md:p-20">
-                <ListItem number="01" name="Scheduling Times">
+              
+            </GridContentSection>
+            
+              
+               <GridContentSection>
+               <ListItem number="01" name="Scheduling Times">
                   All of the competitors offer choices between group of options
                 </ListItem>
                 <ListItem number="02" name="Optional order scheduling">
@@ -272,20 +248,28 @@ export default function ChainReactive() {
                 <ListItem number="03" name="Complicated time pickers">
                   The time pickers offered by most of the competitors were too clustered.
                 </ListItem>
-              </div>
+                </GridContentSection> 
             </div>
             </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Sketching Solutions" number="07">
           <Section.ConstrainedWidth>
-            <div className="w-full flex flex-col md:grid md:grid-cols-2 md:gap-20">
-              <Type variant="body">
-                After gathering research insights, I engaged in ideation to explore potential solutions and user flows. To solidify ideas and visualize the interactions, I initiated the process by creating sketches.
-              </Type>
-              <Type variant="body">
-                Since we were in the early stages of the product we did User testing on the paper prototypes itself
-              </Type>
-            </div>
+          <GridContentSection>
+                                    <div className="w-full">
+                                        <Type variant="h5Subheading">
+                                            Conducting <span className="italic font-serif font-normal">participatory design </span> sessions
+                                        </Type>
+
+                                    </div>
+                                    <div className="w-full">
+                                        <Type variant="body">
+                                        I engaged in ideation to explore potential solutions and user flows along with the stakeholders. To solidify ideas and visualize the interactions, we initiated the process by creating sketches.Since we were in the early stages of the product we did User testing on the paper prototypes itself.
+                                        </Type>
+                                    </div>
+
+                                </GridContentSection>
+         
+            
             
             <div className="mt-10 md:mt-20 grid grid-cols-3 md:grid-cols-2  justify-items-center items-center gap-x-2 gap-y-10 md:gap-10">
               <Image className="w-full col-span-2 md:col-span-1" src={Sketch1} alt="A 3 step time picker" />
@@ -311,26 +295,40 @@ export default function ChainReactive() {
       <PageSection theme="dark">
         <ResultSection number="08">
 
-          <div className="md:w-2/3">
-            <Type variant="body">
-              We were able to come up with a design that satisfied the needs of the business owners while also keeping the complexity to a minimum for the consumers.
-            </Type>
-          </div>
-          <div className="mt-10">
-            <Type variant="emphasized-body">
-              Keeping all <span className="italic font-serif font-normal">stakeholders</span> happy
-            </Type>
+          <div className="flex flex-col mt-10 gap-20">
+
+        <GridContentSection>
+                                    <div className="w-full">
+                                        <Type variant="h5Subheading">
+                                            How to keep all the<span className="italic font-serif font-normal"> stakeholders happy</span> 
+                                        </Type>
+
+                                    </div>
+                                    <div className="w-full">
+                                        <Type variant="body">
+                                        We were able to come up with a design that satisfied the needs of the business owners while also keeping the complexity to a minimum for the consumers.
+                                        </Type>
+                                    </div>
+
+                                </GridContentSection>
+
+        
+
+         
+          
+            
 
 
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-10 p-10 md:gap-20 md:p-20">
-              <ListItem number="01" name="Business Owners">
+            <GridContentSection>
+            <ListItem number="01" name="Business Owners">
                 The business owner&#x27;s requirement of having the user select the pickup/delivery time was addressed by making a default selection which would be handled by code.
               </ListItem>
               <ListItem number="02" name="Customers">
                 The end design was a very simple dropdown which didn’t clutter the screen unnecessarily. This worked from the user&#x27;s perspective.
               </ListItem>
+            </GridContentSection>
 
-            </div>
+            
 
             <Type variant="body">
               Throughout this process, I gained valuable insights on the importance of considering the requirements of all user groups and crafting a design that caters to their needs. Different user groups may have distinct roles and perform diverse actions. By avoiding assumptions and following a structured design process, we were able to create a solution that fulfilled the expectations of all stakeholders.

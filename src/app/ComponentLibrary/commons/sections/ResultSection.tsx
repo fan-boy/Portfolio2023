@@ -13,7 +13,7 @@ const ResultSection = (props:SectionProps) =>{
     return(
         <div className = "w-full my-20 p-5 flex flex-col gap-20">
        
-       <Section theme="dark" name="Results" number = {props.number} >
+       <Section theme="dark" name="Learnings" number = {props.number} >
            <Section.ConstrainedWidth>
           {props.children}
           </Section.ConstrainedWidth>

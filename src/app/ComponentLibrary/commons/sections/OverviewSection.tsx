@@ -19,10 +19,10 @@ const OverviewSection = (props:OverviewSectionProps) =>{
 OverviewSection.Problem = (props:OverviewSectionProps) => {
 
   return(
-    <div className="w-full md:w-1/2 flex flex-col gap-y-6 md:gap-y-8">
-      <Type variant="h5">
-        Problem
-      </Type>
+    <div className="w-full md:w-1/2 flex flex-col ">
+      <span className="font-sans font-semibold text-md md:text-lg">
+      Problem
+    </span>
 
       <Type variant="body" className="max-w-prose">
       {props.children}
@@ -36,10 +36,10 @@ OverviewSection.Problem = (props:OverviewSectionProps) => {
 OverviewSection.Outcome = (props:OverviewSectionProps) => {
 
   return(
-    <div className="w-full md:w-1/2 flex flex-col gap-y-6 md:gap-y-8">
-      <Type variant="h5">
-        Outcome
-      </Type>
+    <div className="w-full md:w-1/2 flex flex-col ">
+      <span className="font-sans font-semibold text-md md:text-lg">
+      Outcome
+    </span>
       
       {props.children}
       
