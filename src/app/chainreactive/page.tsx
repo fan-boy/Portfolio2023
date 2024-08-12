@@ -71,7 +71,7 @@ export default function ChainReactive() {
                   </ProjectSection.SecondPara>
                   <ProjectSection.ThirdPara>
                     <Type variant="body" >
-                    <span className="font-bold">For this case study, I'll focus on the order scheduling aspect of the platform.</span>
+                    <span className="font-bold">For this case study, I&apos;ll focus on the order scheduling aspect of the platform.</span>
                     </Type>
                   </ProjectSection.ThirdPara>
                 </ProjectSection>
