@@ -116,7 +116,7 @@ export const Card = ({ type, ...props }: Props) => {
                             </div>
                             }
                             </div>
-                            <div className="w-5/6 mt-5">
+                            <div className="h-24 w-5/6 mt-5 ">
                             <Type variant="h5Sans">
                                {props.subtitle}
                             </Type>
