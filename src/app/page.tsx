@@ -82,15 +82,16 @@ export default function Home() {
 
           <Card title={projectlist[2].projectName} type={projectlist[2].type as varianttype} subtitle={projectlist[2].subtitle} tags={projectlist[2].tags} />
           </div>
-          <div className="mt-10">
-
-          <Card title={projectlist[4].projectName} type={projectlist[4].type as varianttype} subtitle={projectlist[4].subtitle} tags={projectlist[4].tags} />
-          </div>
+          
           <div className="mt-10">
 
           <Card title={projectlist[1].projectName} type={projectlist[1].type as varianttype} subtitle={projectlist[1].subtitle} tags={projectlist[1].tags} />
           </div>
-         
+          <div className="mt-10">
+
+          <Card title={projectlist[3].projectName} type={projectlist[3].type as varianttype} subtitle={projectlist[3].subtitle} tags={projectlist[3].tags} />
+          </div>
+          
 
         </div>
         </PageSection.ConstrainedWidth>
