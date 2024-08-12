@@ -54,23 +54,26 @@ export default function ChainReactive() {
 
                 <ProjectSection>
                   <ProjectSection.ShortDescription>
-                    Building a <span className="italic font-serif font-normal">scalable solution</span> for small businesses.
+                  <span className="italic font-serif font-normal">Dynamic website builder</span> that empowers <span className="italic font-serif font-normal">small businesses</span> to seamlessly add <span className="italic font-serif font-normal">personalized online ordering</span> to their offerings.
+                    
                   </ProjectSection.ShortDescription>
                   <ProjectSection.FirstPara>
                     We wanted to focus on empowering local businesses and small
-                    mom-pop restaurants in rural areas, starting with the town of
-                    Lewisburg. Our objective was to enhance the existing POS
+                    mom-pop restaurants in rural area. Our objective was to enhance the existing POS
                     system offered by the company and contribute to the vibrant
                     culture of community development and upbringing prevalent in
                     United States.
                   </ProjectSection.FirstPara>
                   <ProjectSection.SecondPara>
-                    Recognizing the challenges faced by these businesses due to the
-                    limited availability or inefficiency of popular apps like Doordash
-                    and Grubhub in rural areas, my goal was to create a user-
+                    My goal was to create a user-
                     friendly and adaptable online ordering experience for both
                     businesses and customers, ensuring a seamless process.
                   </ProjectSection.SecondPara>
+                  <ProjectSection.ThirdPara>
+                    <Type variant="body" >
+                    <span className="font-bold">For this case study, I'll focus on the order scheduling aspect of the platform.</span>
+                    </Type>
+                  </ProjectSection.ThirdPara>
                 </ProjectSection>
 
                 {/* Overview and Solution */}

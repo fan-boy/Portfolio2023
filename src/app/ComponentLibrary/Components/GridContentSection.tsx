@@ -11,7 +11,7 @@ interface GridContentSectionProps{
 const GridContentSection = (props:GridContentSectionProps) =>{
 
     return(
-        <div className={`w-full grid grid-cols-2 gap-20 ${props.classname}`}>
+        <div className={`w-full flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-20 ${props.classname}`}>
             {props.children}
             
         </div>

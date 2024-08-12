@@ -21,13 +21,13 @@ const ProjectSection = (props: ProjectSectionProps) => {
 }
 ProjectSection.ShortDescription = (props: ProjectSectionProps) => (
     <div className="w-full  justify-self-start">
-    <Type variant="emphasized-body">
+    <Type variant="h5Subheading">
        {props.children} 
     </Type>
   </div>
 )
 ProjectSection.FirstPara = (props: ProjectSectionProps) => (
-    <div className="mt-3 md:pr-20">
+    <div className="mt-10 md:pr-20">
                   <Type variant="body">
                     {props.children}
                   </Type>

@@ -117,14 +117,14 @@ export const Card = ({ type, ...props }: Props) => {
                             }
                             </div>
                             <div className="w-5/6 mt-5">
-                            <Type variant="h5">
+                            <Type variant="h5Sans">
                                {props.subtitle}
                             </Type>
                             </div>
                         </div>
-                        <Type variant="h5">
+                        {/* <Type variant="h5Sans">
                             {props.tags}
-                        </Type>
+                        </Type> */}
                     </div>
                     <div className="ml-10 group-hover:scale-102 transform transition duration-y">
                     <Image src={image}  alt={props.title} />

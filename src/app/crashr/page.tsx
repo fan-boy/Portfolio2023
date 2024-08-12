@@ -69,7 +69,9 @@ export default function Crashr() {
 
                                     <ProjectSection>
                                         <ProjectSection.ShortDescription>
-                                            <span className="italic font-serif font-normal">Unifying</span> Design and <span className="italic font-serif font-normal">Elevating</span> User Experience
+
+                                        Building a <span className="italic font-serif font-normal">scalable design system</span> for an NFT marketplace, ensuring consistency across the two sister brands
+                                            
 
                                         </ProjectSection.ShortDescription>
                                         <ProjectSection.FirstPara>

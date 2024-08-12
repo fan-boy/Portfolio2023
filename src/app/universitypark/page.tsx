@@ -66,8 +66,7 @@ export default function UniversityPark() {
 
                                     <ProjectSection>
                                         <ProjectSection.ShortDescription>
-                                            Empowering <span className="italic font-serif font-normal">sustainable</span> communities
-
+                                        Platform that <span className="italic font-serif font-normal">educates</span> residents on <span className="italic font-serif font-normal">sustainable practices</span> and <span className="italic font-serif font-normal">fosters a community around sustainability.</span>
                                         </ProjectSection.ShortDescription>
                                         <ProjectSection.FirstPara>
                                             We had the opportunity to collaborate with the Sustainability Committee of University Park on a project aimed at promoting sustainable living practices among residents. The goal was to create a digital platform that fosters engagement, education, and action towards sustainability within the community.
@@ -241,7 +240,41 @@ export default function UniversityPark() {
                             </div>
                         </Section.ConstrainedWidth>
                     </Section>
-                    <Section theme={"light"} name="Conceptual designs - Low Fi" number="06">
+                    <Section theme={"light"} name="Information Architecture" number="06">
+
+                        <Section.ConstrainedWidth>
+
+                            <div className="flex flex-col gap-20 mt-10">
+                                <GridContentSection>
+                                    <div className="w-full">
+                                        <Type variant="h5Subheading">
+                                            Laying down the <span className="italic font-serif font-normal">skeleton</span> of the app.
+                                        </Type>
+
+                                    </div>
+                                    <div className="w-full">
+                                        <Type variant="body">
+                                            In order to determine the information architecture of the practices page we conducted a simple card sorting exercise with the residents of university park and some proxy users. We conducted this online and in person.
+                                        </Type>
+                                    </div>
+
+                                </GridContentSection>
+
+                                <GridContentSection>
+                                    <Image src={CardSort} alt="Crashr Primary Logo" />
+                                    <Image src={OnlineCardSort} alt="Crashr Primary Logo" />
+                                </GridContentSection>
+
+                            </div>
+
+
+
+                        </Section.ConstrainedWidth>
+
+
+                    </Section>
+                    
+                    <Section theme={"light"} name="Conceptual designs - Low Fi" number="07">
                         <Section.ConstrainedWidth>
 
                             <div className="w-full mt-8 flex flex-col gap-20 mt-10">
@@ -272,7 +305,7 @@ export default function UniversityPark() {
 
 
                     </Section>
-                    <Section theme={"light"} name="Conceptual designs - Mid Fi" number="06">
+                    <Section theme={"light"} name="Conceptual designs - Mid Fi" number="08">
                         <Section.ConstrainedWidth>
 
                             <div className="w-full mt-8 flex flex-col gap-20 mt-10">
@@ -309,40 +342,7 @@ export default function UniversityPark() {
 
 
                     </Section>
-                    <Section theme={"light"} name="Information Architecture" number="07">
-
-                        <Section.ConstrainedWidth>
-
-                            <div className="flex flex-col gap-20 mt-10">
-                                <GridContentSection>
-                                    <div className="w-full">
-                                        <Type variant="h5Subheading">
-                                            Laying down the <span className="italic font-serif font-normal">skeleton</span> of the app.
-                                        </Type>
-
-                                    </div>
-                                    <div className="w-full">
-                                        <Type variant="body">
-                                            In order to determine the information architecture of the practices page we conducted a simple card sorting exercise with the residents of university park and some proxy users. We conducted this online and in person.
-                                        </Type>
-                                    </div>
-
-                                </GridContentSection>
-
-                                <GridContentSection>
-                                    <Image src={CardSort} alt="Crashr Primary Logo" />
-                                    <Image src={OnlineCardSort} alt="Crashr Primary Logo" />
-                                </GridContentSection>
-
-                            </div>
-
-
-
-                        </Section.ConstrainedWidth>
-
-
-                    </Section>
-                    <Section theme={"light"} name="Adding motivators" number="08">
+                    <Section theme={"light"} name="Adding motivators" number="09">
                         <Section.ConstrainedWidth>
 
                             <div className="flex flex-col gap-20 mt-10">
@@ -399,7 +399,7 @@ export default function UniversityPark() {
 
                     </Section>
 
-                    <Section theme={"light"} name="Design System" number="09">
+                    <Section theme={"light"} name="Design System" number="10">
                         <Section.ConstrainedWidth>
 
                             <div className="w-full flex flex-col gap-20 mt-10">
@@ -424,7 +424,7 @@ export default function UniversityPark() {
 
                         </Section.ConstrainedWidth>
                     </Section>
-                    <Section theme={"light"} name="User testing" number="09">
+                    <Section theme={"light"} name="User testing" number="11">
                         <Section.ConstrainedWidth>
 
                             <div className="w-full flex flex-col gap-20 mt-10">
@@ -494,7 +494,7 @@ export default function UniversityPark() {
                         </Section.ConstrainedWidth>
                     </Section>
 
-                    <Section theme={"light"} name="High Fidelity - designs" number="11">
+                    <Section theme={"light"} name="High Fidelity - designs" number="12">
                         <Section.ConstrainedWidth>
                             <GridContentSection >
                                 <div className="w-full">
@@ -515,21 +515,18 @@ export default function UniversityPark() {
 
                         </Section.ConstrainedWidth>
                         <div className="flex flex-col mt-20 justify-center">
-                            <Type className="md:hidden w-2/3 p-4 text-center" variant="body">
-                                Open on desktop to view figma prototype
-                            </Type>
                             <iframe className="hidden md:block rounded-2xl border-gray-500 border" width="1024" height="668" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRn4t2e50vXVVze0gCRJ0dq%2FPost-user-testing-screen-updated%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-1897%26viewport%3D73%252C1424%252C0.09%26t%3DvbIFI5h9KMBx0Sy9-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D1%253A1897%26mode%3Ddesign" allowFullScreen></iframe>
                             <Type className="md:hidden w-2/3 p-4 text-center" variant="body">
                                 Open on desktop to view figma prototype
                             </Type>
-                            <div className="w-full flex justify-center">
-                                <Type className=" w-2/3 p-4 text-center" variant="body">
+                            <div className="hidden md:block w-full flex justify-center">
+                                <Type className="w-full p-4 text-center" variant="body">
                                     This prototype just represents the screens. It does not show the gamification or other features in action.
                                 </Type>
                             </div>
                         </div>
                     </Section>
-                    <Section theme={"light"} name="Admin" number="12">
+                    <Section theme={"light"} name="Admin" number="13">
                         <Section.ConstrainedWidth>
                             <GridContentSection >
                                 <div className="w-full">
@@ -584,7 +581,7 @@ export default function UniversityPark() {
             </PageSection>
 
             <PageSection theme="dark">
-                <ResultSection number="08">
+                <ResultSection number="14">
                     <GridContentSection >
                         <div className="w-full">
                             <Type variant="h5Subheading">
