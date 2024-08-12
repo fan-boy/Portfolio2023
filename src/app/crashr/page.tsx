@@ -155,7 +155,7 @@ export default function Crashr() {
                                     </div>
                                     <div className="w-full">
                                         <Type variant="body">
-                                            I had to work with 2 brands. Crashr and Bombers. Bombers was the fun little brother of the main brand focussing more on NFT's. I conducted semi structured interviews with the team to understand the tone they wanted Crashr and Bombers to exude.
+                                            I had to work with 2 brands. Crashr and Bombers. Bombers was the fun little brother of the main brand focussing more on NFT&apos;s. I conducted semi structured interviews with the team to understand the tone they wanted Crashr and Bombers to exude.
                                         </Type>
                                     </div>
 

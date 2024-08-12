@@ -266,7 +266,7 @@ export default function UniversityPark() {
 
                         </Section.ConstrainedWidth>
                         <div className="flex mt-10">
-                            <Image src={CrazyEights} className='' alt="Crashr Primary Logo" />
+                            <Image src={CrazyEights} alt="Crashr Primary Logo" />
 
                         </div>
 
@@ -302,7 +302,7 @@ export default function UniversityPark() {
 
 
                         <div className="flex mt-10 px-5">
-                            <Image src={MidFi} className='' alt="Crashr Primary Logo" />
+                            <Image src={MidFi}  alt="Crashr Primary Logo" />
 
                         </div>
 
@@ -330,8 +330,8 @@ export default function UniversityPark() {
                                 </GridContentSection>
 
                                 <GridContentSection>
-                                    <Image src={CardSort} className='' alt="Crashr Primary Logo" />
-                                    <Image src={OnlineCardSort} className='' alt="Crashr Primary Logo" />
+                                    <Image src={CardSort} alt="Crashr Primary Logo" />
+                                    <Image src={OnlineCardSort} alt="Crashr Primary Logo" />
                                 </GridContentSection>
 
                             </div>
