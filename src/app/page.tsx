@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <DefaultPage selected="work">
       <PageSection theme="dark">
+        <PageSection.ConstrainedWidth>
         <div className="flex flex-col mt-14 mb-14">
           <div className="md:flex md:flex-row md:items-end md:gap-10">
             <div className="flex mt-4 flex-col text-center md:text-left  md:min-w-1/2 gap-4 md:gap-0">
@@ -66,11 +67,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-
+        </PageSection.ConstrainedWidth>        
       </PageSection>
 
 
       <PageSection theme="dark"  >
+        <PageSection.ConstrainedWidth>
         <div className="w-full sm:px-40 md:px-0 md:columns-2 md:flex-row pt-40 gap-10">
           <div className="-mt-40">
 
@@ -80,10 +82,7 @@ export default function Home() {
 
           <Card title={projectlist[2].projectName} type={projectlist[2].type as varianttype} subtitle={projectlist[2].subtitle} tags={projectlist[2].tags} />
           </div>
-          <div className="mt-10">
-
-          <Card title={projectlist[4].projectName} type={projectlist[4].type as varianttype} subtitle={projectlist[4].subtitle} tags={projectlist[4].tags} />
-          </div>
+          
           <div className="mt-10">
 
           <Card title={projectlist[1].projectName} type={projectlist[1].type as varianttype} subtitle={projectlist[1].subtitle} tags={projectlist[1].tags} />
@@ -95,6 +94,7 @@ export default function Home() {
           
 
         </div>
+        </PageSection.ConstrainedWidth>
       </PageSection>
 
 

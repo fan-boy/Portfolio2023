@@ -10,7 +10,7 @@ interface SectionProps{
 const ProcessSection = (props:SectionProps) =>{
 
     return(
-        <div className = "w-full my-20 md:mt-32 p-5 p-5 flex flex-col gap-20">
+        <div className = "w-full my-20 md:mt-32 flex flex-col gap-20">
        
             {props.children}
        

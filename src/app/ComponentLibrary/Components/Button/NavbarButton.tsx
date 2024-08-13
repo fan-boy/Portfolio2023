@@ -6,7 +6,7 @@ const buttonStyles = cva(
 	{
 		variants: {
 			intent: {
-                default:'font-thin text-fontLight',
+                default:'font-thin text-fontDark',
 				selected: ' bg-fontDark text-fontLight ',
 			},
 			

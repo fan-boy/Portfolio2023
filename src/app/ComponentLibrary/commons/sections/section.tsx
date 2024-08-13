@@ -8,6 +8,11 @@ interface SectionProps{
     number:string;
     theme:theme;
     classname?:string
+    dontCenter?:boolean
+}
+
+interface SubSectionProps{
+    children:React.ReactNode;
 }
 
 const Section = (props:SectionProps) =>{
@@ -20,10 +25,11 @@ const Section = (props:SectionProps) =>{
     }
 
     return(
-        <div className={`w-full ${classname}`}>
-            <SectionDivider theme = {props.theme} name={props.name} number={props.number}/>
-
-            <div className="mt-5 md:mt-8">
+        <div className={`w-full  flex flex-col ${props.dontCenter?"items-start":"items-center"} ${classname}`}>
+            
+             <SectionDivider theme = {props.theme} name={props.name} number={props.number}/>
+            
+            <div className={`mt-5 lg:max-w-8xl md:mt-8 flex flex-col ${props.dontCenter?"items-start":"items-center"} justify-center`}>
                 {props.children}
 
             </div>
@@ -31,6 +37,15 @@ const Section = (props:SectionProps) =>{
         </div>
     );
 }
+
+Section.ConstrainedWidth = (props:SubSectionProps)=>(
+    <div className="flex  max-w-xs sm:max-w-3xl md:max-w-4xl justify-center ">
+        <div className="flex flex-col w-full">
+        {props.children}
+        </div>
+        </div>
+);
+
 
 Section.displayName = "Section";
 

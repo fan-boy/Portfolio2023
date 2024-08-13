@@ -29,6 +29,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-7/12 p-5">
               <Section name="About me" number="" theme="dark">
+                <Section.ConstrainedWidth>
                 <div className="flex flex-col gap-10">
                   <div className="flex flex-col gap-2">
                     <Type variant="h2">
@@ -54,6 +55,7 @@ export default function Home() {
                   Beyond pixels and code, I envision becoming a compassionate and approachable design leader and mentor, fostering creativity and innovation. 
                   </Type>
                 </div>
+                </Section.ConstrainedWidth>
               </Section>
             </div>
 
@@ -63,7 +65,7 @@ export default function Home() {
           </Section>
         </div>
       </PageSection>
-      <PageSection theme="dark" isFullWidth>
+      <PageSection theme="dark" >
                 {/* Hero Section */}
                 <div className="w-full ">
                 

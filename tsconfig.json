@@ -20,7 +20,10 @@
       }
     ],
     "paths": {
-      "@ui/*": ["./src/ComponentLibrary/Components/*"]
+      "@uicommon/*": ["./src/ComponentLibrary/commons/*"],
+      "@uicomponents/*":["./src/ComponentLibrary/Components/*"],
+      "@uibase/*":["./src/ComponentLibrary/*"]
+
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -29,6 +29,8 @@ type Variant =
     | "h3"
     | "h4"
     | "h5"
+    | "h5Sans"
+    | "h5Subheading"
     | "emphasized-body"
     | "body"
     | "body-small"
@@ -51,6 +53,8 @@ const tags: Record<Variant, ElementType> = {
     h3: "h4",
     h4: "h5",
     h5: "h6",
+    h5Sans:"h6",
+    h5Subheading:"h6",
     "emphasized-body": "p",
     body: "p",
     "body-small": "p",
@@ -66,6 +70,8 @@ const sizes: Record<Variant, string> = {
     h3: "font-serif md:text-4xl  text-2xl",
     h4: "font-serif md:text-3xl text-xl",
     h5: "font-serif md:text-2xl  text-lg",
+    h5Sans:"font-sans md:text-2xl  text-lg",
+    h5Subheading: "font-sans md:text-[40px] leading-snug  text-lg",
     "emphasized-body": "font-sans not-italic text-md md:text-2xl",
     body: "font-sans md:text-lg text-md",
     "body-small": "font-sans text-md sm:text-sm",

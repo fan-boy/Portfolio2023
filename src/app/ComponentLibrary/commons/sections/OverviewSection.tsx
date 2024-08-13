@@ -10,7 +10,7 @@ interface OverviewSectionProps{
 
 const OverviewSection = (props:OverviewSectionProps) =>{
     return(
-        <Section theme="dark" name="Overview" number = "03" >
+        <Section theme="dark" name="Overview" number = "03"  >
           {props.children}
         </Section>
     );
@@ -19,12 +19,12 @@ const OverviewSection = (props:OverviewSectionProps) =>{
 OverviewSection.Problem = (props:OverviewSectionProps) => {
 
   return(
-    <div className="w-full md:w-1/2 flex flex-col gap-y-6 md:gap-y-8">
-      <Type variant="h4">
-        The Problem
-      </Type>
+    <div className="w-full md:w-1/2 flex flex-col ">
+      <span className="font-sans font-semibold text-md md:text-lg">
+      Problem
+    </span>
 
-      <Type variant="emphasized-body" className="max-w-prose">
+      <Type variant="body" className="max-w-prose">
       {props.children}
       </Type>
 
@@ -36,10 +36,10 @@ OverviewSection.Problem = (props:OverviewSectionProps) => {
 OverviewSection.Outcome = (props:OverviewSectionProps) => {
 
   return(
-    <div className="w-full md:w-1/2 flex flex-col gap-y-6 md:gap-y-8">
-      <Type variant="h4">
-        The Outcome
-      </Type>
+    <div className="w-full md:w-1/2 flex flex-col ">
+      <span className="font-sans font-semibold text-md md:text-lg">
+      Outcome
+    </span>
       
       {props.children}
       
@@ -49,19 +49,7 @@ OverviewSection.Outcome = (props:OverviewSectionProps) => {
 
 }
 
-OverviewSection.Solution = (props:OverviewSectionProps) =>{
-  return(
-    <div className="w-full flex flex-col mt-20 gap-y-10 md:gap-y-20">
-      <Type variant="h4">
-        The Solution
-      </Type>
-      <div>
-      {props.children}
-      </div>
 
-    </div>
-  );
-}
 
 OverviewSection.OutcomeParagraph = (props:OverviewSectionProps) =>{
   return(
