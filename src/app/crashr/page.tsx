@@ -35,6 +35,7 @@ import PasswordProtected from '../ComponentLibrary/commons/sections/PasswordSect
 import React, { useEffect, useState } from 'react'
 import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork'
 import GridContentSection from '../ComponentLibrary/Components/GridContentSection'
+import SolutionSection from '../ComponentLibrary/commons/sections/SolutionSection'
 
 
 
@@ -133,10 +134,53 @@ export default function Crashr() {
 
                     </div>
                 </PageSection.ConstrainedWidth>
-            </PageSection>
+            
+            <PageSection.FullWidth theme="dark" >
+        <SolutionSection>
+        <div className="grid grid-cols-4 gap-y-40 gap-x-10 py-20 ">
+                  
+                    <video loop autoPlay muted className="col-span-3 rounded-2xl">
+                      <source src="./assets/crashr/Videos/CrashrDesktop.mp4" type="video/mp4" />
+                    </video>
+                    <div className="w-full flex flex-col gap-4 justify-end py-20 items-start">
+                      <Type variant="h5" fontType="font-serif"> Desktop Drafts for Crashr</Type>
+                      <Type variant="body" > Some test screens for testing out the design system </Type>
+                    </div>
+                  
+                    <div></div>
+                    <div className=" flex flex-col justify-end py-20 gap-4 items-start">
+                      <Type variant="h5" fontType="font-serif"> Mobile Drafts for Crashr</Type>
+                      <Type variant="body" > Some test screens for testing out the design system </Type>
+                    </div>
+                    
+                      <video loop autoPlay muted className=" rounded-2xl">
+                        <source src="./assets/crashr/Videos/CrashrMobile.mp4" type="video/mp4" />
+                      </video>
+                      <div></div>
+                      <video loop autoPlay muted className="col-span-3 rounded-2xl">
+                      <source src="./assets/crashr/Videos/BombersDesktop.mp4" type="video/mp4" />
+                    </video>
+                    <div className="w-full flex flex-col gap-4 justify-end py-20 items-start">
+                      <Type variant="h5" fontType="font-serif"> Desktop Drafts for Bombers</Type>
+                      <Type variant="body" > Some test screens for testing out the design system </Type>
+                    </div>
+                  
+                    <div></div>
+                    <div className=" flex flex-col gap-4 justify-end py-20 items-start">
+                      <Type variant="h5" fontType="font-serif"> Mobile Drafts for Bombers</Type>
+                      <Type variant="body" > Some test screens for testing out the design system </Type>
+                    </div>
+                    
+                      <video loop autoPlay muted className=" rounded-2xl">
+                        <source src="./assets/crashr/Videos/BombersMobile.mp4" type="video/mp4" />
+                      </video>
+                    
+                  
+                </div>
+        </SolutionSection>
+      </PageSection.FullWidth>
 
-
-
+      </PageSection>
 
             <PageSection theme="light">
 
