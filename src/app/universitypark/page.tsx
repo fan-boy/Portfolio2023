@@ -136,7 +136,7 @@ export default function UniversityPark() {
 
                 <PageSection.FullWidth theme="dark">
                     <SolutionSection>
-                        <div className="grid grid-cols-4 gap-y-40 gap-x-10 py-20 ">
+                        <div className="flex flex-col gap-y-4 md:grid md:grid-cols-4 md:gap-y-40 md:gap-x-10 py-20 ">
                             <video loop autoPlay muted className="col-span-3 rounded-2xl">
                                 <source src="./assets/universitypark/OnboardingFlow.mp4" type="video/mp4" />
                             </video>
