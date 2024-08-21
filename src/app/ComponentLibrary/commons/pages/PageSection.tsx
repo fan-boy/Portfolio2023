@@ -18,9 +18,9 @@ const PageSection = (props:PageSectionProps) =>{
   return (
     
     
-    <main className={`flex flex-col `}>
+    <main className={`flex flex-col overflow-x-hidden `}>
        
-        <div className={`flex flex-col items-center  ${props.theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
+        <div className={`flex flex-col  items-center  ${props.theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
         
         {props.children}
         
