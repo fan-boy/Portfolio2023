@@ -32,7 +32,7 @@ const PageSection = (props:PageSectionProps) =>{
 
 PageSection.FullWidth = (props:PageSectionProps) =>(
   <div className="w-screen lg:max-w-8xl flex flex-col px-10">
-    <div className={`flex   ${props.theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
+    <div className={`flex flex-col  ${props.theme == "dark"?"bg-backgroundDark text-fontDark":"bg-backgroundLight text-fontLight"}`}>
     <span className="font-sans text-md md:text-lg">
       {props.children}
     </span>
