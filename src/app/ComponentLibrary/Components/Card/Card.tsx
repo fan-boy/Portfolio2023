@@ -78,7 +78,7 @@ export const Card = ({ type, ...props }: Props) => {
             break;
             case "Cadence":
             image = Cadence;
-            link = "/everestos"
+            link = "/cadence"
             break;
         default:
             image= Crashr;

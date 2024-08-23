@@ -362,7 +362,7 @@ export default function Cadence() {
       </PageSection>
       <PageSection theme="dark"  >
 
-        <OtherWork currentProject={"chainreactive"} />
+        <OtherWork currentProject={"cadence"} />
       </PageSection>
 
     </DefaultPage>
