@@ -19,6 +19,8 @@ import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork';
 import Hero from '../../../public/assets/Cadence/hero.png'
 import Inspiration from '../../../public/assets/Cadence/inspiration.png'
 import MappingSurface from '../../../public/assets/Cadence/mappingsurface.png'
+import UserFlow from '../../../public/assets/Cadence/Userflow.png'
+import Storyboard from '../../../public/assets/Cadence/Storyboard.png'
 import { ButtonOrLink } from '../ComponentLibrary/Components/Button/LinkOrButton';
 
 
@@ -193,11 +195,15 @@ export default function Cadence() {
                   </div>
 
                 </GridContentSection>
+              </div>
+              
+            </Section.ConstrainedWidth>
+            <div className="flex flex-col gap-y-4 md:grid md:grid-cols-3 items-center px-4 md:gap-y-40 md:gap-x-10 py-20 ">
 
-
+                <Image src={UserFlow} className="col-span-1" alt="High levelUserflow"/>
+                <Image src={Storyboard} className="col-span-2" alt="Storyboard"/>
 
               </div>
-            </Section.ConstrainedWidth>
           </Section>
           <Section theme={"light"} name="Building the base" number="06 " classname="my-20 ">
             <Section.ConstrainedWidth>

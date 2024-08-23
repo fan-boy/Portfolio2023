@@ -9,6 +9,7 @@ import Crashr from 'public/assets/home/crashr/CrashrImage.png'
 import Hive from 'public/assets/home/hive/hiveimage.png'
 import EverestOS from 'public/assets/home/everestos/everestosCard.png'
 import UPark from 'public/assets/home/universitypark/UParkCard.png'
+import Cadence from 'public/assets/home/Cadence/image.png'
 import React from 'react';
 import Link from 'next/link';
 
@@ -38,7 +39,8 @@ const cardStyles = cva(
                     'bg-chainReactiveCard',
                 hive: 'bg-hiveCard text-white focus:ring-red-500',
                 everestos:'bg-everestosCard',
-                upark:'bg-uParkCard'
+                upark:'bg-uParkCard',
+                cadence:'bg-cadenceCard'
             },
             
         },
@@ -72,6 +74,10 @@ export const Card = ({ type, ...props }: Props) => {
             break;
         case "Everest OS":
             image = EverestOS;
+            link = "/everestos"
+            break;
+            case "Cadence":
+            image = Cadence;
             link = "/everestos"
             break;
         default:

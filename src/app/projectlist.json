@@ -25,5 +25,19 @@
         "subtitle":" Reimagining operating systems",
         "tags":"Visual design • Branding • Passion Project"
 
+    },
+    {
+        "projectName":"Cadence",
+        "type":"cadence",
+        "subtitle":" Designing new interactions in an ArtTech installation",
+        "tags":"Visual design • Branding • Passion Project"
+
+    },
+    {
+        "projectName":"Hive",
+        "type":"hive",
+        "subtitle":" Simplifying Return to work",
+        "tags":"Visual design • Branding • Passion Project"
+
     }
 ]

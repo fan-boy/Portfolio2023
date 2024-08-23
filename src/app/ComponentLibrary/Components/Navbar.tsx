@@ -20,7 +20,7 @@ const Navbar = (props:NavbarProps) =>{
             </span>
             </ButtonOrLink>
 
-            <div className=" flex items-right justify-right">
+            <div className=" flex items-center sm:items-right justify-right">
 
             <span className="flex  flex-row gap-2 ">
            <NavbarButton intent={props.selected === "work"?"selected":"default"} href="/">Work</NavbarButton>
