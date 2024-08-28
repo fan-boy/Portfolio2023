@@ -64,7 +64,7 @@ export default function Monumap() {
                     <OverviewSection>
                       <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
                         <OverviewSection.Problem>
-                        How might we enhance traditional tourism experiences, to create a more interactive and immersive way for visitors to engage deeply with the city's rich history and cultural significance?
+                        How might we enhance traditional tourism experiences, to create a more interactive and immersive way for visitors to engage deeply with the city&#39;s rich history and cultural significance?
                         </OverviewSection.Problem>
                         <OverviewSection.Outcome>
                           <OverviewSection.OutcomeParagraph>
