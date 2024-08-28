@@ -16,7 +16,7 @@ import ListItem from '../ComponentLibrary/Components/List Items/listitem';
 import ResultSection from '../ComponentLibrary/commons/sections/ResultSection';
 import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork';
 
-import Hero from '../../../public/assets/Cadence/hero.png'
+import Hero from '../../../public/assets/Cadence/hero.png';
 import Inspiration from '../../../public/assets/Cadence/inspiration.png'
 import MappingSurface from '../../../public/assets/Cadence/mappingsurface.png'
 import UserFlow from '../../../public/assets/Cadence/Userflow.png'

@@ -40,7 +40,7 @@ export default function Home() {
                     </Type>
                   </div>
                   <Type variant="emphasized-body">
-                  I am a Product Designer and Fullstack web developer based in New York, USA.
+                  I am a Product Designer and Fullstack web developer based in the US.
                   </Type>
                   <Type variant="body">
                   My professional journey spans diverse experiences, including shaping the visual identity at Crashr and delving into production-scale product development at Accenture. My time at Ingram Micro emphasized the importance of User Experience design, sparking my passion for understanding user behavior. Wearing dual hats as a User Experience designer and a full-stack web developer, I&#x27;m dedicated to creating exceptional digital experiences.
