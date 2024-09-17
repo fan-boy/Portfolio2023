@@ -19,6 +19,7 @@ import OtherWork from '../ComponentLibrary/commons/OtherWork/otherwork';
 import Hero from '../../../public/assets/Cadence/hero.png';
 import MappingSurface from '../../../public/assets/Cadence/mappingsurface.png'
 import JourneyMap from '../../../public/assets/monumap/JourneyMap.png'
+import Planning from '../../../public/assets/monumap/planning.png'
 import Storyboard from '../../../public/assets/monumap/StoryBoard.png'
 import { ButtonOrLink } from '../ComponentLibrary/Components/Button/LinkOrButton';
 
@@ -35,7 +36,7 @@ export default function Monumap() {
         {/* Hero Section */}
         <>
           <div className="max-w-screen-xl max-h-[65vh] rounded-b-lg md:rounded-b-2xl overflow-hidden">
-             <Image src={Hero} alt="Cadence - An Interactive art + tech installation"/>   
+            <Image src={Hero} alt="Cadence - An Interactive art + tech installation" />
           </div>
         </>
         <PageSection.ConstrainedWidth>
@@ -48,13 +49,13 @@ export default function Monumap() {
 
                   <ProjectSection>
                     <ProjectSection.ShortDescription>
-                     An <span className="italic font-serif font-normal">augmented reality</span> app to bring cities and monuments to life. 
+                      An <span className="italic font-serif font-normal">augmented reality</span> app to bring cities and monuments to life.
                     </ProjectSection.ShortDescription>
                     <ProjectSection.FirstPara>
-                    Traveling should be more than just sightseeing—it should be an immersive and entertaining experience. We created MonuMap to revolutionize how people explore and learn about monuments. By leveraging augmented reality, MonuMap transforms the way travelers discover historical information, making it both engaging and informative.
+                      Traveling should be more than just sightseeing—it should be an immersive and entertaining experience. We created MonuMap to revolutionize how people explore and learn about monuments. By leveraging augmented reality, MonuMap transforms the way travelers discover historical information, making it both engaging and informative.
                     </ProjectSection.FirstPara>
                     <ProjectSection.SecondPara>
-                    No more searching through endless links or carrying pamphlets—MonuMap brings history to life right on your screen, making every journey a deeper and more meaningful adventure.
+                      No more searching through endless links or carrying pamphlets—MonuMap brings history to life right on your screen, making every journey a deeper and more meaningful adventure.
                     </ProjectSection.SecondPara>
 
                   </ProjectSection>
@@ -64,11 +65,11 @@ export default function Monumap() {
                     <OverviewSection>
                       <div className="flex flex-col md:flex-row md:gap-x-20 md:gap-y-0 gap-y-20 justify-center">
                         <OverviewSection.Problem>
-                        How might we enhance traditional tourism experiences, to create a more interactive and immersive way for visitors to engage deeply with the city&#39;s rich history and cultural significance?
+                          How might we enhance traditional tourism experiences, to create a more interactive and immersive way for visitors to engage deeply with the city&#39;s rich history and cultural significance?
                         </OverviewSection.Problem>
                         <OverviewSection.Outcome>
                           <OverviewSection.OutcomeParagraph>
-                          The MonuMap App leverages Augmented Reality (AR) to create an interactive and educational experience for tourists and residents. By overlaying historical timelines and significant facts onto the monuments, users can explore the city’s history in a visually captivating and immersive manner.
+                            The MonuMap App leverages Augmented Reality (AR) to create an interactive and educational experience for tourists and residents. By overlaying historical timelines and significant facts onto the monuments, users can explore the city’s history in a visually captivating and immersive manner.
                           </OverviewSection.OutcomeParagraph>
 
 
@@ -110,58 +111,12 @@ export default function Monumap() {
 
           </div>
         </PageSection.ConstrainedWidth>
-        </PageSection>
-        <PageSection theme="light" >
-
-        <PageSection.FullWidth theme="light" >
-          <SolutionSection>
-            <div className="w-full flex justify-center" >
-
-          <video loop autoPlay muted className="rounded-2xl">
-                      <source src="./assets/monumap/walkthrough.mp4" type="video/mp4" />
-                    </video>
-                    </div>
-          </SolutionSection>
-        </PageSection.FullWidth>
       </PageSection>
+
       <PageSection theme="light">
 
         {/* Process */}
         <ProcessSection>
-
-        <Section theme={"light"} name="Defining expectations" number="04">
-            <Section.ConstrainedWidth>
-              <div className="flex flex-col mt-10 gap-20">
-                <GridContentSection>
-                  <div className="w-full">
-                    <Type variant="h5Subheading">
-                      <span className="italic font-serif font-normal">What this project is and what to expect?</span>
-                    </Type>
-
-                  </div>
-                  <div className="w-full">
-                    <Type variant="body">
-                      My goal with this project was to practice my XR design and prototyping skills. I conducted user research and a usability testing session.
-                    </Type>
-                  </div>
-
-                </GridContentSection>
-
-                <GridContentSection>
-                  <ListItem number="01" name="Personal Project">
-                    This is a personal project to develop and improve my skills. There are no metrics or outcomes beyond my personal growth.
-                  </ListItem>
-                  <ListItem number="02" name="Developing XR skillset">
-                    I focused on learning new XR tools and XR design guidelines and 
-                  </ListItem>
-                  <ListItem number="03" name="Trying new things">
-                    I also wanted to work on this project to try new things and expand my creative potential.
-                  </ListItem>
-
-                </GridContentSection>
-              </div>
-            </Section.ConstrainedWidth>
-          </Section>
 
           <Section theme={"light"} name="User research" number="04">
 
@@ -172,27 +127,42 @@ export default function Monumap() {
                 <GridContentSection>
                   <div className="w-full">
                     <Type variant="h5Subheading">
-                     <span className="italic font-serif font-normal">Observing</span> how people visit <span className="italic font-serif font-normal">monuments</span>
+                      <span className="italic font-serif font-normal">Observing</span> how people visit <span className="italic font-serif font-normal">monuments</span>
                     </Type>
 
                   </div>
                   <div className="w-full">
                     <p>
-                    <Type variant="body">
-                      Our research entailed visiting different monuments in the DMV region and making detailed notes on how people explored and visited the different monuments and making detailed notes. 
-                    </Type>
+                      <Type variant="body">
+                        Our research entailed visiting different monuments in the DMV region and making detailed notes on how people explored and visited the different monuments and making detailed notes.
+                      </Type>
                     </p>
                     <p>
-                    <Type variant="body">
-                      We also interviewed 4 first time tourists to understand how we can improve their experience. These were unstructured interviews.
-                    </Type>
+                      <Type variant="body">
+                        We also interviewed 4 first time tourists to understand how we can improve their experience. These were unstructured interviews.
+                      </Type>
                     </p>
                   </div>
 
                 </GridContentSection>
+                <GridContentSection>
+                  <ListItem number="01" name="Fragmented Learning Experience">
+                  Visitors often struggle to find cohesive and detailed information, leading to a disjointed understanding of the monuments they visit.
+                  </ListItem>
+                  <ListItem number="02" name="Overreliance on Traditional Resources">
+                  ourists typically relied on pamphlets or generic web searches, which often failed to provide the depth of information they sought and is often distracting.
+                  </ListItem>
+                  <ListItem number="03" name="Desire for Enhanced Exploration">
+                  First-time tourists showed enthusiasm for a more interactive, self-guided experience that could offer both educational content and engaging visuals.
+                  </ListItem>
+                  <ListItem number="04" name="Lack of Interactivity">
+                  Many tourists expressed that their experiences felt passive, with limited opportunities for engaging with the history and significance of the monuments.
+                  </ListItem>
+
+                </GridContentSection>
               </div>
             </Section.ConstrainedWidth>
-           
+
           </Section>
 
           <Section theme={"light"} name="Ideating" number="05" classname=" ">
@@ -201,147 +171,203 @@ export default function Monumap() {
                 <GridContentSection>
                   <div className="w-full">
                     <Type variant="h5Subheading">
-                      Designing the  <span className="italic font-serif font-normal">user flows</span> and <span className="italic font-serif font-normal">interactions</span>
+                      Designing the  <span className="italic font-serif font-normal">user flows</span> and <span className="italic font-serif font-normal">interactions</span> to make exploring exciting
                     </Type>
 
                   </div>
                   <div className="w-full">
                     <p>
-                    <Type variant="body">
-                      We decided on our approach to augment the monuments and create an infographic around the monuments physical space to enhance the visitors experience.   
-                    </Type>
+                      <Type variant="body">
+                        We decided on our approach to augment the monuments and create an infographic around the monuments physical space to enhance the visitors experience.
+                      </Type>
                     </p>
                     <p>
-                    <Type variant="body">
-                      We created storyboards and journey maps to better understand the experience from the users perspective.
-                    </Type>
+                      <Type variant="body">
+                        We created storyboards and journey maps to better understand the experience from the users perspective.
+                      </Type>
                     </p>
                   </div>
 
                 </GridContentSection>
               </div>
-              
+
             </Section.ConstrainedWidth>
             <div className="flex flex-col gap-y-4 md:grid md:grid-cols-5 items-center px-4 md:gap-y-40 md:gap-x-10 py-20 ">
 
-                
-                <Image src={Storyboard} className="col-span-2" alt="Storyboard"/>
-                <Image src={JourneyMap} className="col-span-3" alt="Journey Map"/>
 
-              </div>
+              <Image src={Storyboard} className="col-span-2" alt="Storyboard" />
+              <Image src={JourneyMap} className="col-span-3" alt="Journey Map" />
+
+            </div>
           </Section>
-          <Section theme={"light"} name="Building the base" number="06 " classname="my-20 ">
+          <Section theme={"light"} name="Low-fi Prototyping" number="06 " classname="my-20 ">
             <Section.ConstrainedWidth>
-            <div className="w-full flex flex-col gap-20 mt-10">
-              <GridContentSection>
+              <div className="w-full flex flex-col gap-20 mt-10">
+                <GridContentSection>
 
-                <div className="w-full">
-                  <Type variant="h5Subheading">
-                    Building the  <span className="italic font-serif font-normal">POC</span>
-                  </Type>
+                  <div className="w-full">
+                    <Type variant="h5Subheading">
+                      <span className="italic font-serif font-normal">Planning</span> and <span className="italic font-serif font-normal">building</span>  a low-fi  prototype
+                    </Type>
 
-                </div>
-                <div className="w-full">
-                  <Type variant="body">
-                    I tried to get the core concept of the experience working with the tech I had. I built the POC using Touchdesigner with Kinect Azure for motion detection. I used Max msp for music generation and built a basic therim.
-                  </Type>
-                </div>
-                
+                  </div>
+                  <div className="w-full flex flex-col gap-4">
+                    <p>
+                      <Type variant="body">
+                        Planning on how to place content around the monuments in the AR space was one of the biggest challenge. We started out with visiting the monument and clicking pictures of the surrounding and trying to sketch where and how we would be placing the content
+                      </Type>
+                    </p>
+                    <p>
+                      <Type variant="body">
+                        We decided to build the experience for the <span className="font-bold">MLK monument in Washington DC</span>.
+                      </Type>
+                    </p>
+                  </div>
 
 
-              </GridContentSection>
-             </div>
+
+                </GridContentSection>
+              </div>
 
             </Section.ConstrainedWidth>
-            <div className="flex flex-col gap-y-4 md:grid md:grid-cols-4 md:gap-y-40 md:gap-x-10 mt-20 ">
-                  
-                 
-                
-                  <div></div>
-            <div className=" flex flex-col gap-4 justify-end  items-start">
-                      <Type variant="h5" fontType="font-serif"> A simple therim</Type>
-                      <Type variant="body" > Unmute the video to hear the sound. Warning: The sound is harsh.  </Type>
-                    </div>
-                  
-                    <video loop autoPlay muted controls className=" rounded-2xl">
-                      <source src="./assets/Cadence/poc.mp4" type="video/mp4" />
-                    </video>
-                    </div>
+            <div className="mt-20">
+              <Image src={Planning} alt="Planning on how we planned to use the surfaces around the monument to augment it." />
+            </div>
           </Section>
           <Section theme={"light"} name="Prototyping" number="07">
             <Section.ConstrainedWidth>
-            <div className="w-full flex flex-col gap-20 mt-10">
-              <GridContentSection>
-                <div className="w-full">
-                  <Type variant="h5Subheading">
-                    Buidling <span className="italic font-serif font-normal">the experience </span>
-                  </Type>
+              <div className="w-full flex flex-col gap-20 mt-10">
+                <GridContentSection>
+                  <div className="w-full">
+                    <Type variant="h5Subheading">
+                      Getting the <span className="italic font-serif font-normal">tech</span> ready
+                    </Type>
 
-                </div>
-                <div className="w-full">
-                  <Type variant="body">
-                    After we got the POC validated, we worked on making the experience more immersive by adding an audio reactive particle cloud visualization and mapping it to different surfaces that we built using cardboard.
+                  </div>
+                  <div className="w-full">
+                    <Type variant="body">
+                      Since we wanted to create a locaiton specific experience, we decided to use Lightship VPS.
 
-                  </Type>
-                </div>
+                    </Type>
+                  </div>
 
-              </GridContentSection>
+                </GridContentSection>
+
+
+              </div>
+
+            </Section.ConstrainedWidth>
+            <div className="flex flex-col gap-y-4 md:grid md:grid-cols-4 md:gap-y-40 md:gap-x-10 mt-20 px-10">
+
+
+
+              <div></div>
+              <div className=" flex flex-col gap-4 justify-end my-20 items-start">
+                <Type variant="h5" fontType="font-serif">3D photogrammetry scans</Type>
+                <Type variant="body" > In order to add the location to the Niantic Lightship database we had to conduct a photogammetry 3d scan of the monument.   </Type>
+              </div>
+
+              <video loop autoPlay muted className="rounded-2xl">
+                <source src="./assets/monumap/scan.mp4" type="video/mp4" />
+              </video>
+              <div></div>
+
+              <video loop autoPlay muted className="rounded-2xl col-span-3">
+                <source src="./assets/monumap/UnityPlacment.mp4" type="video/mp4" />
+              </video>
+              
+              <div className=" flex flex-col  gap-4 justify-end my-20 items-start">
+                <Type variant="h5" fontType="font-serif">Adding scans to Unity</Type>
+                <Type variant="body" > Added the scans to Unity and placed content around the monument in the virtual space </Type>
+              </div>
 
               
-            </div>  
+              <div></div>
+            </div>
+          </Section>
+          <Section theme={"light"} name="Content Design" number="08">
+            <Section.ConstrainedWidth>
+              <div className="w-full flex flex-col gap-20 mt-10">
+                <GridContentSection>
+                  <div className="w-full">
+                    <Type variant="h5Subheading">
+                      Desiging the <span className="italic font-serif font-normal">content</span> to augment on the monuments 
+                    </Type>
+
+                  </div>
+                  <div className="w-full">
+                    <Type variant="body">
+                      We initially had plans of having a 3D tour guide who would walk you across the monument but due to time constraints we were limited to 2D graphics. 
+
+                    </Type>
+                  </div>
+
+                </GridContentSection>
+
+
+              </div>
 
             </Section.ConstrainedWidth>
-            <div className="flex flex-col gap-y-4 md:grid md:grid-cols-4 md:gap-y-40 md:gap-x-10 p-20 ">
-                  
-            <Image src={MappingSurface} className='col-span-3 rounded-2xl' alt="Mapping surface" />
+            <div className="flex flex-col gap-y-4 md:grid md:grid-cols-4 md:gap-y-40 md:gap-x-10 mt-20 px-10">
 
-            <div className=" flex flex-col gap-4 justify-end py-20 items-start">
-                      <Type variant="h5" fontType="font-serif"> Building Projection surfaces</Type>
-                      <Type variant="body" > We built multiple surfaces using cardboard and covered them using white paper and spray paint  </Type>
-                    </div>
-                
-                  
-            <div className=" flex flex-col gap-4 justify-end py-20 items-start">
-                      <Type variant="h5" fontType="font-serif"> Mapping the projection</Type>
-                      <Type variant="body" > We used Kantan mapper to map different visualizations to each surface we created </Type>
-                    </div>
-                  
-                    <video loop autoPlay muted controls className="col-span-3 rounded-2xl">
-                      <source src="./assets/Cadence/mapping.mp4" type="video/mp4" />
-                    </video>
-                    </div>
+
+
+              <div></div>
+              <div className=" flex flex-col gap-4 justify-end my-20 items-start">
+                <Type variant="h5" fontType="font-serif">3D photogrammetry scans</Type>
+                <Type variant="body" > In order to add the location to the Niantic Lightship database we had to conduct a photogammetry 3d scan of the monument.   </Type>
+              </div>
+
+              <video loop autoPlay muted className="rounded-2xl">
+                <source src="./assets/monumap/scan.mp4" type="video/mp4" />
+              </video>
+              <div></div>
+
+              <video loop autoPlay muted className="rounded-2xl col-span-3">
+                <source src="./assets/monumap/UnityPlacment.mp4" type="video/mp4" />
+              </video>
+              
+              <div className=" flex flex-col  gap-4 justify-end my-20 items-start">
+                <Type variant="h5" fontType="font-serif">Adding scans to Unity</Type>
+                <Type variant="body" > Added the scans to Unity and placed content around the monument in the virtual space </Type>
+              </div>
+
+              
+              <div></div>
+            </div>
           </Section>
+          
           <Section theme={"light"} name="User Testing" number="08">
             <Section.ConstrainedWidth>
-            <div className="w-full flex flex-col gap-20 mt-10 mb-10">
-              <GridContentSection>
-                <div className="w-full">
-                  <Type variant="h5Subheading">
-                  <span className="italic font-serif font-normal">Testing</span> and <span className="italic font-serif font-normal">iterating  </span>
-                  </Type>
+              <div className="w-full flex flex-col gap-20 mt-10 mb-10">
+                <GridContentSection>
+                  <div className="w-full">
+                    <Type variant="h5Subheading">
+                      <span className="italic font-serif font-normal">Testing</span> and <span className="italic font-serif font-normal">iterating  </span>
+                    </Type>
 
-                </div>
-                <div className="w-full">
-                  <Type variant="body">
-                    We tested our installation with 10 users and gathered some feedback and iterated on the installation. 
-                    Our key learnings were:
-                  </Type>
-                </div>
+                  </div>
+                  <div className="w-full">
+                    <Type variant="body">
+                      We tested our installation with 10 users and gathered some feedback and iterated on the installation.
+                      Our key learnings were:
+                    </Type>
+                  </div>
 
-              </GridContentSection>
+                </GridContentSection>
 
-              <GridContentSection>
-                                    <ListItem number="01" name="Magical experience">
-                                        We got a lot of positive feedback from the users. Most of them described the experience as “magical” and feeling “part of the art.”
-                                    </ListItem>
-                                    <ListItem number="02" name="Unclear interaction patterns">
-                                        Based on our observation of the users we could tell that the gestures for changing music were not clear and intuitive. We changed it up to make it even more immersive.
-                                    </ListItem>
-                                </GridContentSection>
-      </div>
+                <GridContentSection>
+                  <ListItem number="01" name="Magical experience">
+                    We got a lot of positive feedback from the users. Most of them described the experience as “magical” and feeling “part of the art.”
+                  </ListItem>
+                  <ListItem number="02" name="Unclear interaction patterns">
+                    Based on our observation of the users we could tell that the gestures for changing music were not clear and intuitive. We changed it up to make it even more immersive.
+                  </ListItem>
+                </GridContentSection>
+              </div>
 
             </Section.ConstrainedWidth>
-            </Section>
+          </Section>
 
         </ProcessSection>
       </PageSection>

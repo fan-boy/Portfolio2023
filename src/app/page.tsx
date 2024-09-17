@@ -2,6 +2,7 @@ import React from 'react'
 import DefaultPage from './ComponentLibrary/commons/pages/DefaultPage'
 import PageSection from './ComponentLibrary/commons/pages/PageSection'
 import { Card, varianttype } from './ComponentLibrary/Components/Card/Card'
+import GridContentSection from './ComponentLibrary/Components/GridContentSection'
 import TextLoop from './ComponentLibrary/Components/TextLoop'
 import BouncingArrow from './ComponentLibrary/Specials/BouncingArrow'
 import { Type, Variants } from './ComponentLibrary/Typography/Type'
@@ -15,7 +16,48 @@ export default function Home() {
     <DefaultPage selected="work">
       <PageSection theme="dark">
         <PageSection.ConstrainedWidth>
-          <div className="flex flex-col mt-14 mb-14">
+          <GridContentSection classname="items-end mb-20">
+          <div className="flex mt-4 flex-col text-center md:text-left  md:min-w-1/2 gap-4 md:gap-0">
+                <span>
+                  <Type variant={"body"}>Hi! I&#x27;m</Type>
+                </span>
+                <span >
+                  <Type variant={"heroText"}>
+                    Aaditya
+                  </Type>
+                </span>
+              </div>
+              <div className="flex mt-9 flex-col text-center md:text-left md:min-w-1/2 w-full">
+                <span>
+                  <Type variant={"h3"}> A product designer </Type>
+                </span>
+                <span className="w-full">
+                  <TextLoop />
+                </span>
+                
+              </div>
+              {/* <div className="hidden md:flex  md:flex-col text-center md:text-left gap-4 ">
+                <span >
+                  <Type variant={"body"}>
+                    I empathize with users to bridge the gap <br/> between the intent and impact of a product
+
+                  </Type>
+                </span>
+              </div>
+              <div className="flex  flex-col text-center md:text-left gap-4 md:min-w-1/2">
+                <span >
+                  <Type variant={"emphasized-body"}>
+                    Actively looking for full time roles
+                  </Type>
+                </span>
+                <span >
+                <Type variant={"body"}>
+                  Graduating May 2024
+                </Type>
+              </span>
+              </div> */}
+          </GridContentSection>
+          {/* <div className="flex flex-col mt-14 mb-14">
             <div className="md:flex md:flex-row md:items-end md:gap-10">
               <div className="flex mt-4 flex-col text-center md:text-left  md:min-w-1/2 gap-4 md:gap-0">
                 <span>
@@ -51,11 +93,11 @@ export default function Home() {
                     Actively looking for full time roles
                   </Type>
                 </span>
-                {/* <span >
+                <span >
                 <Type variant={"body"}>
                   Graduating May 2024
                 </Type>
-              </span> */}
+              </span>
               </div>
             </div>
             <div className="w-full text-center md:text-left mt-10 md:mt-28 md:flex md:flex-row-reverse">
@@ -66,13 +108,14 @@ export default function Home() {
                 <BouncingArrow />
               </div>
             </div>
-          </div>
+          </div> */}
         </PageSection.ConstrainedWidth>
       </PageSection>
 
 
       <PageSection theme="dark"  >
         <PageSection.ConstrainedWidth>
+          <div className="mt-40">
 
           <div className="w-full sm:px-40 md:px-0 md:columns-2 md:flex-row gap-10 mt-40">
             <div className="-mt-40">
@@ -103,7 +146,7 @@ export default function Home() {
 
           </div>
 
-
+          </div>  
 
 
 

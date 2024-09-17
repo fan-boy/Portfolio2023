@@ -12,7 +12,7 @@ const Navbar = (props:NavbarProps) =>{
     return(
         <div className="w-full bg-backgroundDark text-fontDark flex justify-center">
 
-            <div className="w-full lg:max-w-8xl p-2   items-center flex justify-between  ">
+            <div className="w-full  p-2   items-center flex justify-between  ">
 
             <ButtonOrLink className="hidden sm:block font-sans font-regular ml-4" href="/">
             <span>

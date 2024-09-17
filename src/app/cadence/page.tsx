@@ -53,13 +53,9 @@ export default function Cadence() {
 
                     </ProjectSection.ShortDescription>
                     <ProjectSection.FirstPara>
-                      I wanted to explore new interation patterns. The IMD incubator at UMD gave me the opportunity to explore new immersive tech and create an amazing experience. The objective of this incubator was to build art installations to be showcased in the NextNow Fest 2024, a art tech festival at UMD.
+                      I wanted to explore new interaction patterns. The IMD incubator at UMD gave me the opportunity to explore new immersive tech and create an amazing experience. The objective of this incubator was to build art installations to be showcased in the NextNow Fest 2024, a art tech festival at UMD.
                     </ProjectSection.FirstPara>
-                    <ProjectSection.SecondPara>
-                      My goal was to create a user-
-                      friendly and adaptable online ordering experience for both
-                      businesses and customers, ensuring a seamless process.
-                    </ProjectSection.SecondPara>
+                    
 
                   </ProjectSection>
 
@@ -96,7 +92,7 @@ export default function Cadence() {
                     </InfoSection.Column>
                     <InfoSection.Column>
                       <InfoSection.Tools>
-                        Figma, Procreate, Blender, Touchdesigner
+                        Figma, Procreate, Blender, Unity, Touchdesigner
                       </InfoSection.Tools>
                       <InfoSection.Team>
                         Arjav Jain
