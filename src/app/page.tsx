@@ -16,7 +16,7 @@ export default function Home() {
     <DefaultPage selected="work">
       <PageSection theme="dark">
         <PageSection.ConstrainedWidth>
-          <GridContentSection classname="items-end mb-20">
+          {/* <GridContentSection classname="items-end mb-20">
           <div className="flex mt-4 flex-col text-center md:text-left  md:min-w-1/2 gap-4 md:gap-0">
                 <span>
                   <Type variant={"body"}>Hi! I&#x27;m</Type>
@@ -36,7 +36,7 @@ export default function Home() {
                 </span>
                 
               </div>
-              {/* <div className="hidden md:flex  md:flex-col text-center md:text-left gap-4 ">
+              <div className="hidden md:flex  md:flex-col text-center md:text-left gap-4 ">
                 <span >
                   <Type variant={"body"}>
                     I empathize with users to bridge the gap <br/> between the intent and impact of a product
@@ -55,9 +55,9 @@ export default function Home() {
                   Graduating May 2024
                 </Type>
               </span>
-              </div> */}
-          </GridContentSection>
-          {/* <div className="flex flex-col mt-14 mb-14">
+              </div>
+          </GridContentSection> */}
+          <div className="flex flex-col mt-14 ">
             <div className="md:flex md:flex-row md:items-end md:gap-10">
               <div className="flex mt-4 flex-col text-center md:text-left  md:min-w-1/2 gap-4 md:gap-0">
                 <span>
@@ -93,22 +93,18 @@ export default function Home() {
                     Actively looking for full time roles
                   </Type>
                 </span>
-                <span >
-                <Type variant={"body"}>
-                  Graduating May 2024
-                </Type>
-              </span>
+               
               </div>
             </div>
-            <div className="w-full text-center md:text-left mt-10 md:mt-28 md:flex md:flex-row-reverse">
+            {/* <div className="w-full text-center md:text-left mt-10 md:mt-14 md:flex md:flex-row-reverse">
               <div className="flex flex-row gap-5">
                 <Type variant="emphasized-body">
                   Selected Work
                 </Type>
                 <BouncingArrow />
               </div>
-            </div>
-          </div> */}
+            </div> */}
+          </div>
         </PageSection.ConstrainedWidth>
       </PageSection>
 
