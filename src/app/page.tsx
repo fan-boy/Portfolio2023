@@ -7,6 +7,8 @@ import TextLoop from './ComponentLibrary/Components/TextLoop'
 import BouncingArrow from './ComponentLibrary/Specials/BouncingArrow'
 import { Type, Variants } from './ComponentLibrary/Typography/Type'
 import projectlist from './projectlist.json';
+import Image from 'next/image'
+import DuneLogo from '../../public/assets/home/Dune/logo.png';
 
 
 export default function Home() {
@@ -16,7 +18,7 @@ export default function Home() {
     <DefaultPage selected="work">
       <PageSection theme="dark">
         <PageSection.ConstrainedWidth>
-          {/* <GridContentSection classname="items-end mb-20">
+           {/* <GridContentSection classname="items-end mb-20">
           <div className="flex mt-4 flex-col text-center md:text-left  md:min-w-1/2 gap-4 md:gap-0">
                 <span>
                   <Type variant={"body"}>Hi! I&#x27;m</Type>
@@ -88,10 +90,18 @@ export default function Home() {
                 </span>
               </div>
               <div className="flex mt-20 flex-col text-center md:text-left gap-4 md:min-w-1/2">
-                <span >
-                  <Type variant={"emphasized-body"}>
+                <span className="flex flex-row gap-4 justify-left items-center">
+                   <Type variant={"emphasized-body"}>
+                    Currently at 
+                  </Type> 
+                  
+                    <a className="w-1/3" href="https://dune.security/">
+                 <Image  src={DuneLogo} alt=" Currently designing at Dune"/>
+                 </a>
+                 
+                  {/* <Type variant={"emphasized-body"}>
                     Actively looking for full time roles
-                  </Type>
+                  </Type> */}
                 </span>
                
               </div>
